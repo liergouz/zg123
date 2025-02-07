@@ -1,0 +1,1015 @@
+
+#include <skill.h>
+#include <effect.h>
+#include <item.h>
+#include <map.h>
+
+// º¯Êý£ºÉú³É¶þ½øÖÆÂë
+void SAVE_BINARY() { }
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û
+void stop_loop_perform( object me )
+{
+        if( get_effect_3(me, EFFECT_CHAR_ATTACK) ) set_effect(me, EFFECT_CHAR_ATTACK, 1);    // Ë³ÊÆÍÆÖÛ(×ÔÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_MOVE) ) set_effect(me, EFFECT_CHAR_MOVE, 1);    // Ì¤Ñ©ÎÞºÛ(×ÔÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_INVISIBLE) ) set_effect_2(me, EFFECT_CHAR_INVISIBLE, 1, 1);    // ÒþÉí(×ÔÓÃ) ## 2 ##
+        if( get_effect_3(me, EFFECT_CHAR_CHANGE) ) set_effect(me, EFFECT_CHAR_CHANGE, 1);    // Ç¬À¤Å²ÒÆ(×ÔÓÃ)
+
+        if( get_effect_3(me, EFFECT_CHAR_ADD_DP) ) set_effect(me, EFFECT_CHAR_ADD_DP, 1);    // ½ðÖÓÕÖ(£«·ÀÓù)(×ÔÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_ADD_PP) ) set_effect(me, EFFECT_CHAR_ADD_PP, 1);    // »¤Ìå½ð¹â(£«·¨·À)(×ÔÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_MISS) ) set_effect(me, EFFECT_CHAR_MISS, 1);    // ÁéÆø¼×(×ÔÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_IMMORTAL) ) set_effect(me, EFFECT_CHAR_IMMORTAL, 1);    // ²»ËÀÖ®Éí(²»ËÀ)(×ÔÓÃ)
+
+        if( get_effect_3(me, EFFECT_USER_HURT) ) set_effect_2(me, EFFECT_USER_HURT, 1, 1);    // »¤Éí¶¾»·(×ÔÓÃ)
+
+        if( get_effect_3(me, EFFECT_CHAR_POWERUP) ) set_effect(me, EFFECT_CHAR_POWERUP, 1);    // ½ðÕë¶É¶ò(ËûÓÃ)
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(²»Á¼)
+void stop_loop_perform_4( object me )
+{
+        if( get_effect_3(me, EFFECT_CHAR_FAINT) ) set_effect(me, EFFECT_CHAR_FAINT, 1);    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)
+        if( get_effect_3(me, EFFECT_CHAR_FAINT_2) ) set_effect(me, EFFECT_CHAR_FAINT_2, 1);    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)(Âé·ÐÉ¢)
+
+        if( get_effect_3(me, EFFECT_CHAR_ARMORFALL) ) set_effect(me, EFFECT_CHAR_ARMORFALL, 1);    // Ê´¼×(ËûÓÃ)ä
+
+        if( get_effect_3(me, EFFECT_CHAR_SHUT) ) set_effect(me, EFFECT_CHAR_SHUT, 1);    // À§µÐ(²»ÄÜÐÐ×ß)
+        if( get_effect_3(me, EFFECT_CHAR_NO_PF) ) set_effect(me, EFFECT_CHAR_NO_PF, 1);    // ·âÄ§¾÷(ËûÓÃ)
+        if( get_effect_3(me, EFFECT_CHAR_LAZY) ) set_effect(me, EFFECT_CHAR_LAZY, 1);    // ÑÓ»º(¹¥»÷ÒÆ¶¯±äÂý)
+        if( get_effect_3(me, EFFECT_CHAR_SLOW) ) set_effect(me, EFFECT_CHAR_SLOW, 1);    // ÑÓ»º(¹¥»÷±äÂý)
+        if( get_effect_3(me, EFFECT_CHAR_DREAM_1) ) set_effect(me, EFFECT_CHAR_DREAM_1, 1);    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê(±£»¤×´Ì¬)
+        if( get_effect_3(me, EFFECT_CHAR_DREAM) ) set_effect_2(me, EFFECT_CHAR_DREAM, 1, 1);    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê
+        if( get_effect_3(me, EFFECT_CHAR_CHAOS) ) set_effect(me, EFFECT_CHAR_CHAOS, 1);    // »ìÂÒ(Êó±ê·´×ª)
+        if( get_effect_3(me, EFFECT_CHAR_WOUND) ) set_effect(me, EFFECT_CHAR_WOUND, 1);    // ¸ºÉË(£­¹¥»÷£­·ÀÓù)
+        if( get_effect_3(me, EFFECT_CHAR_BLOOD) ) set_effect_2(me, EFFECT_CHAR_BLOOD, 1, 1);    // Á÷Ñª(²»¶Ï¼õÑª)
+
+        if( get_effect_3(me, EFFECT_USER_BURN) ) set_effect_2(me, EFFECT_USER_BURN, 1, 1);    // È¼ÉÕ(¼õÉÙÄÍ¾Ã)
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(Éñ´ò)
+void stop_loop_perform_5( object me )
+{
+//        if( get_effect_3(me, EFFECT_CHAR_HALFGOD) ) set_effect(me, EFFECT_CHAR_HALFGOD, 1);    // Éñ´ò(×ÔÓÃ)
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(ÆäËü)
+void stop_loop_perform_8( object me )
+{
+	string file, arg;
+        if( get_effect_3(me, EFFECT_USER_HERB) ) "/effect/herb"->effect_herb_break(me);    	// ²É¼¯²ÝÒ©(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_TRAVEL) ) "/sys/task/travel"->effect_break(me);    		// æäÕ¾´«ËÍ(ÖÐ¶Ï)
+
+	if( get_effect_3(me, EFFECT_CON_HP_MP) ) "/sys/item/food"->effect_recover_break(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+	if( get_effect_3(me, EFFECT_CON_MP) ) "/sys/item/food"->effect_recover_break2(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+	
+        if( get_effect_3(me, EFFECT_USER_RECOVER) ) PF_FILE_03481->effect_recover_break(me);    	// ÐÝÕû(ÖÐ¶Ï)
+
+        if( get_effect_3(me, EFFECT_USER_THUNDER) ) PF_FILE_04236->effect_thunder_break(me);    	// À×Áú¾÷(ÖÐ¶Ï)
+
+        if( get_effect_3(me, EFFECT_USER_WORK) )	TASK_WORKER_D->effect_work_break(me);
+        if( get_effect_3(me, EFFECT_OPEN_BOX) )	"/npc/00/2001"->effect_break(me);
+	if( get_effect_3(me, EFFECT_MINE) )	"/npc/00/2002"->effect_break(me);
+        if( get_effect_3(me, EFFECT_CONJURE) )	"/effect/zombie"->effect_break(me);
+        if( get_effect_3(me, EFFECT_PROGRESS) )
+        {        	
+                file = me->get_progress_file();
+                arg = me->get_progress_arg();
+                if (file)
+                	file->effect_break(me, arg);        	
+        }
+        if( get_effect_3(me, EFFECT_PROGRESS2) )
+        {        	
+                file = me->get_progress_file();
+                arg = me->get_progress_arg();
+                if (file)
+                	file->effect_break(me, arg);        	
+        }        
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(±»¹¥»÷)
+void stop_loop_perform_be_attack( object me )
+{
+	string file, arg;
+	if( get_effect_3(me, EFFECT_USER_ESCAPE) ) ITEM_0497_FILE->effect_escape_break(me);    // ÌÓÀëÕ½³¡(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_HERB) ) "/effect/herb"->effect_herb_break(me);    	// ²É¼¯²ÝÒ©(ÖÐ¶Ï)
+//        if( get_effect_3(me, EFFECT_TRAVEL) ) "/sys/task/travel"->effect_break(me);    		// æäÕ¾´«ËÍ(ÖÐ¶Ï)
+
+	if( get_effect_3(me, EFFECT_CON_HP_MP) ) "/sys/item/food"->effect_recover_break(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+	if( get_effect_3(me, EFFECT_CON_MP) ) "/sys/item/food"->effect_recover_break2(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_RECOVER) ) PF_FILE_03481->effect_recover_break(me);    	// ÐÝÕû(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_WORK) )	TASK_WORKER_D->effect_work_break(me);
+        if( get_effect_3(me, EFFECT_OPEN_BOX) )	"/npc/00/2001"->effect_break(me);
+        if( get_effect_3(me, EFFECT_MINE) )	"/npc/00/2002"->effect_break(me);
+        if( get_effect_3(me, EFFECT_CONJURE) )	"/effect/zombie"->effect_break(me);
+        if( get_effect_3(me, EFFECT_SLEEP) ) set_effect(me, EFFECT_SLEEP, 1);    // »èÃÔ
+        if( get_effect_3(me, EFFECT_PROGRESS2) )
+        {        	
+                file = me->get_progress_file();
+                arg = me->get_progress_arg();
+                if (file)
+                	file->effect_break(me, arg);        	
+        }        
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(Ñ£ÔÎ£¬ÃÎÓÎ)
+void stop_loop_perform_faint( object me )
+{
+	if( get_effect_3(me, EFFECT_USER_ESCAPE) ) ITEM_0497_FILE->effect_escape_break(me);    // ÌÓÀëÕ½³¡(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_HERB) ) "/effect/herb"->effect_herb_break(me);    	// ²É¼¯²ÝÒ©(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_TRAVEL) ) "/sys/task/travel"->effect_break(me);    		// æäÕ¾´«ËÍ(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_THUNDER) ) PF_FILE_04236->effect_thunder_break(me);    	// À×Áú¾÷(ÖÐ¶Ï)
+	if( get_effect_3(me, EFFECT_CON_HP_MP) ) "/sys/item/food"->effect_recover_break(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+	if( get_effect_3(me, EFFECT_CON_MP) ) "/sys/item/food"->effect_recover_break2(me);    	// ³ÔÊ³Îï(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_RECOVER) ) PF_FILE_03481->effect_recover_break(me);    	// ÐÝÕû(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_WORK) )	TASK_WORKER_D->effect_work_break(me);
+        if( get_effect_3(me, EFFECT_OPEN_BOX) )	"/npc/00/2001"->effect_break(me);
+        if( get_effect_3(me, EFFECT_MINE) )	"/npc/00/2002"->effect_break(me);
+        if( get_effect_3(me, EFFECT_CONJURE) )	"/effect/zombie"->effect_break(me);
+}
+
+// º¯Êý£ºÖÐ¶Ï³ÖÐøÐ§¹û(ÆäËü)(È«)
+void stop_loop_perform_9( object me )
+{
+        if( get_effect_3(me, EFFECT_USER_ESCAPE) ) ITEM_0497_FILE->effect_escape_break(me);    // ÌÓÀëÕ½³¡(ÖÐ¶Ï)
+        stop_loop_perform_8(me);
+}
+
+// º¯Êý£º×ßÂ·ÖÐ¶Ï³ÖÐøÐ§¹û(ÆäËü)
+void stop_loop_perform_go( object me )
+{
+	string file, arg;
+        if( get_effect_3(me, EFFECT_USER_HERB) ) "/effect/herb"->effect_herb_break(me);    	// ²É¼¯²ÝÒ©(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_TRAVEL) ) "/sys/task/travel"->effect_break(me);    		// æäÕ¾´«ËÍ(ÖÐ¶Ï)
+
+	if( get_effect_3(me, EFFECT_USER_ESCAPE) ) ITEM_0497_FILE->effect_escape_break(me);    // ÌÓÀëÕ½³¡(ÖÐ¶Ï)
+        if( get_effect_3(me, EFFECT_USER_RECOVER) ) PF_FILE_03481->effect_recover_break(me);    	// ÐÝÕû(ÖÐ¶Ï)
+
+        if( get_effect_3(me, EFFECT_USER_THUNDER) ) PF_FILE_04236->effect_thunder_break(me);    	// À×Áú¾÷(ÖÐ¶Ï)
+
+        if( get_effect_3(me, EFFECT_USER_WORK) )	TASK_WORKER_D->effect_work_break(me);
+        if( get_effect_3(me, EFFECT_OPEN_BOX) )	"/npc/00/2001"->effect_break(me);
+        if( get_effect_3(me, EFFECT_MINE) )	"/npc/00/2002"->effect_break(me);
+        if( get_effect_3(me, EFFECT_CONJURE) )	"/effect/zombie"->effect_break(me);
+        if( get_effect_3(me, EFFECT_PROGRESS) )
+        {        	
+                file = me->get_progress_file();
+                arg = me->get_progress_arg();
+                if (file)
+                	file->effect_break(me, arg);        	
+        }
+        if( get_effect_3(me, EFFECT_PROGRESS2) )
+        {        	
+                file = me->get_progress_file();
+                arg = me->get_progress_arg();
+                if (file)
+                	file->effect_break(me, arg);        	
+        }        
+}
+
+// º¯Êý£ºÖÐ¶Ï¶¾Ò©Ð§¹û
+void stop_poison_effect( object me )
+{
+        if( get_effect_3(me, EFFECT_CHAR_POISON) ) set_effect_2(me, EFFECT_CHAR_POISON, 1, 1);    // ¶¾Ò©(½â³ý) ## 2 ##
+        if( get_effect_3(me, EFFECT_CHAR_POISON_2) ) set_effect_2(me, EFFECT_CHAR_POISON_2, 1, 1);    // ¶¾Ò©(½â³ý) ## 2 ##
+
+        if( get_effect_3(me, EFFECT_CHAR_5215) ) set_effect(me, EFFECT_CHAR_5215, 1);    // Èí½îÉ¢(½â³ý)
+
+        if( get_effect_3(me, EFFECT_CHAR_DREAM_1) ) set_effect(me, EFFECT_CHAR_DREAM_1, 1);    // ÃÔÉñÉ¢(½â³ý)
+        if( get_effect_3(me, EFFECT_CHAR_DREAM) ) set_effect_2(me, EFFECT_CHAR_DREAM, 1, 1);    // ÃÔÉñÉ¢(½â³ý) ## 2 ##
+}
+
+// =============================================================
+
+// º¯Êý£º³õÊ¼»¯³ÖÐøÐ§¹û
+void init_loop_perform( object me )
+{
+        int *pf = ({ });
+        object map,item;
+        string name1, name2;
+        if( me->is_user() )    // Íæ¼Ò
+        {
+                if( get_effect_3(me, EFFECT_USER_HERB) ) pf += ({ 00131, 10, OVER_BODY });    // ²É¼¯²ÝÒ©(×ÔÓÃ)
+                map = get_map_object( get_z(me) );
+                if (map && (map->get_map_type()==BATTLE_MAP) && (me->is_die()==0) )
+                {
+                	if ( map->is_changping() )
+                	{
+		                if( me->get_2("changping.country") == "ÇØ¹ú" ) pf += ({ 9005, 1, OVER_BODY });
+		                else
+		                if( me->get_2("changping.country") == "ÕÔ¹ú" )  pf += ({ 9006, 1, OVER_BODY });
+                		
+                	}
+                	else
+                	{
+		                name1 = map->get_war_attack();
+		                name2 = map->get_war_defense();
+		                if( me->get_org_name() == name1 ) pf += ({ 9005, 1, OVER_BODY });
+		                else
+		                if( me->get_org_name() == name2 ) pf += ({ 9006, 1, OVER_BODY });
+                	}
+                }               
+        }
+        else    // £Î£Ð£Ã
+        {
+//                if( !me->get_action() ) pf += ({ 9414, 1, UNDER_FOOT });    // ÕÙ»½ÊÞÍ£Ö¹
+                if( get_effect_3(me, EFFECT_NPC_0531_1) ) pf += ({ 5311, 1, OVER_BODY });    // ÃÔ»ê¾÷(ËûÓÃ)
+                if( get_effect_3(me, EFFECT_CHAR_SOUL_LOCK) ) pf += ({ 42531, 1, OVER_BODY });    
+        }
+                if( get_effect_3(me, EFFECT_CHAR_FAINT) ) pf += ({ 9002, 1, OVER_BODY });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)
+                if( get_effect_3(me, EFFECT_CHAR_FAINT_2) ) pf += ({ 9002, 1, OVER_BODY });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)(Âé·ÐÉ¢)
+                if( get_effect_3(me, EFFECT_SLEEP) ) pf += ({ 9015, 1, OVER_BODY });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)
+                if( get_effect_3(me, EFFECT_CHAR_NO_MOVE) ) pf += ({ 9012, 1, UNDER_FOOT });    // À§µÐ
+
+                if( get_effect_3(me, EFFECT_CHAR_IMMORTAL) ) pf += ({ 32540, 1, OVER_BODY });    // ²»ËÀÖ®Éí(²»ËÀ)(×ÔÓÃ)
+
+                if( get_effect_3(me, EFFECT_CHAR_SHUT) ) pf += ({ 34821, 1, UNDER_FOOT });    // 
+
+                if( get_effect_3(me, EFFECT_CHAR_INVISIBLE) ) pf += ({ 9000, 1, UNDER_FOOT });    // ÒþÉí(×ÔÓÃ)
+                if( get_effect_3(me, EFFECT_USER_HURT) ) pf += ({ 36321, 3, UNDER_FOOT });    // »¤Éí¶¾»·
+
+//                if( get_effect_3(me, EFFECT_CHAR_HALFGOD2) ) pf += ({ 41710, 1, UNDER_FOOT });    // Éñ´ò(×ÔÓÃ)
+
+                if( get_effect_3(me, EFFECT_CHAR_DANCE) || get_effect_3(me, EFFECT_CHAR_SING) ) pf += ({ 01011, 10, OVER_BODY });    // ÌøÎè/³ª¸è
+
+                if( get_effect_3(me, EFFECT_CHAR_SLOW) ) pf += ({ 9012, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_LAZY) ) pf += ({ 9012, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_NO_PF) ) pf += ({ 9010, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_SUPPRESS) ) pf += ({ 9569, 1, OVER_BODY });    
+//                if( get_effect_3(me, EFFECT_CHAR_CHAOS) ) pf += ({ 9018, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_DREAM_1) ) pf += ({ 9016, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_DREAM) ) pf += ({ 53112, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_USER_BURN) ) pf += ({ 9026, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_WOUND) ) pf += ({ 9020, 1, OVER_BODY });
+                if( get_effect_3(me, EFFECT_CHAR_POISON) ) pf += ({ 9096, 1, OVER_BODY });    
+                if( get_effect_3(me, EFFECT_CHAR_POISON_2) ) pf += ({ 9096, 1, OVER_BODY });    
+                if (me->is_leader()) pf += ({ 9111, 1, OVER_BODY });  
+                if(item = me->get_equip(107))//Èç¹ûÍæ¼Ò·¨±¦×°±¸À¸»¹×°±¸´ãÔÂÖ®»·£¬ÄÇÃ´¼ÌÐø²¥·Å·¨ÊõÐ§¹û¡£
+        	{
+        		if(item->get_name()=="´ãÔÂÖ®»·" || item->get_name()=="ÈÕÔÂÐÇ³½" )
+        		{
+        			pf += ({ 9009, 1, UNDER_FOOT });
+        		}
+        	}  
+
+        me->set_loop_pf(pf);
+}
+
+// º¯Êý£º·¢ËÍ³ÖÐøÐ§¹ûµÄÊ±¼ä
+void send_loop_perform_time( object me, int *pf )    // ·¢¸ø×Ô¼º
+{
+        int i, size;
+        if( arrayp(pf) )
+        {
+                size = sizeof(pf);
+                for (i=0;i<size;i+=2)
+                {
+                        if (pf[i+1]!=-1) send_user( me, "%c%w%c%w", 0x50, pf[0], 0xff, pf[1] );
+                }
+        }
+}
+
+// º¯Êý£º·¢ËÍ³ÖÐøÐ§¹û
+void send_loop_perform( object me, mixed user )
+{
+        int id = getoid(me);
+        int *pf = me->get_loop_pf();
+
+        if( arrayp(pf) ) switch( sizeof(pf) )
+        {
+       case 3 : send_user( user, "%c%d%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], PF_LOOP );  break;
+       case 6 : send_user( user, "%c%d%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], PF_LOOP );  break;
+       case 9 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], PF_LOOP );  break;
+      case 12 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], PF_LOOP );  break;
+      case 15 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], PF_LOOP );  break;
+      case 18 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], PF_LOOP );  break;
+      case 21 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], PF_LOOP );  break;
+      case 24 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], PF_LOOP );  break;
+      case 27 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], PF_LOOP );  break;
+      case 30 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], PF_LOOP );  break;
+      case 33 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], PF_LOOP );  break;
+      case 36 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], PF_LOOP );  break;
+      case 39 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], PF_LOOP );  break;
+      case 42 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], PF_LOOP );  break;
+      case 45 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], PF_LOOP );  break;
+      case 48 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], PF_LOOP );  break;
+      case 51 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], PF_LOOP );  break;
+      case 54 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], PF_LOOP );  break;
+      case 57 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], pf[54], pf[55], pf[56], PF_LOOP );  break;
+      case 60 : send_user( user, "%c%d%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%w%c%c%c", 0x6f, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], pf[54], pf[55], pf[56], pf[57], pf[58], pf[59], PF_LOOP );  break;
+      default : break;
+        }
+}
+
+// º¯Êý£º·¢ËÍ³ÖÐøÐ§¹û(¸¨Öúº¯Êý)
+private void send_loop_perform_3( object me, int *pf, int flag )    // ·¢¸ø×Ô¼º
+{
+        if( arrayp(pf) ) switch( sizeof(pf) )
+        {
+       case 2 : send_user( me, "%c%w%w%c", 0x81, pf[0], pf[1], flag );  break;
+       case 4 : send_user( me, "%c%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], flag );  break;
+       case 6 : send_user( me, "%c%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], flag );  break;
+       case 8 : send_user( me, "%c%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], flag );  break;
+      case 10 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], flag );  break;
+      case 12 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], flag );  break;
+      case 14 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], flag );  break;
+      case 16 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], flag );  break;
+      case 18 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], flag );  break;
+      case 20 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], flag );  break;
+      case 22 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], flag );  break;
+      case 24 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], flag );  break;
+      case 26 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], flag );  break;
+      case 28 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], flag );  break;
+      case 30 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], flag );  break;
+      case 32 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], flag );  break;
+      case 34 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], flag );  break;
+      case 36 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], flag );  break;
+      case 38 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], flag );  break;
+      case 40 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], flag );  break;
+      case 42 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], flag );  break;
+      case 44 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], flag );  break;
+      case 46 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], flag );  break;
+      case 48 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], flag );  break;
+      case 50 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], flag );  break;
+      case 52 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], flag );  break;
+      case 54 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], flag );  break;
+      case 56 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], pf[54], pf[55], flag );  break;
+      case 58 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], pf[54], pf[55], pf[56], pf[57], flag );  break;
+      case 60 : send_user( me, "%c%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], pf[30], pf[31], pf[32], pf[33], pf[34], pf[35], pf[36], pf[37], pf[38], pf[39], pf[40], pf[41], pf[42], pf[43], pf[44], pf[45], pf[46], pf[47], pf[48], pf[49], pf[50], pf[51], pf[52], pf[53], pf[54], pf[55], pf[56], pf[57], pf[58], pf[59], flag );  break;
+      default : break;
+        }
+}
+
+// º¯Êý£º·¢ËÍ³ÖÐøÐ§¹û(¸¨Öúº¯Êý)
+private void send_loop_perform_4( object me, mixed user, int *pf, int flag )    // ·¢¸ø±ðÈË
+{
+        int id = getoid(me);
+
+        if( arrayp(pf) ) switch( sizeof(pf) )
+        {
+       case 1 : send_user( user, "%c%d%w%c%c", 0x83, id, pf[0], 1, flag );  break;
+       case 2 : send_user( user, "%c%d%w%w%c%c", 0x83, id, pf[0], pf[1], 1, flag );  break;
+       case 3 : send_user( user, "%c%d%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], 1, flag );  break;
+       case 4 : send_user( user, "%c%d%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], 1, flag );  break;
+       case 5 : send_user( user, "%c%d%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], 1, flag );  break;
+       case 6 : send_user( user, "%c%d%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], 1, flag );  break;
+       case 7 : send_user( user, "%c%d%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], 1, flag );  break;
+       case 8 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], 1, flag );  break;
+       case 9 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], 1, flag );  break;
+      case 10 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], 1, flag );  break;
+      case 11 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], 1, flag );  break;
+      case 12 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], 1, flag );  break;
+      case 13 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], 1, flag );  break;
+      case 14 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], 1, flag );  break;
+      case 15 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], 1, flag );  break;
+      case 16 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], 1, flag );  break;
+      case 17 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], 1, flag );  break;
+      case 18 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], 1, flag );  break;
+      case 19 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], 1, flag );  break;
+      case 20 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], 1, flag );  break;
+      case 21 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], 1, flag );  break;
+      case 22 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], 1, flag );  break;
+      case 23 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], 1, flag );  break;
+      case 24 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], 1, flag );  break;
+      case 25 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], 1, flag );  break;
+      case 26 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], 1, flag );  break;
+      case 27 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], 1, flag );  break;
+      case 28 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], 1, flag );  break;
+      case 29 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], 1, flag );  break;
+      case 30 : send_user( user, "%c%d%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%c%c", 0x83, id, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], pf[10], pf[11], pf[12], pf[13], pf[14], pf[15], pf[16], pf[17], pf[18], pf[19], pf[20], pf[21], pf[22], pf[23], pf[24], pf[25], pf[26], pf[27], pf[28], pf[29], 1, flag );  break;
+      default : break;
+        }
+}
+
+// º¯Êý£º·¢ËÍ³ÖÐøÐ§¹û
+void send_loop_perform_2( object me, mixed user )
+{
+        int time, *pf, *pf2;
+
+        pf = ({ });  pf2 = ({ });    // pf ºÃµÄÐ§¹û£»pf2 »µµÄÐ§¹û
+        if( me->is_npc() || objectp(user) && me != user || arrayp(user) )    // ·¢¸ø±ðÈË
+        {
+        	if (arrayp(user))
+        	{
+	        	user -= ({ me });
+        		if (sizeof(user)==0) return ;
+        	}
+                if( me->is_user() )    // Íæ¼Ò
+                {
+                        if( me->get_perform(PF_FLAG_03172) && time()-me->get_perform(PF_FLAG_03172)<1800 ) pf += ({ 3172 });    // ÔªÆø¸´Éú(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_REBOUND) ) pf += ({ 3173 });    // »¤Ìå½ðî¸(×ÔÓÃ)
+                        
+                        if( me->get_perform("03191") ) pf += ({ 3191 });    //
+                        if( me->get_perform("03192") ) pf += ({ 3192 });    //
+                        if( me->get_perform("02221#") ) pf += ({ 2221 }); 
+                        if( me->get_perform("02222#") ) pf += ({ 2222 }); 
+                        if( me->get_perform("05016#") ) pf += ({ 5016 }); 
+
+//                        if( me->get_perform(PF_FLAG_02214) ) pf += ({ 2214 });    // ÆÃ·çÈýÊ½(×ÔÓÃ)
+//                        if( me->get_perform(PF_FLAG_02514) ) pf += ({ 2514 });    // ºáÉ¨Ç§¾ü(×ÔÓÃ)
+                }
+                else    // £Î£Ð£Ã
+                {
+                        if( get_effect_3(me, EFFECT_NPC_0531_1) ) pf += ({ 5311 });    // ÃÔ»ê¾÷(ËûÓÃ)
+                }
+//                        if( gone_time( me->get_perform(PF_FLAG_03485) ) < 180 ) pf += ({ 3485 });    // ¾ÅËÀÒ»Éú
+                        if( me->get_perform(PF_FLAG_03486) ) pf += ({ 3486 });    // ¾ÅËÀÒ»Éú(±»¶¯)
+                        
+                        if( me->get_perform(PF_FLAG_03172) && time()-me->get_perform(PF_FLAG_03172)<1800 ) pf += ({ 3172 });    // ¾ÅËÀÒ»Éú(±»¶¯)
+
+                        if( get_effect_3(me, EFFECT_CHAR_FAINT) ) pf2 += ({ 9002 });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)
+                        if( get_effect_3(me, EFFECT_CHAR_FAINT_2) ) pf2 += ({ 9002 });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)(Âé·ÐÉ¢)
+
+                        if( get_effect_3(me, EFFECT_CHAR_ATTACK) ) pf += ({ 2321 });    // Ë³ÊÆÍÆÖÛ(×ÔÓÃ)
+
+                        if( get_effect_3(me, EFFECT_CHAR_ADD_DP) ) pf += ({ 3251 });    // ½ðÖÓÕÖ(£«·ÀÓù)(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_ADD_PP) ) pf += ({ 3252 });    // »¤Ìå½ð¹â(£«·¨·À)(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_IMMORTAL) ) pf += ({ 3254 });    // ²»ËÀÖ®Éí(²»ËÀ)(×ÔÓÃ)
+
+                        if( get_effect_3(me, EFFECT_USER_RECOVER) ) pf += ({ 3481 });    // ÐÝÕû(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_03484) ) pf += ({ 3484 });    // 
+                        if( get_effect_3(me, EFFECT_CHAR_SHUT) ) pf2 += ({ 3482 });    // À§µÐ(²»ÄÜÐÐ×ß)
+
+                        if( get_effect_3(me, EFFECT_CHAR_INVISIBLE) ) pf += ({ 3631 });    // ÒþÉí(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_USER_HURT) ) pf += ({ 3632 });    // »¤Éí¶¾»·(×ÔÓÃ)
+
+                        if( get_effect_3(me, EFFECT_CHAR_MOVE) ) pf += ({ 3641 });    // Ì¤Ñ©ÎÞºÛ(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_03642) ) pf += ({ 3642 });    // 
+                        if( get_effect_3(me, EFFECT_03643) ) pf += ({ 3643 });    // 
+
+                        if( get_effect_3(me, EFFECT_CHAR_ARMORFALL) ) pf2 += ({ 4143 });    // Ê´¼×(ËûÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_POWERFALL) ) pf2 += ({ 4144 });    // Ê´ÐÄ(ËûÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_FALL) ) pf2 += ({ 4145 });    // Ê´»ê(ËûÓÃ)
+                        if( get_effect_3(me, EFFECT_MP_FALL) ) pf2 += ({ 4148 });    // 
+                        if( get_effect_3(me, EFFECT_DOUBLE_USE) ) pf2 += ({ 4141 });    // 
+                        if( get_effect_3(me, EFFECT_MAGIC_4243) ) pf2 += ({ 4243 });    // ±äÉíÊõ
+
+                        if( get_effect_3(me, EFFECT_CHAR_HALFGOD2) ) pf += ({ 4171 });    // Éñ´ò(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_CHANGE) ) pf += ({ 4251 });    // Ç¬À¤Å²ÒÆ(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_MISS) ) pf += ({ 4252 });    // ÁéÆø¼×(×ÔÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_MISS2) ) pf += ({ 5911 });    // 
+
+                        if( get_effect_3(me, EFFECT_CHAR_POWERUP) ) pf += ({ 5011 });    // ½ðÕë¶É¶ò(ËûÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_POWERUP2) ) pf += ({ 5012 });    // 
+                        if( get_effect_3(me, EFFECT_CHAR_POWERUP3) ) pf += ({ 5014 });    // 
+                        if( get_effect_3(me, EFFECT_NO_WEAPON) ) pf += ({ 2114 });    // ÎäÆ÷½ûÓÃ
+                        if( get_effect_3(me, EFFECT_NO_CLOTH) ) pf += ({ 2516 });    // ·À¾ß½ûÓÃ
+
+                        if( get_effect_3(me, EFFECT_CHAR_NO_PF) ) pf2 += ({ 9010 });    // ·âÄ§¾÷(ËûÓÃ)
+                        if( get_effect_3(me, EFFECT_CHAR_LAZY) ) pf2 += ({ 9012 });    // ÑÓ»º(¹¥»÷ÒÆ¶¯±äÂý)
+                        if( get_effect_3(me, EFFECT_CHAR_SLOW) ) pf2 += ({ 9012 });    // ÑÓ»º(¹¥»÷±äÂý)
+                        if( get_effect_3(me, EFFECT_CHAR_DREAM_1) ) pf2 += ({ 9016 });    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê(±£»¤×´Ì¬)
+                        if( get_effect_3(me, EFFECT_CHAR_DREAM) ) pf2 += ({ 9016 });    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê
+                        if( get_effect_3(me, EFFECT_CHAR_CHAOS) ) pf2 += ({ 9018 });    // »ìÂÒ(Êó±ê·´×ª)
+                        if( get_effect_3(me, EFFECT_CHAR_WOUND) ) pf2 += ({ 9020 });    // ¸ºÉË(£­¹¥»÷£­·ÀÓù)
+                        if( get_effect_3(me, EFFECT_CHAR_BLOOD) ) pf2 += ({ 9022 });    // Á÷Ñª(²»¶Ï¼õÑª)
+                        if( get_effect_3(me, EFFECT_2123_ARMORFALL) ) pf2 += ({ 2123 });    //
+                        if( get_effect_3(me, EFFECT_SLEEP) ) pf2 += ({ 9002 });    //
+                        if( get_effect_3(me, EFFECT_CHAR_BLIND) ) pf2 += ({ 9024 });    //
+                        if( get_effect_3(me, EFFECT_02614) ) pf2 += ({ 2614 });    //
+                        if( get_effect_3(me, EFFECT_02616) ) pf2 += ({ 2616 });    //
+                        if( get_effect_3(me, EFFECT_CHAR_NO_MOVE) ) pf2 += ({ 9002 });    //
+                        
+                        if( get_effect_3(me, EFFECT_USER_SP) ) pf += ({ 2123 });    // 
+                        if( get_effect_3(me, EFFECT_DODGE) ) pf += ({ 2422 });    // 
+                        if( get_effect_3(me, EFFECT_EXCITE) ) pf += ({ 3162 });    // 
+
+                        if( get_effect_3(me, EFFECT_USER_BURN) ) pf2 += ({ 9026 });    // È¼ÉÕ(¼õÉÙÄÍ¾Ã)
+
+                        if( get_effect_3(me, EFFECT_CHAR_POISON) ) pf2 += ({ 9096 });    // ÖÐ¶¾
+                        if( get_effect_3(me, EFFECT_CHAR_POISON_2) ) pf2 += ({ 9096 });    // ÖÐ¶¾
+
+                        if( get_effect_3(me, EFFECT_CHAR_KING) ) pf += ({ 9150 });    // ÌìÍõÉ¢
+                        if( get_effect_3(me, EFFECT_CHAR_KING_2) ) pf2 += ({ 9152 });    // ÌìÍõÉ¢£²
+
+                        if( get_effect_3(me, EFFECT_CHAR_SUPPRESS) ) pf2 += ({ 9561 });    // Ñ¹ÖÆ·¨±¦
+
+                        if( get_effect_3(me, EFFECT_USER_DP) ) pf += ({ 3291 });    // ¼ÓÎï·À
+                        if( get_effect_3(me, EFFECT_USER_PP) ) pf += ({ 3292 });    // ¼Ó·¨·À
+                        
+                        if( get_effect_3(me, EFFECT_1808) ) pf += ({ 1808 });    
+                        if( get_effect_3(me, EFFECT_1809) ) pf += ({ 1809 });    
+                        if( get_effect_3(me, EFFECT_1810) ) pf += ({ 1810 });    
+                        if( get_effect_3(me, EFFECT_1811) ) pf += ({ 1811 });    
+
+                send_loop_perform_4(me, user, pf, EFFECT_GOOD);
+                send_loop_perform_4(me, user, pf2, EFFECT_BAD);
+        }
+        if(   ( objectp(user) && me == user )
+        ||    ( arrayp(user) && member_array(me, user) != -1 ) )    // ·¢¸ø×Ô¼º
+        {
+                if( me->is_user() )    // Íæ¼Ò
+                {
+                        if( me->get_perform(PF_FLAG_03172) && time()-me->get_perform(PF_FLAG_03172)<1800 ) pf += ({ 3172, 30000 });    // ÔªÆø¸´Éú(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_REBOUND) ) pf += ({ 3173, time });    // »¤Ìå½ðî¸
+                        if( me->get_perform("03191") ) pf += ({ 3191, 30000 });    // 
+                        if( me->get_perform("03192") ) pf += ({ 3192, 30000 });    // 
+
+//                        if( me->get_perform(PF_FLAG_02214) ) pf += ({ 2214, -1 });    // ÆÃ·çÈýÊ½(×ÔÓÃ)
+//                        if( me->get_perform(PF_FLAG_02514) ) pf += ({ 2514, -1 });    // ºáÉ¨Ç§¾ü(×ÔÓÃ)
+                }
+                else    // £Î£Ð£Ã
+                {
+                        if( time = get_effect_3(me, EFFECT_NPC_0531_1) ) pf += ({ 5311, time });    // ÃÔ»ê¾÷(ËûÓÃ)
+                }
+//                        if( me->get_perform(PF_FLAG_03485) ) pf += ({ 3485, -1 });    // ±³Ë®Ò»Õ½(±»¶¯)
+//                        if( me->get_perform(PF_FLAG_03486) ) pf += ({ 3486, -1 });    // ¾ÅËÀÒ»Éú(±»¶¯)
+                        if( time = get_effect_3(me, EFFECT_CHAR_FAINT) ) pf2 += ({ 9002, time });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)
+                        if( time = get_effect_3(me, EFFECT_CHAR_FAINT_2) ) pf2 += ({ 9002, time });    // Ñ£ÔÎ(ÎÞ·¨¶¯×÷)(Âé·ÐÉ¢)
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_ATTACK) ) pf += ({ 2321, time });    // Ë³ÊÆÍÆÖÛ(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_RENSHEN) ) pf += ({ 0006, time });    // 
+                        if( time = get_effect_3(me, EFFECT_XUESHI_HP) ) pf += ({ 0002, time });    // 
+                        if( time = get_effect_3(me, EFFECT_FALISHI_MP) ) pf += ({ 0004, time });    // 
+                        if( time = get_effect_3(me, EFFECT_ITEM_9165) ) pf += ({ 9165, time });    // 
+
+                        if( time = get_effect_3(me, EFFECT_USER_EXCHANGE_HP) ) pf += ({ 0443, time });    // 
+                        if( time = get_effect_3(me, EFFECT_USER_EXCHANGE_MP) ) pf += ({ 0444, time });    // 
+                        if( time = get_effect_3(me, EFFECT_USER_EXCHANGE_AP) ) pf += ({ 0445, time });    // 
+                        if( time = get_effect_3(me, EFFECT_USER_EXCHANGE_CP) ) pf += ({ 0446, time });    // 
+                        
+                        if((time = me->get_2("jg_effect_buff.sz1")) || (time = me->get_2("jg_effect_buff.sz2")) || (time = me->get_2("jg_effect_buff.sz3"))) pf += ({4033,time});
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_ADD_DP) ) pf += ({ 3251, time });    // ½ðÖÓÕÖ(£«·ÀÓù)(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_ADD_PP) ) pf += ({ 3252, time });    // »¤Ìå½ð¹â(£«·¨·À)(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_IMMORTAL) ) pf += ({ 3254, time });    // ²»ËÀÖ®Éí(²»ËÀ)(×ÔÓÃ)
+
+                        if( time = get_effect_3(me, EFFECT_USER_RECOVER) ) pf += ({ 3481, time });    // ÐÝÕû(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_03484) ) pf += ({ 3484, time });    // 
+                        if( time = get_effect_3(me, EFFECT_CHAR_SHUT) ) pf2 += ({ 3482, time });    // À§µÐ(²»ÄÜÐÐ×ß)
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_INVISIBLE) ) 
+                        {
+                        	pf += ({ 3631, 30000 });    // ÒþÉí(×ÔÓÃ)
+                        }
+                        if( time = get_effect_3(me, EFFECT_USER_HURT) ) pf += ({ 3632, time });    // »¤Éí¶¾»·(×ÔÓÃ)
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_MOVE) ) pf += ({ 3641, time });    // Ì¤Ñ©ÎÞºÛ(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_03642) ) pf += ({ 3642, time });    // 
+                        if( time = get_effect_3(me, EFFECT_03643) ) pf += ({ 3643, time });    // 
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_ARMORFALL) ) pf2 += ({ 4143, time });    // Ê´¼×(ËûÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_POWERFALL) ) pf2 += ({ 4144, time });    // Ê´ÐÄ(ËûÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_FALL) ) pf2 += ({ 4145, time });    // Ê´»ê(ËûÓÃ)
+                        if( time = get_effect_3(me, EFFECT_MP_FALL) ) pf2 += ({ 4148, time });    // 
+                        if( time = get_effect_3(me, EFFECT_DOUBLE_USE) ) pf2 += ({ 4141, time });    // 
+                        if( time = get_effect_3(me, EFFECT_MAGIC_4243) ) pf2 += ({ 4243, time });    // ±äÉíÊõ
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_HALFGOD2) ) pf += ({ 4171, time });    // Éñ´ò(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_CHANGE) ) pf += ({ 4251, time });    // Ç¬À¤Å²ÒÆ(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_MISS) ) pf += ({ 4252, time });    // ÁéÆø¼×(×ÔÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_MISS2) ) pf += ({ 5911, time });    // 
+                        if( me->get_perform("02221#") ) pf += ({ 2221, 30000 });
+                        if( me->get_perform("02222#") ) pf += ({ 2222, 30000 });
+                        if( me->get_perform("05016#") ) pf += ({ 5016, 30000 });
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_POWERUP) ) pf += ({ 5011, time });    // ½ðÕë¶É¶ò(ËûÓÃ)
+                        if( time = get_effect_3(me, EFFECT_CHAR_POWERUP2) ) pf += ({ 5012, time });    // 
+                        if( time = get_effect_3(me, EFFECT_CHAR_POWERUP3) ) pf += ({ 5014, time });    // 
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_NO_PF) ) pf2 += ({ 9010, time });    // ·âÄ§¾÷(ËûÓÃ)
+                        if( time = get_effect_3(me, EFFECT_NO_WEAPON) ) pf2 += ({ 2114, time });    // ÎäÆ÷½ûÓÃ
+                        if( time = get_effect_3(me, EFFECT_NO_CLOTH) ) pf2 += ({ 2516, time });    // ·À¾ß½ûÓÃ
+                        
+                        if( time = get_effect_3(me, EFFECT_CHAR_LAZY) ) pf2 += ({ 9012, time });    // ÑÓ»º(¹¥»÷ÒÆ¶¯±äÂý)
+                        if( time = get_effect_3(me, EFFECT_CHAR_SLOW) ) pf2 += ({ 9012, time });    // ÑÓ»º(¹¥»÷±äÂý)
+                        if( time = get_effect_3(me, EFFECT_CHAR_DREAM_1) ) pf2 += ({ 9016, time });    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê(±£»¤×´Ì¬)
+                        if( time = get_effect_3(me, EFFECT_CHAR_DREAM) ) pf2 += ({ 9016, time });    // ÃÎÓÎ(Ëæ»ú×ßÂ·)Ê§»ê
+                        if( time = get_effect_3(me, EFFECT_CHAR_CHAOS) ) pf2 += ({ 9018, time });    // »ìÂÒ(Êó±ê·´×ª)
+                        if( time = get_effect_3(me, EFFECT_CHAR_WOUND) ) pf2 += ({ 9020, time });    // ¸ºÉË(£­¹¥»÷£­·ÀÓù)
+                        if( time = get_effect_3(me, EFFECT_CHAR_BLOOD) ) pf2 += ({ 9022, time });    // Á÷Ñª(²»¶Ï¼õÑª)
+                        if( time = get_effect_3(me, EFFECT_2123_ARMORFALL) ) pf2 += ({ 2123, time });    // 
+                        if( time = get_effect_3(me, EFFECT_SLEEP) ) pf2 += ({ 9002, time });    // 
+                        if( time = get_effect_3(me, EFFECT_CHAR_BLIND) ) pf2 += ({ 9024, time });    // 
+                        if( time = get_effect_3(me, EFFECT_02614) ) pf2 += ({ 2614, time });    // 
+                        if( time = get_effect_3(me, EFFECT_02616) ) pf2 += ({ 2616, time });    // 
+                        if( time = get_effect_3(me, EFFECT_CHAR_NO_MOVE) ) pf2 += ({ 9002, time });    // 
+                        
+                        if( time = get_effect_3(me, EFFECT_USER_SP) ) pf += ({ 2421, time });    //
+                        if( time = get_effect_3(me, EFFECT_DODGE) ) pf += ({ 2422, time });    //
+                        if( time = get_effect_3(me, EFFECT_EXCITE) ) pf += ({ 3162, time });    //
+
+                        if( time = get_effect_3(me, EFFECT_USER_BURN) ) pf2 += ({ 9026, time });    // È¼ÉÕ(¼õÉÙÄÍ¾Ã)
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_POISON) ) pf2 += ({ 9096, time });    // ÖÐ¶¾
+                        if( time = get_effect_3(me, EFFECT_CHAR_POISON_2) ) pf2 += ({ 9096, time });    // ÖÐ¶¾
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_KING) ) pf += ({ 9150, time });    // ÌìÍõÉ¢
+                        if( time = get_effect_3(me, EFFECT_CHAR_KING_2) ) pf2 += ({ 9152, time });    // ÌìÍõÉ¢£²
+
+                        if( time = get_effect_3(me, EFFECT_CHAR_SUPPRESS) ) pf2 += ({ 9561, time });    // Ñ¹ÖÆ·¨±¦
+
+                        if( time = get_effect_3(me, EFFECT_USER_DP ) ) pf += ({ 3291, time });    // ÌìÍõÉ¢
+                        if( time = get_effect_3(me, EFFECT_USER_PP ) ) pf += ({ 3292, time });    // ÌìÍõÉ¢
+
+			if( time = get_effect_3(me, EFFECT_1808 ) ) pf += ({ 1808, time });    
+			if( time = get_effect_3(me, EFFECT_1809 ) ) pf += ({ 1809, time });    
+			if( time = get_effect_3(me, EFFECT_1810 ) ) pf += ({ 1810, time });    
+			if( time = get_effect_3(me, EFFECT_1811 ) ) pf += ({ 1811, time });    
+                        if( time = get_effect_3(me, EFFECT_RECOVER_YUAN ) ) pf += ({ 298, time });    
+                        if( time = get_effect_3(me, EFFECT_USER_PK ) ) pf += ({ 2214, time });    
+                        if( me->get_vip() ) pf += ({ 7401, 999 });    
+			if ( me->get("team_follow") ) pf += ({ 0011, -1 });
+                send_loop_perform_3(me, pf, EFFECT_GOOD);
+                send_loop_perform_3(me, pf2, EFFECT_BAD);
+//                if (me->get_login_flag()<3) send_loop_perform_time(me, pf);
+        }
+}
+
+// º¯Êý£º»ñÈ¡³ÖÐø×´Ì¬ÃèÊö
+string get_loop_desc( object me, int pf )
+{
+        switch( pf )
+        {
+    case 0002 : return "/item/sell/0002"->get_loop_desc(me);    
+    case 0004 : return "/item/sell/0004"->get_loop_desc(me);            
+    case 0006 : return "/item/sell/0006"->get_loop_desc(me);      
+    case 0011 : return "¶ÓÎé¸úËæ";    
+    case 0298 : return "/item/sell/0042"->get_loop_desc(me);      
+
+    case 0443 : return "/npc/party/exchange_angel"->get_loop_desc1(me);      
+    case 0444 : return "/npc/party/exchange_angel"->get_loop_desc2(me);      
+    case 0445 : return "/npc/party/exchange_angel"->get_loop_desc3(me);      
+    case 0446 : return "/npc/party/exchange_angel"->get_loop_desc4(me);      
+
+    case 1808 : return "/item/final/91/1808"->get_loop_desc(me);      
+    case 1809 : return "/item/final/91/1809"->get_loop_desc(me);
+    case 1810 : return "/item/final/91/1810"->get_loop_desc(me);
+    case 1811 : return "/item/final/91/1811"->get_loop_desc(me);
+
+    case 2123 : return "/skill/02/02123"->get_loop_desc(me);
+    case 2114 : return "/skill/02/02114"->get_loop_desc(me);
+    case 2214 : return "/cmd/base/set"->get_loop_desc(me);
+    case 2221 : return "/skill/02/02221"->get_loop_desc(me);
+    case 2222 : return "/skill/02/02222"->get_loop_desc(me);
+    case 2321 : return PF_FILE_02321->get_loop_desc(me);
+    case 2421 : return "/skill/02/02421"->get_loop_desc(me);
+    case 2422 : return "/skill/02/02422"->get_loop_desc(me);
+    
+    case 2516 : return "/skill/02/02516"->get_loop_desc(me);
+    case 2614 : return "/skill/02/02614"->get_loop_desc(me);
+    case 2616 : return "/skill/02/02616"->get_loop_desc(me);    
+
+    case 3161 : return "/skill/03/03161"->get_loop_desc(me);
+    case 3162 : return "/skill/03/03162"->get_loop_desc(me);
+    case 3172 : return PF_FILE_03172->get_loop_desc(me);
+    case 3173 : return PF_FILE_03173->get_loop_desc(me);
+    case 3191 : return "/skill/03/03191"->get_loop_desc(me);
+    case 3192 : return "/skill/03/03192"->get_loop_desc(me);
+    
+    case 3251 : return PF_FILE_03251->get_loop_desc(me);
+    case 3252 : return PF_FILE_03252->get_loop_desc(me);
+    case 3254 : return PF_FILE_03254->get_loop_desc(me);    
+    
+    case 3291 : return "/skill/03/03291"->get_loop_desc(me);
+    case 3292 : return "/skill/03/03291"->get_loop_desc2(me);
+   
+    case 3481 : return PF_FILE_03481->get_loop_desc(me);
+    case 3482 : return PF_FILE_03482->get_loop_desc(me);
+    case 3484 : return PF_FILE_03484->get_loop_desc(me);
+    case 3485 : return PF_FILE_03485->get_loop_desc(me);
+    case 3486 : return PF_FILE_03486->get_loop_desc(me);
+
+    case 3631 : return "/skill/03/03683"->get_loop_desc(me);
+    case 3632 : return PF_FILE_03632->get_loop_desc(me);
+    case 3641 : return PF_FILE_03641->get_loop_desc(me);
+    case 3642 : return "/skill/03/03642"->get_loop_desc(me);
+    case 3643 : return "/skill/03/03643"->get_loop_desc(me);
+
+    case 4033 : 
+    		if(me->get_2("jg_effect_buff.sz1")) {
+    			return "/item/08/0841"->get_pet_desc();
+    		} else if(me->get_2("jg_effect_buff.sz2")) {
+    			return "/item/08/0842"->get_pet_desc();
+    		} else if(me->get_2("jg_effect_buff.sz3")) {
+    			return "/item/08/0843"->get_pet_desc();
+    		}
+    case 4141 : return "/skill/04/04141"->get_loop_desc(me);
+    case 4143 : return PF_FILE_04143->get_loop_desc(me);
+    case 4144 : return PF_FILE_04144->get_loop_desc(me);
+    case 4145 : return PF_FILE_04145->get_loop_desc(me);
+    case 4148 : return "/skill/04/04148"->get_loop_desc(me);
+
+    case 4171 : return PF_FILE_04171->get_loop_desc(me);
+
+    case 4243 : return "/skill/04/04211"->get_loop_desc(me);
+    case 4251 : return PF_FILE_04251->get_loop_desc(me);
+    case 4252 : return PF_FILE_04252->get_loop_desc(me);
+
+    case 5011 : return PF_FILE_05011->get_loop_desc(me);
+    case 5012 : return "/skill/05/05012"->get_loop_desc(me);
+    case 5013 : return "/skill/05/05013"->get_loop_desc(me);
+    case 5014 : return "/skill/05/05014"->get_loop_desc(me);
+    case 5016 : return "/skill/05/05016"->get_loop_desc(me);
+    case 5311 : return PF_FILE_05311->get_loop_desc(me);
+    case 5911 : return "/skill/05/05911"->get_loop_desc(me);
+
+    case 7401 : return "/item/sell/0061"->get_loop_desc(me);
+    	
+    case 9002 : return PF_FILE_LOOP->get_loop_faint_desc(me);
+
+    case 9010 : return PF_FILE_LOOP->get_loop_no_pf_desc(me);
+    case 9012 : return PF_FILE_LOOP->get_loop_slow_desc(me);
+    case 9013 : return PF_FILE_LOOP->get_loop_lazy_desc(me);
+    case 9016 : return PF_FILE_LOOP->get_loop_dream_desc(me);
+    case 9018 : return PF_FILE_LOOP->get_loop_chaos_desc(me);
+    case 9020 : return PF_FILE_LOOP->get_loop_wound_desc(me);
+    case 9022 : return PF_FILE_LOOP->get_loop_blood_desc(me);
+    case 9024 : return PF_FILE_LOOP->get_loop_blind_desc(me);
+    case 9026 : return PF_FILE_LOOP->get_loop_burn_desc(me);
+    case 9096 : return "/skill/03/03632"->get_loop_desc2(me);
+
+    case 9150 : return PF_FILE_LOOP->get_loop_king_desc(me);
+    case 9152 : return PF_FILE_LOOP->get_loop_king_2_desc(me);
+    case 9154 : return "/sys/item/food"->get_loop_desc(me);
+    case 9156 : return "/sys/item/food"->get_loop_desc2(me);
+    case 9158 : return "/sys/item/food"->get_loop_desc3(me);
+
+    case 9561 : return PF_FILE_LOOP->get_loop_suppress_desc(me);
+    case 9165 : return "/item/91/9165"->get_loop_desc(me);
+    	
+    case 9998 : return "item/08/0001"->get_loop_desc();
+    case 9999 : return "item/08/0002"->get_loop_desc();
+
+      default : return "";
+        }
+}
+
+
+// =============================================================
+
+// º¯Êý£ºÕ÷×´½áÊøÐ§¹û
+
+void effect_attack_done( object me )    // Ë³ÊÆÍÆÖÛ(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 2321, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 2321, 0, EFFECT_GOOD );
+
+        me->set_perform( "02321", time() );
+        me->set_perform( "02321#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, PF_NO_02321, 0xff, 0 );
+}
+
+void effect_add_dp_done( object me )    // ½ðÖÓÕÖ(£«·ÀÓù)(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 3161, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 3161, 0, EFFECT_GOOD );
+
+        USER_ENERGY_D->count_dp(me);
+
+        me->set_perform( "03161", time() );
+        me->set_perform( "03161#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, 3161, 0xff, 0 );
+}
+
+void effect_add_pp_done( object me )    // »¤Ìå½ð¹â(£«·¨·À)(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 3252, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 3252, 0, EFFECT_GOOD );
+
+        USER_ENERGY_D->count_pp(me);    // cp/pp Ó°Ïì ap/dp, ËùÒÔ·ÅÇ°
+        USER_ENERGY_D->count_dp(me);
+
+        me->set_perform( "03252", time() );
+        me->set_perform( "03252#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, PF_NO_03252, 0xff, 0 );
+}
+
+void effect_immortal_done( object me )    // ²»ËÀÖ®Éí(²»ËÀ)(×ÔÓÃ)
+{
+	if (me->get_perform( "03254#"))
+	{
+	        send_user( me, "%c%w%w%c", 0x81, 3254, 0, EFFECT_GOOD );
+	        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 3254, 0, EFFECT_GOOD );
+	        init_loop_perform(me);
+	        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 32540, 1, OVER_BODY, PF_STOP );
+	
+//	        me->set_perform( "03254", time() );
+	        me->set_perform( "03254#", 0 );
+//	        send_user( me, "%c%w%c%w", 0x50, PF_NO_03254, 0xff, 0 );
+	}	       
+}
+
+void effect_invisible_done( object me )    // ÒþÉí(×ÔÓÃ)
+{
+	if( get_effect_3(me, EFFECT_CHAR_INVISIBLE)&&  me->get_mp() >= 10)
+        {
+        	if (me->get_save("no_visible")) return;;
+        	set_effect_2( me, EFFECT_CHAR_INVISIBLE, 3000, 10 );    // Ã¿Ê®Ãë¼õÑª
+                me->add_mp(-10);  
+                return;    // ÄÜÁ¿²»×ã£¬ÎÞ·¨ÒþÉí
+        }	
+        if( get_effect_3(me, EFFECT_CHAR_INVISIBLE) && me->get_mp() >= 10 )
+        {
+                me->add_mp(-10);  return;    // ÄÜÁ¿²»×ã£¬ÎÞ·¨ÒþÉí
+        }	
+        send_user( me, "%c%w%w%c", 0x81, 3631, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 3631, 0, EFFECT_GOOD );
+        init_loop_perform(me);
+        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 9000, 1, UNDER_FOOT, PF_STOP );
+
+        set_invisible(me, 0);
+        send_user( me, "%c%c%c", 0x3d, 241, 2 );    // »Ö¸´×ßÂ·²½Êý
+
+        me->set_perform( "03643", time() );
+        me->set_perform( "03643#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, 03683, 0xff, 0 );
+        set_effect_2( me, EFFECT_CHAR_INVISIBLE, 0, 0 );
+}
+
+void effect_move_done( object me )    // Ì¤Ñ©ÎÞºÛ(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 3641, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 3641, 0, EFFECT_GOOD );
+
+	me->set_save("03641", 0);
+//        USER_ENERGY_D->count_sp(me);
+
+        me->set_perform( "03641", time() );
+        me->set_perform( "03641#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, PF_NO_03641, 0xff, 0 );
+}
+
+void effect_armorfall_done( object me )    // Ê´¼×(ËûÓÃ)
+{
+        int point;
+
+        send_user( me, "%c%w%w%c", 0x81, 4143, 0, EFFECT_BAD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4143, 0, EFFECT_BAD );
+
+        if( me->is_user() )
+        {
+                me->delete("pf.armorfall"); 
+                me->delete("pf.armorfall2"); 
+        	me->delete_save_2("pf.armorfall");
+        	me->delete_save_2("pf.armorfall2");
+                USER_ENERGY_D->count_pp(me);    // cp/pp Ó°Ïì ap/dp, ËùÒÔ·ÅÇ°
+                USER_ENERGY_D->count_dp(me);
+        }
+        else
+        {
+                point = me->get("pf.armorfall");    // ÓÐ BUG: ¿ÉÄÜ CP/AP »á±ÈÔ­À´¸ß
+                me->add_dp( -point );
+                point = me->get("pf.armorfall2");
+                me->add_pp( -point );                
+                me->delete("pf.armorfall"); 
+                me->delete("pf.armorfall2"); 
+        }
+}
+
+void effect_powerfall_done( object me )    // Ê´ÐÄ(ËûÓÃ)
+{
+        int point;
+
+        send_user( me, "%c%w%w%c", 0x81, 4144, 0, EFFECT_BAD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4144, 0, EFFECT_BAD );
+
+        if( me->is_user() )
+        {
+        	me->set_save_2("pf.powerfall", 0);
+        }
+        else
+        {
+                point = me->get("pf.powerfall");    // ÓÐ BUG: ¿ÉÄÜ CP/AP »á±ÈÔ­À´¸ß
+        }
+}
+
+void effect_fall_done( object me )    // Ê´»ê(ËûÓÃ)
+{
+        int point;
+        if (me->is_user()) point = me->get_save_2("pf.fall");
+        else point = me->get("pf.fall");
+	if (me->is_nianshou()) point = 0;
+	send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w", 0x68, getoid(me), -point );
+        if( me->add_hp(point) < 1 ) me->set_hp(1);
+        if( !get_effect_3(me, EFFECT_CHAR_FALL) )    // Ñ­»·Õ÷×´ set_effect_2
+        {
+	        if (me->is_user()) point = me->set_save_2("pf.fall", 0);
+	        me->set("pf.fall", 0);
+                send_user( me, "%c%w%w%c", 0x81, 4145, 0, EFFECT_BAD );
+                send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4145, 0, EFFECT_BAD );
+        }
+}
+
+void effect_fmp_done( object me )    // Ê´ÆÇ
+{
+        int point;
+        if (me->is_user()) point = me->get_save_2("pf.fmp");
+        else point = me->get("pf.fmp");
+	if (me->is_nianshou()) point = 0;
+	send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w", 0x6d, getoid(me), -point );
+        me->add_mp(point);
+        if (me->get_mp()<0) me->set_mp(0);
+
+        if( !get_effect_3(me, EFFECT_MP_FALL) )    // Ñ­»·Õ÷×´ set_effect_2
+        {
+	        if (me->is_user()) point = me->set_save_2("pf.fmp", 0);
+	        me->set("pf.fmp", 0);
+                send_user( me, "%c%w%w%c", 0x81, 4148, 0, EFFECT_BAD );
+                send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4148, 0, EFFECT_BAD );
+        }
+}
+
+void effect_halfgod_done( object me )    // Éñ´ò(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 4171, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4171, 0, EFFECT_GOOD );
+        init_loop_perform(me);
+        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 41710, 1, UNDER_FOOT, PF_STOP );
+
+        USER_ENERGY_D->count_dp(me);
+
+        me->set_save( "04171", 0 );
+        send_user( me, "%c%w%c%w", 0x50, 4171, 0xff, 0 );
+}
+
+void effect_change_done( object me )    // Ç¬À¤Å²ÒÆ(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 4251, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4251, 0, EFFECT_GOOD );
+
+        me->set_change_hurt(0);    // Ã»·ÅÈë USER_ENERGY_D
+
+        me->set_perform( "04251", time() );
+        me->set_perform( "04251#", 0 );
+        send_user( me, "%c%w%c%w", 0x50, PF_NO_04251, 0xff, 0 );
+}
+
+void effect_miss_done( object me )    // Ç¬À¤Å²ÒÆ
+{
+        send_user( me, "%c%w%w%c", 0x81, 4252, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 4252, 0, EFFECT_GOOD );
+
+	me->set_save("pf.miss", 0);
+//        me->set_perform( "04252", time() );
+//        me->set_perform( "04252#", 0 );
+//        send_user( me, "%c%w%c%w", 0x50, PF_NO_04252, 0xff, 0 );        
+}
+
+void effect_miss2_done( object me )    // ÁéÆø¼×(×ÔÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 5911, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 5911, 0, EFFECT_GOOD );
+	if (me->is_user()) me->set_save("05911", 0);
+	else me->set("05911", 0);
+	send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 10711, 1, OVER_BODY, PF_STOP );
+}
+
+void effect_powerup_done( object me )    // ÒøÕë¶É¶ò(ËûÓÃ)
+{
+        int point;
+        send_user( me, "%c%w%w%c", 0x81, 5011, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 5011, 0, EFFECT_GOOD );
+        if (me->is_user())
+        {
+        	me->set_save("05011", 0);
+        	USER_ENERGY_D->count_ap(me);
+        }
+        else
+        {
+		me->add_ap(-me->get("05011"));
+		me->set("05011", 0);
+        }
+}
+
+void effect_powerup2_done( object me )    // ½ðÕë¶É¶ò(ËûÓÃ)
+{
+        int point;
+        send_user( me, "%c%w%w%c", 0x81, 5012, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 5012, 0, EFFECT_GOOD );
+        if (me->is_user())
+        {
+        	me->set_save("05012", 0);
+        	USER_ENERGY_D->count_cp(me);
+        }
+        else
+        {
+		me->add_cp(-me->get("05012"));
+		me->set("05012", 0);
+        }
+}
+
+void effect_powerup3_done( object me )    // Ç¿ÌåÊõ(ËûÓÃ)
+{
+        int point;
+        send_user( me, "%c%w%w%c", 0x81, 5014, 0, EFFECT_GOOD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 5014, 0, EFFECT_GOOD );
+        if (me->is_user())
+        {
+        	me->set_save("05014", 0);
+        	USER_ENERGY_D->count_max_hp(me);
+        }
+        else
+        {
+		me->add_max_hp(-me->get("05014"));
+		me->set("05014", 0);
+        }
+}
+
+void effect_no_pf_done( object me )    // ·âÄ§¾÷(ËûÓÃ)
+{
+        send_user( me, "%c%w%w%c", 0x81, 9010, 0, EFFECT_BAD );
+        send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 9010, 0, EFFECT_BAD );
+        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 9010, 1, OVER_BODY, PF_STOP );
+        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 21131, 1, OVER_BODY, PF_STOP );
+
+}

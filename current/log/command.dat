@@ -1,0 +1,3399 @@
+2007-11-07 09:40:00 163/6
+无指令: 110/2 无效: 40/2 makecpp: 8/1 quit: 5/1 
+2007-11-07 09:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 
+2007-11-07 09:55:01 115/3
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 
+2007-11-07 10:40:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 
+2007-11-07 10:45:00 123/4
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 
+2007-11-13 17:15:08 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 
+2007-11-13 17:20:00 123/4
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 
+2007-11-17 17:45:00 118/3
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 0/0 
+2007-11-17 17:50:01 5/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 
+2007-11-19 11:05:00 435/19
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 181/8
+tips: 6/1 clone: 20/1 look: 20/2 talk: 76/4 call: 22/1
+
+2007-11-19 11:10:00 690/49
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 0/0 clone: 0/0 look: 50/5 talk: 114/6 call: 144/4
+desc: 318/29 family: 32/3 use: 9/1 
+2007-11-19 11:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 call: 0/0
+desc: 0/0 family: 0/0 use: 0/0 
+2007-11-19 11:20:00 5/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 call: 0/0
+desc: 0/0 family: 0/0 use: 0/0 
+2007-11-19 11:25:00 123/4
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 
+2007-11-21 17:50:11 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 
+2007-11-22 08:25:00 123/4
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 
+2007-11-22 08:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 
+2007-11-22 12:55:08 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 
+2007-11-22 14:05:00 563/41
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 70/3
+tips: 0/0 clone: 18/1 look: 36/4 talk: 68/4 buyitem: 131/12
+goto: 12/1 desc: 100/12 use: 18/2 
+2007-11-22 14:10:00 571/48
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 162/9 look: 45/5 talk: 85/5 buyitem: 0/0
+goto: 0/0 desc: 218/23 use: 0/0 ilist: 11/1 blue: 50/5
+
+2007-11-22 14:15:00 57/3
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 24/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 ilist: 0/0 blue: 0/0
+update: 28/1 
+2007-11-22 14:20:00 499/20
+无指令: 110/2 无效: 40/2 makecpp: 0/0 quit: 0/0 go: 343/15
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 
+2007-11-22 14:25:01 2435/163
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1247/53
+tips: 25/4 clone: 18/1 look: 24/3 talk: 0/0 buyitem: 265/23
+goto: 0/0 desc: 354/37 use: 27/3 list: 24/3 buy: 214/20
+family: 30/3 remove: 32/4 sell: 16/1 blue: 40/4 who: 4/1
+
+2007-11-22 14:30:02 463/26
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 24/1
+tips: 0/0 clone: 72/4 look: 9/1 talk: 17/1 buyitem: 0/0
+goto: 6/1 desc: 96/10 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 4/1
+give: 72/2 friend: 14/1 drop: 11/1 update: 28/1 
+2007-11-22 14:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 14:40:00 446/31
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 239/10
+tips: 6/1 clone: 0/0 look: 18/2 talk: 17/1 buyitem: 0/0
+goto: 0/0 desc: 127/13 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 16/2 who: 0/0
+give: 0/0 friend: 14/1 drop: 0/0 update: 0/0 
+2007-11-22 14:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 14:50:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 14:55:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:00:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:05:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:10:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:25:00 5/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:40:00 55/2
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 27/1 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 28/1 
+2007-11-22 15:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:50:00 5/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 15:55:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 16:00:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-22 16:05:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:05:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:10:00 123/4
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:20:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:25:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:30:02 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:35:00 533/42
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 24/1
+tips: 0/0 clone: 0/0 look: 36/4 talk: 68/4 buyitem: 0/0
+goto: 0/0 desc: 224/24 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 50/5 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 12/1
+
+2007-11-29 10:40:00 22/2
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 10/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+move: 12/1 
+2007-11-29 10:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:45:00 314/29
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 71/3
+tips: 0/0 clone: 0/0 look: 27/3 talk: 34/2 buyitem: 0/0
+goto: 0/0 desc: 132/16 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 50/5 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+move: 0/0 
+2007-11-29 10:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:50:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+move: 0/0 
+2007-11-29 10:50:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:55:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 
+2007-11-29 10:55:00 19/3
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 14/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+move: 0/0 
+2007-11-29 11:30:00 332/18
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 72/3
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 120/10 use: 0/0 list: 0/0 buy: 0/0
+family: 30/3 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 11:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 11:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 11:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 11:50:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 11:55:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:00:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:05:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:10:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:25:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:50:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 12:55:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:00:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:05:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:10:00 5/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:25:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 13:45:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-11-29 14:00:00 133/5
+无指令: 110/2 无效: 0/0 makecpp: 8/1 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 10/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+
+2007-12-05 17:10:00 181/7
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 48/4 
+2007-12-05 17:15:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 17:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:05:00 167/7
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 20/1 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 37/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:10:00 280/27
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 47/2
+tips: 0/0 clone: 20/1 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 57/8 use: 63/7 list: 0/0 buy: 0/0
+family: 0/0 remove: 48/6 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 21/1 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:15:00 176/9
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 165/7
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 6/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:25:00 323/22
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 46/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 59/5
+goto: 0/0 desc: 65/8 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 16/2 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 
+2007-12-05 18:30:00 285/19
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 95/4
+tips: 0/0 clone: 17/1 look: 8/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 72/7 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 26/2 pawn: 67/4 
+2007-12-05 18:35:00 468/29
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 283/12
+tips: 6/1 clone: 36/2 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 42/6 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 16/2 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 40/2 yellow: 0/0
+go2map: 0/0 pawn: 28/2 dest: 8/1 
+2007-12-05 18:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 
+2007-12-05 18:45:12 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 
+2007-12-07 19:10:00 110/2
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 
+2010-03-24 19:00:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 
+2010-03-24 19:05:00 402/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 117/5
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 112/15 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 36/3
+go2map: 0/0 pawn: 0/0 dest: 0/0 use2: 10/1 
+2010-03-24 19:10:00 110/2
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 
+2010-03-24 19:15:00 1359/66
+无指令: 0/0 无效: 71/5 makecpp: 0/0 quit: 0/0 go: 1119/47
+tips: 6/1 clone: 0/0 look: 25/3 talk: 93/5 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 45/5 pawn: 0/0 dest: 0/0 
+2010-03-24 19:20:00 258/17
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 40/4 talk: 57/3 buyitem: 24/3
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 95/6 say: 42/1
+
+2010-03-25 12:55:00 1529/67
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1329/56
+tips: 6/1 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 8/1 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+clone-test: 66/6 
+2010-03-25 13:00:00 207/8
+无指令: 110/2 无效: 40/2 makecpp: 0/0 quit: 5/1 go: 46/2
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+clone-test: 0/0 
+2010-04-07 13:20:00 143/5
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 33/3
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+
+2010-04-07 13:45:00 1481/98
+无指令: 110/2 无效: 40/2 makecpp: 0/0 quit: 0/0 go: 342/15
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 678/49
+goto: 0/0 desc: 232/22 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 7/1
+pet: 28/2 pf5: 18/2 
+2010-04-07 13:50:00 195/14
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 172/13
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 13:55:00 185/8
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 75/6
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 14:05:00 235/14
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 46/4
+goto: 0/0 desc: 70/7 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 14:10:00 209/12
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 63/6
+goto: 0/0 desc: 36/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 14:15:00 477/35
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 198/16
+goto: 0/0 desc: 136/14 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 14:20:00 1381/103
+无指令: 220/4 无效: 6/1 makecpp: 0/0 quit: 5/1 go: 341/15
+tips: 12/2 clone: 0/0 look: 6/1 talk: 0/0 buyitem: 255/24
+goto: 0/0 desc: 468/48 use: 36/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 14:30:00 507/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 90/4
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 301/21
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 16:10:00 301/16
+无指令: 110/2 无效: 40/2 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 102/8
+goto: 0/0 desc: 20/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 16:15:03 1144/62
+无指令: 330/6 无效: 40/2 makecpp: 0/0 quit: 10/2 go: 365/16
+tips: 18/3 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 237/18
+goto: 0/0 desc: 117/12 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 
+2010-04-07 16:20:00 532/40
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 204/9
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 33/3
+goto: 0/0 desc: 113/11 use: 54/6 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 76/6 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 12/2
+pet: 0/0 pf5: 0/0 title: 15/1 vipchat: 25/2 
+2010-04-07 16:25:00 3649/195
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2613/111
+tips: 25/4 clone: 0/0 look: 37/4 talk: 80/4 buyitem: 351/25
+goto: 0/0 desc: 245/20 use: 94/10 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 100/7 pf5: 0/0 title: 0/0 vipchat: 0/0 org: 20/2
+kill: 40/4 key: 8/1 pf2: 36/3 
+2010-04-07 16:30:00 1032/68
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 499/21
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 36/5 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 26/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 92/5 pf5: 0/0 title: 0/0 vipchat: 0/0 org: 10/1
+kill: 190/19 key: 8/1 pf2: 72/6 move: 36/3 zgdict: 44/3
+
+2010-04-07 16:35:00 2045/109
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1431/60
+tips: 0/0 clone: 0/0 look: 87/10 talk: 105/5 buyitem: 0/0
+goto: 0/0 desc: 131/14 use: 6/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 org: 0/0
+kill: 30/3 key: 0/0 pf2: 0/0 move: 0/0 zgdict: 0/0
+get: 132/12 
+2010-04-07 16:40:00 9883/638
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 309/13
+tips: 0/0 clone: 0/0 look: 36/4 talk: 32/2 buyitem: 0/0
+goto: 0/0 desc: 1332/112 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 org: 0/0
+kill: 0/0 key: 0/0 pf2: 0/0 move: 0/0 zgdict: 0/0
+get: 0/0 learn: 8016/501 gift: 19/1 
+2010-04-07 16:45:00 645/51
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 48/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 46/4
+goto: 0/0 desc: 204/23 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 182/14
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 20/2
+
+2010-04-07 16:50:00 1078/79
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 356/15
+tips: 0/0 clone: 0/0 look: 38/4 talk: 44/2 buyitem: 0/0
+goto: 0/0 desc: 332/32 use: 36/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 16/2 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 81/5
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 49/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 20/2
+kill: 20/2 pf2: 12/1 key: 50/5 
+2010-04-07 16:55:00 5182/274
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4299/180
+tips: 19/3 clone: 0/0 look: 93/11 talk: 12/1 buyitem: 0/0
+goto: 0/0 desc: 238/22 use: 0/0 list: 16/2 buy: 42/4
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 9/1 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 97/10 pf2: 6/1 key: 0/0 pf: 351/39 
+2010-04-07 17:00:00 6014/303
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4755/204
+tips: 6/1 clone: 0/0 look: 195/20 talk: 118/6 buyitem: 171/12
+goto: 0/0 desc: 67/7 use: 45/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 78/2 friend: 0/0 drop: 48/4 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 64/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 60/6 pf2: 0/0 key: 10/1 pf: 320/26 move: 36/3
+gift: 31/2 get: 10/1 
+2010-04-07 17:05:00 6298/320
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 5127/221
+tips: 0/0 clone: 0/0 look: 19/2 talk: 0/0 buyitem: 123/10
+goto: 0/0 desc: 58/6 use: 69/7 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 49/2 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 0/0 pf: 619/50 move: 0/0
+gift: 43/3 get: 10/1 zgdict: 11/1 
+2010-04-07 17:10:00 5599/283
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4332/183
+tips: 6/1 clone: 0/0 look: 100/11 talk: 44/2 buyitem: 8/1
+goto: 0/0 desc: 69/5 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 182/10 pf5: 17/1 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 0/0 pf: 555/43 move: 0/0
+gift: 74/5 get: 33/3 zgdict: 0/0 
+2010-04-07 17:15:01 4233/255
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2499/109
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 190/15
+goto: 0/0 desc: 87/6 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 39/2 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 470/47 pf2: 0/0 key: 0/0 pf: 894/72 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 44/3 
+2010-04-07 17:20:00 4521/288
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 995/42
+tips: 0/0 clone: 0/0 look: 94/10 talk: 121/6 buyitem: 0/0
+goto: 0/0 desc: 693/58 use: 47/5 list: 9/1 buy: 22/2
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 13/1
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 72/4 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 10/1
+kill: 80/8 pf2: 6/1 key: 0/0 pf: 217/19 move: 0/0
+gift: 32/2 get: 0/0 zgdict: 11/1 learn: 1984/124 
+2010-04-07 17:25:00 2508/154
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1637/69
+tips: 0/0 clone: 0/0 look: 16/2 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 217/18 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 34/2 pf5: 17/1 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 40/4 pf: 348/38 move: 0/0
+gift: 0/0 get: 11/1 zgdict: 0/0 learn: 0/0 
+2010-04-07 17:35:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 17:40:00 698/38
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 355/15
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 123/10
+goto: 0/0 desc: 56/6 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 48/4 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 6/1 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 17:45:00 12/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 12/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 17:50:00 80/4
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 72/3
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 8/1
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 17:55:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 19:55:01 506/29
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 71/3
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 265/18
+goto: 0/0 desc: 36/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 20:15:00 652/40
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 447/28
+goto: 0/0 desc: 95/10 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 20:20:00 363/26
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 113/8
+goto: 0/0 desc: 140/16 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 20:45:03 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 20:50:00 1082/81
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 118/5
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 361/26
+goto: 0/0 desc: 285/31 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 96/8 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 102/8
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 20:55:00 1172/88
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 117/5
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 482/32
+goto: 0/0 desc: 174/18 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 360/30 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 39/3
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:00:00 362/32
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 16/2
+goto: 0/0 desc: 21/3 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 312/26 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 13/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:05:00 582/45
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 407/29
+goto: 0/0 desc: 77/8 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 72/6 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 26/2
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:10:00 226/18
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 170/12
+goto: 0/0 desc: 56/6 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:15:01 208/18
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 24/1
+tips: 0/0 clone: 0/0 look: 6/1 talk: 0/0 buyitem: 161/14
+goto: 0/0 desc: 17/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:20:01 7/1
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 7/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:30:00 185/8
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 65/5
+goto: 0/0 desc: 10/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:35:01 220/10
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 110/8
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 21:40:00 158/6
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 48/4
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 22:05:00 524/29
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 242/11
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 75/6
+goto: 0/0 desc: 57/6 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 22:10:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-07 22:15:01 652/26
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 529/23
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 13/1 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-08 10:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-08 10:25:00 1200/78
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 504/23
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 391/33
+goto: 0/0 desc: 177/18 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-08 10:30:00 51/5
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 51/5
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-08 10:40:00 372/20
+无指令: 110/2 无效: 13/1 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 249/17
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 
+2010-04-08 10:45:00 5588/255
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 5241/219
+tips: 25/4 clone: 0/0 look: 86/10 talk: 76/4 buyitem: 0/0
+goto: 0/0 desc: 105/12 use: 18/2 list: 8/1 buy: 9/1
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 12/1 
+2010-04-08 10:55:00 1793/133
+无指令: 220/4 无效: 116/6 makecpp: 0/0 quit: 5/1 go: 160/7
+tips: 12/2 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 309/25
+goto: 0/0 desc: 757/71 use: 9/1 list: 0/0 buy: 0/0
+family: 68/6 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 91/7
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 38/2
+
+2010-04-08 11:05:00 1095/79
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 136/11
+goto: 0/0 desc: 330/33 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 234/18
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 285/15
+
+2010-04-08 11:25:00 476/35
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 223/19
+goto: 0/0 desc: 130/13 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 13/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 11:55:00 395/23
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 238/16
+goto: 0/0 desc: 20/2 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 12:05:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 12:55:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 13:00:00 2508/168
+无指令: 110/2 无效: 19/1 makecpp: 0/0 quit: 0/0 go: 877/37
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 419/28
+goto: 0/0 desc: 442/45 use: 99/11 list: 0/0 buy: 0/0
+family: 0/0 remove: 32/4 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 336/28 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 7/1 move: 77/6
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 76/4
+
+2010-04-08 13:10:00 225/8
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 95/4
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 13:15:00 1169/64
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 927/39
+tips: 0/0 clone: 0/0 look: 6/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 6/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 230/23 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+
+2010-04-08 13:20:01 1477/91
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 713/30
+tips: 6/1 clone: 0/0 look: 20/2 talk: 44/2 buyitem: 149/13
+goto: 0/0 desc: 225/21 use: 29/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 60/4 pf5: 0/0 title: 0/0 vipchat: 24/2 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 10/1 pf: 55/7 move: 0/0
+gift: 12/1 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 
+2010-04-08 13:25:00 4251/227
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3291/139
+tips: 19/3 clone: 0/0 look: 122/14 talk: 75/4 buyitem: 296/23
+goto: 0/0 desc: 348/33 use: 49/5 list: 16/2 buy: 18/2
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 7/1 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:30:00 3272/170
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2634/113
+tips: 6/1 clone: 0/0 look: 176/20 talk: 124/7 buyitem: 0/0
+goto: 0/0 desc: 182/18 use: 66/4 list: 8/1 buy: 42/3
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:35:01 6580/313
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 5848/251
+tips: 32/5 clone: 0/0 look: 105/12 talk: 139/8 buyitem: 103/10
+goto: 0/0 desc: 177/18 use: 9/1 list: 8/1 buy: 9/1
+family: 0/0 remove: 0/0 sell: 16/1 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 6/1 key: 13/1 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:40:00 166/6
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 56/4
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:45:00 414/13
+无指令: 330/6 无效: 0/0 makecpp: 0/0 quit: 10/2 go: 0/0
+tips: 0/0 clone: 0/0 look: 18/2 talk: 56/3 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:50:00 800/47
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 343/15
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 306/26 use: 0/0 list: 0/0 buy: 0/0
+family: 35/3 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 13:55:00 6140/312
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 4890/209
+tips: 14/2 clone: 0/0 look: 358/39 talk: 443/26 buyitem: 34/4
+goto: 0/0 desc: 71/8 use: 0/0 list: 8/1 buy: 9/1
+family: 0/0 remove: 16/2 sell: 16/1 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 6/1 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 160/15 
+2010-04-08 14:00:00 5463/292
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 3889/168
+tips: 6/1 clone: 0/0 look: 211/23 talk: 461/27 buyitem: 182/13
+goto: 0/0 desc: 152/16 use: 63/7 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 6/1 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 92/7 get: 0/0 zgdict: 0/0 learn: 17/1 mix3: 0/0
+org: 245/23 
+2010-04-08 14:05:00 2333/133
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1192/51
+tips: 0/0 clone: 0/0 look: 160/16 talk: 315/18 buyitem: 0/0
+goto: 0/0 desc: 288/24 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 44/3 learn: 294/17 mix3: 0/0
+org: 40/4 
+2010-04-08 14:10:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 14:15:00 3229/143
+无指令: 110/2 无效: 108/6 makecpp: 0/0 quit: 0/0 go: 2846/121
+tips: 0/0 clone: 0/0 look: 58/6 talk: 67/4 buyitem: 0/0
+goto: 0/0 desc: 12/1 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 
+2010-04-08 14:20:01 4573/217
+无指令: 0/0 无效: 44/3 makecpp: 0/0 quit: 0/0 go: 3883/166
+tips: 0/0 clone: 0/0 look: 134/14 talk: 417/24 buyitem: 0/0
+goto: 0/0 desc: 36/4 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 32/3 
+2010-04-08 14:25:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 
+2010-04-08 14:30:00 4946/281
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4902/276
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 30/3 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 5/1 
+2010-04-08 14:35:00 1495/99
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 262/11
+tips: 0/0 clone: 0/0 look: 36/4 talk: 39/3 buyitem: 0/0
+goto: 0/0 desc: 437/36 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 721/45 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 14:40:00 1825/122
+无指令: 110/2 无效: 6/1 makecpp: 0/0 quit: 5/1 go: 143/6
+tips: 0/0 clone: 0/0 look: 29/3 talk: 60/3 buyitem: 189/14
+goto: 0/0 desc: 391/33 use: 78/8 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 800/50 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 14:45:00 3648/223
+无指令: 0/0 无效: 39/3 makecpp: 0/0 quit: 0/0 go: 2356/99
+tips: 0/0 clone: 0/0 look: 19/2 talk: 44/2 buyitem: 153/14
+goto: 0/0 desc: 300/30 use: 72/8 list: 0/0 buy: 0/0
+family: 0/0 remove: 24/3 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 66/4 pf5: 0/0 title: 15/1 vipchat: 0/0 use2: 0/0
+kill: 150/15 pf2: 0/0 key: 0/0 pf: 246/30 move: 39/3
+gift: 0/0 get: 44/4 zgdict: 0/0 learn: 0/0 mix3: 57/3
+org: 0/0 act: 0/0 
+2010-04-08 14:50:00 4125/221
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3423/150
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 55/5
+goto: 0/0 desc: 61/6 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 58/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 240/24 pf2: 0/0 key: 0/0 pf: 206/26 move: 0/0
+gift: 32/2 get: 20/2 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 14:55:00 4896/236
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4428/191
+tips: 0/0 clone: 0/0 look: 28/4 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 33/4 use: 47/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 120/7 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 90/9 pf2: 0/0 key: 0/0 pf: 110/14 move: 0/0
+gift: 0/0 get: 32/3 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:00:00 2595/132
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2196/94
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 86/8 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 72/6 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 40/4 pf2: 0/0 key: 0/0 pf: 96/12 move: 0/0
+gift: 32/2 get: 10/1 zgdict: 44/3 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 
+2010-04-08 15:05:01 2494/140
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1545/67
+tips: 0/0 clone: 0/0 look: 166/17 talk: 288/16 buyitem: 0/0
+goto: 0/0 desc: 146/13 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 25/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 60/6 pf2: 0/0 key: 0/0 pf: 67/7 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 44/3 learn: 144/9 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:10:00 910/57
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 335/14
+tips: 0/0 clone: 0/0 look: 64/7 talk: 44/2 buyitem: 99/8
+goto: 0/0 desc: 99/9 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 13/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 256/16 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:15:01 1078/62
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 740/31
+tips: 6/1 clone: 0/0 look: 33/4 talk: 77/4 buyitem: 0/0
+goto: 0/0 desc: 148/15 use: 46/4 list: 8/1 buy: 20/2
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:20:00 677/54
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 191/8
+tips: 0/0 clone: 0/0 look: 33/4 talk: 13/1 buyitem: 0/0
+goto: 0/0 desc: 266/26 use: 9/1 list: 8/1 buy: 45/4
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 100/8 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 12/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:25:00 313/15
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 287/12
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:30:00 3404/174
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2674/112
+tips: 0/0 clone: 0/0 look: 30/3 talk: 80/4 buyitem: 169/13
+goto: 0/0 desc: 74/8 use: 156/12 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 87/5 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 30/3 pf2: 0/0 key: 0/0 pf: 104/14 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:35:00 4492/216
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4033/175
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 48/4 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 211/12 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 152/20 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:40:00 2151/111
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1816/79
+tips: 0/0 clone: 0/0 look: 16/2 talk: 38/2 buyitem: 0/0
+goto: 0/0 desc: 24/4 use: 84/6 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 34/2 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 77/11 move: 0/0
+gift: 32/2 get: 10/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 
+2010-04-08 15:45:00 2961/212
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 861/36
+tips: 0/0 clone: 0/0 look: 47/5 talk: 168/10 buyitem: 441/34
+goto: 0/0 desc: 482/50 use: 165/17 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 78/2 friend: 0/0 drop: 562/46 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 25/2 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 99/7
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 33/3 
+2010-04-08 15:50:00 1834/127
+无指令: 0/0 无效: 28/2 makecpp: 0/0 quit: 0/0 go: 621/26
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 413/28
+goto: 0/0 desc: 176/18 use: 199/21 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 266/22 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 39/3
+gift: 0/0 get: 0/0 zgdict: 44/3 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 11/1 openbox: 27/2 
+2010-04-08 15:55:00 5168/328
+无指令: 0/0 无效: 322/23 makecpp: 0/0 quit: 0/0 go: 1243/52
+tips: 12/2 clone: 0/0 look: 44/5 talk: 28/2 buyitem: 149/11
+goto: 0/0 desc: 702/61 use: 99/11 list: 8/1 buy: 33/3
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 72/6 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 10/1 pf: 7/1 move: 25/2
+gift: 104/8 get: 0/0 zgdict: 0/0 learn: 2300/138 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 17:55:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:00:00 972/55
+无指令: 330/6 无效: 13/1 makecpp: 0/0 quit: 5/1 go: 211/9
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 90/8
+goto: 0/0 desc: 190/19 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 120/10 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 13/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:05:00 1283/94
+无指令: 110/2 无效: 286/22 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 232/18
+goto: 0/0 desc: 290/29 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 156/12
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 209/11
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:10:00 237/12
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 50/5 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 39/3
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 38/2
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:15:00 565/37
+无指令: 110/2 无效: 260/20 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 195/15
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:30:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:40:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:45:01 242/13
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 64/7 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 26/2
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 19/1
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 19:55:00 1056/68
+无指令: 110/2 无效: 104/8 makecpp: 0/0 quit: 0/0 go: 347/15
+tips: 0/0 clone: 0/0 look: 9/1 talk: 0/0 buyitem: 79/7
+goto: 0/0 desc: 193/21 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 91/7
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 114/6
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 
+2010-04-08 20:00:01 814/61
+无指令: 0/0 无效: 130/10 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 420/29
+goto: 0/0 desc: 73/8 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 98/8
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 19/1
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 57/3
+
+2010-04-08 20:10:01 1628/122
+无指令: 110/2 无效: 351/27 makecpp: 0/0 quit: 0/0 go: 24/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 260/20
+goto: 0/0 desc: 397/40 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 192/16
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 285/15
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+
+2010-04-08 20:40:01 1842/101
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1238/54
+tips: 0/0 clone: 0/0 look: 50/5 talk: 92/6 buyitem: 104/9
+goto: 0/0 desc: 165/17 use: 47/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 16/1 mix3: 0/0
+org: 20/2 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+
+2010-04-08 20:45:00 2232/106
+无指令: 220/4 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1733/74
+tips: 7/1 clone: 0/0 look: 89/9 talk: 76/5 buyitem: 0/0
+goto: 0/0 desc: 74/9 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+
+2010-04-08 20:50:00 3767/206
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 2576/111
+tips: 0/0 clone: 0/0 look: 235/24 talk: 231/14 buyitem: 0/0
+goto: 0/0 desc: 444/38 use: 0/0 list: 0/0 buy: 0/0
+family: 35/3 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 30/3 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 74/7 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 27/3 
+2010-04-08 20:55:00 3959/305
+无指令: 0/0 无效: 1001/77 makecpp: 0/0 quit: 0/0 go: 319/14
+tips: 0/0 clone: 0/0 look: 10/1 talk: 14/1 buyitem: 703/57
+goto: 0/0 desc: 800/81 use: 36/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 20/2 pf: 56/5 move: 403/31
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 589/31
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:00:00 8311/369
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 8100/350
+tips: 0/0 clone: 0/0 look: 20/2 talk: 67/4 buyitem: 46/4
+goto: 0/0 desc: 32/4 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 7/1 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:05:00 1355/61
+无指令: 0/0 无效: 6/1 makecpp: 0/0 quit: 0/0 go: 1301/55
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 34/3
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 14/2 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:10:00 4118/207
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3756/163
+tips: 0/0 clone: 0/0 look: 28/4 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 0/0 pf: 154/22 move: 0/0
+gift: 0/0 get: 10/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:15:00 4626/267
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3424/150
+tips: 0/0 clone: 0/0 look: 40/4 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 70/6 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 140/14 pf2: 0/0 key: 30/3 pf: 784/76 move: 0/0
+gift: 0/0 get: 120/12 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:20:00 2084/134
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1479/65
+tips: 0/0 clone: 0/0 look: 48/8 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 6/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 140/14 pf2: 0/0 key: 0/0 pf: 341/39 move: 0/0
+gift: 0/0 get: 60/6 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:35:00 271/9
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 161/7
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 
+2010-04-08 21:40:00 829/41
+无指令: 351/9 无效: 0/0 makecpp: 0/0 quit: 10/2 go: 308/13
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 8/1
+goto: 0/0 desc: 120/12 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 32/4 
+2010-04-08 22:05:00 638/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 475/20
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 20/2 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 14/2 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-08 22:20:00 110/2
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 12:40:02 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 12:50:00 1437/75
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1057/46
+tips: 7/1 clone: 0/0 look: 30/3 talk: 18/1 buyitem: 48/4
+goto: 0/0 desc: 110/12 use: 47/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 12:55:00 2488/129
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1839/81
+tips: 0/0 clone: 0/0 look: 158/16 talk: 194/11 buyitem: 102/10
+goto: 0/0 desc: 60/6 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 13:00:00 523/25
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 457/20
+tips: 0/0 clone: 0/0 look: 30/3 talk: 36/2 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 13:05:00 2160/112
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1652/72
+tips: 0/0 clone: 0/0 look: 190/19 talk: 270/15 buyitem: 0/0
+goto: 0/0 desc: 23/3 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 20/2 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 13:15:01 3148/167
+无指令: 110/2 无效: 126/9 makecpp: 0/0 quit: 0/0 go: 2221/96
+tips: 0/0 clone: 0/0 look: 208/21 talk: 230/13 buyitem: 70/6
+goto: 0/0 desc: 113/13 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 50/5 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 13:35:00 2195/128
+无指令: 220/4 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 1195/51
+tips: 0/0 clone: 0/0 look: 38/4 talk: 50/3 buyitem: 416/39
+goto: 0/0 desc: 143/14 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 12/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 62/6 act: 0/0 bag: 0/0 openbox: 27/2 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 14:35:00 783/42
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 310/13
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 276/18
+goto: 0/0 desc: 87/9 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 14:40:00 417/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 71/3
+tips: 7/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 65/5
+goto: 0/0 desc: 164/17 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 14:50:00 295/19
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 99/7
+goto: 0/0 desc: 77/9 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 16:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 16:50:00 456/30
+无指令: 110/2 无效: 188/14 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 89/7
+goto: 0/0 desc: 56/6 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 13/1
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 17:05:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 17:25:01 839/59
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 215/9
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 218/23 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 264/22 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 32/3 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 17:30:00 3381/197
+无指令: 0/0 无效: 13/1 makecpp: 0/0 quit: 0/0 go: 2009/84
+tips: 0/0 clone: 0/0 look: 28/3 talk: 44/2 buyitem: 393/32
+goto: 0/0 desc: 236/24 use: 114/10 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 167/10 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 30/3 pf2: 0/0 key: 0/0 pf: 89/11 move: 117/9
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 57/3
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 76/4
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 17:35:00 3282/161
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2733/118
+tips: 0/0 clone: 0/0 look: 72/8 talk: 204/11 buyitem: 8/1
+goto: 0/0 desc: 13/1 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 100/6 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 40/4 pf2: 0/0 key: 0/0 pf: 94/10 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 17:40:00 2620/133
+无指令: 0/0 无效: 70/5 makecpp: 0/0 quit: 0/0 go: 2068/87
+tips: 6/1 clone: 0/0 look: 37/4 talk: 19/1 buyitem: 255/20
+goto: 0/0 desc: 99/9 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 48/4 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:10:00 222/11
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 82/6
+goto: 0/0 desc: 30/3 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:15:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:20:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:30:01 110/2
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:35:00 435/24
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 96/4
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 229/18
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 18:55:00 332/21
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 48/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 64/5
+goto: 0/0 desc: 80/8 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 21/3 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 19:30:00 639/35
+无指令: 110/2 无效: 52/4 makecpp: 0/0 quit: 0/0 go: 310/13
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 76/6
+goto: 0/0 desc: 47/5 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 14/2 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 19:35:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 19:40:01 177/9
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 17/2
+goto: 0/0 desc: 50/5 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 19:45:00 149/12
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 132/10
+goto: 0/0 desc: 17/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 19:50:00 426/30
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 69/3
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 35/4
+goto: 0/0 desc: 126/13 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 59/5 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 21:05:00 1412/95
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 523/22
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 106/8
+goto: 0/0 desc: 230/22 use: 107/11 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 192/16 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 46/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 88/10 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 
+2010-04-09 21:10:00 5698/272
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 5134/218
+tips: 0/0 clone: 0/0 look: 26/3 talk: 72/4 buyitem: 0/0
+goto: 0/0 desc: 80/10 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 60/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 30/3 pf2: 0/0 key: 0/0 pf: 146/20 move: 0/0
+gift: 116/7 get: 11/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 5/1 
+2010-04-09 21:15:00 5458/317
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 2539/106
+tips: 0/0 clone: 0/0 look: 110/12 talk: 197/10 buyitem: 98/9
+goto: 0/0 desc: 501/45 use: 63/7 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 240/20 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 28/2
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 1664/104 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 21:20:01 5123/257
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4611/209
+tips: 0/0 clone: 0/0 look: 46/5 talk: 110/5 buyitem: 0/0
+goto: 0/0 desc: 36/3 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 24/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 154/22 move: 0/0
+gift: 64/4 get: 29/3 zgdict: 11/1 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 21:25:01 7269/353
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 6685/294
+tips: 0/0 clone: 0/0 look: 48/5 talk: 82/4 buyitem: 0/0
+goto: 0/0 desc: 73/9 use: 45/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 60/6 pf2: 0/0 key: 0/0 pf: 124/16 move: 0/0
+gift: 44/3 get: 58/6 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 50/5 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:00:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:05:00 3341/148
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3106/135
+tips: 0/0 clone: 0/0 look: 19/2 talk: 64/4 buyitem: 0/0
+goto: 0/0 desc: 12/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 30/3 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:10:00 1906/113
+无指令: 0/0 无效: 378/27 makecpp: 0/0 quit: 0/0 go: 1008/43
+tips: 0/0 clone: 0/0 look: 50/5 talk: 128/8 buyitem: 201/16
+goto: 0/0 desc: 91/9 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:15:01 1899/102
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1371/60
+tips: 0/0 clone: 0/0 look: 130/13 talk: 258/15 buyitem: 0/0
+goto: 0/0 desc: 18/2 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 102/10 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:20:01 3510/174
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 2885/125
+tips: 0/0 clone: 0/0 look: 88/9 talk: 179/11 buyitem: 0/0
+goto: 0/0 desc: 184/20 use: 45/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:25:00 4182/207
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 3808/172
+tips: 0/0 clone: 0/0 look: 30/3 talk: 44/2 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 51/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 40/4 pf2: 0/0 key: 0/0 pf: 157/19 move: 0/0
+gift: 32/2 get: 9/1 zgdict: 11/1 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:30:00 4562/212
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4294/184
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 40/4 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 25/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 30/3 pf2: 0/0 key: 0/0 pf: 98/14 move: 0/0
+gift: 44/3 get: 0/0 zgdict: 22/2 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:35:00 4393/220
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 3537/150
+tips: 6/1 clone: 0/0 look: 64/7 talk: 230/13 buyitem: 120/10
+goto: 0/0 desc: 179/21 use: 47/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 42/6 move: 0/0
+gift: 20/1 get: 11/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 12/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:40:00 2275/129
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1353/59
+tips: 0/0 clone: 0/0 look: 170/17 talk: 534/30 buyitem: 0/0
+goto: 0/0 desc: 59/7 use: 69/7 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 90/9 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:45:00 1709/94
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1103/48
+tips: 0/0 clone: 0/0 look: 136/14 talk: 376/22 buyitem: 0/0
+goto: 0/0 desc: 12/2 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 10/1 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 52/5 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:50:00 1383/107
+无指令: 0/0 无效: 12/2 makecpp: 0/0 quit: 0/0 go: 23/1
+tips: 0/0 clone: 0/0 look: 210/21 talk: 547/31 buyitem: 35/4
+goto: 0/0 desc: 402/35 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 12/1 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 52/3 mix3: 0/0
+org: 70/7 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-09 23:55:00 2128/144
+无指令: 0/0 无效: 70/5 makecpp: 0/0 quit: 0/0 go: 544/24
+tips: 0/0 clone: 0/0 look: 400/40 talk: 522/29 buyitem: 124/10
+goto: 0/0 desc: 135/12 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 171/8 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 122/12 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 00:00:00 3140/157
+无指令: 110/2 无效: 6/1 makecpp: 0/0 quit: 5/1 go: 2202/95
+tips: 0/0 clone: 0/0 look: 229/23 talk: 510/28 buyitem: 0/0
+goto: 0/0 desc: 29/2 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 40/4 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 00:05:00 4917/276
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1395/61
+tips: 0/0 clone: 0/0 look: 206/21 talk: 3074/171 buyitem: 0/0
+goto: 0/0 desc: 192/18 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 30/3 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 15:15:01 828/58
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 182/8
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 176/18 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 360/30 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:00:00 215/10
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 46/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 43/4
+goto: 0/0 desc: 6/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:05:00 781/45
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 389/17
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 338/23
+goto: 0/0 desc: 54/5 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:10:00 281/22
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 257/20
+goto: 0/0 desc: 24/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:15:00 267/23
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 261/22
+goto: 0/0 desc: 6/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:20:00 567/39
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 567/39
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:25:00 794/52
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 794/52
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:30:00 407/25
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 297/23
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:35:00 68/4
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 68/4
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:40:00 118/3
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 8/1
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 16:45:01 405/25
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 24/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 266/21
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:05:00 1049/63
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 451/19
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 308/22
+goto: 0/0 desc: 162/18 use: 18/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:10:00 16/2
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 16/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:15:04 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:20:00 724/53
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 184/8
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 146/13
+goto: 0/0 desc: 170/18 use: 36/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 24/3 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 48/4 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:35:00 342/24
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 53/4
+goto: 0/0 desc: 146/15 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 18:40:00 473/33
+无指令: 110/2 无效: 9/1 makecpp: 0/0 quit: 0/0 go: 114/5
+tips: 6/1 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 48/4
+goto: 0/0 desc: 186/20 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:25:00 1357/69
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 944/40
+tips: 19/3 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 48/4
+goto: 0/0 desc: 159/14 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 49/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:30:00 1472/76
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1175/49
+tips: 12/2 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 135/12 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 39/2 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 80/8 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 11/1 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:35:00 46/5
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 46/5 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:40:01 2489/133
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1658/70
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 57/5
+goto: 0/0 desc: 294/27 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 158/8 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 140/14 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 22/2 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:50:00 431/29
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 47/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 164/14
+goto: 0/0 desc: 90/9 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 21:55:00 2618/146
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1593/67
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 348/23
+goto: 0/0 desc: 183/17 use: 60/6 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 193/9 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 230/23 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 11/1 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:00:01 1613/77
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1352/57
+tips: 0/0 clone: 0/0 look: 20/2 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 26/2 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 104/5 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 78/8 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 33/3 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:05:00 1499/83
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 857/36
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 57/5
+goto: 0/0 desc: 247/23 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 130/7 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 78/8 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:10:00 371/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 48/4
+goto: 0/0 desc: 164/17 use: 49/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:20:00 1678/96
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 972/41
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 57/5
+goto: 0/0 desc: 268/26 use: 49/5 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 123/7 pf5: 9/1 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 90/9 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:25:00 448/27
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 308/13
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 120/12 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 20/2 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:30:00 323/28
+无指令: 0/0 无效: 14/1 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 106/9
+goto: 0/0 desc: 125/11 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 28/2 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:35:00 52/4
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 52/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:40:01 1109/91
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 703/55 use: 238/24 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 168/12 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:45:00 382/25
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 48/4
+goto: 0/0 desc: 190/16 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:50:01 118/3
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 8/1
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 22:55:00 110/2
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:05:00 192/8
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 24/1
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 58/5
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:10:00 220/13
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 46/4
+goto: 0/0 desc: 44/5 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:20:00 1187/70
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 496/21
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 203/14
+goto: 0/0 desc: 262/23 use: 60/6 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 56/4 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:25:00 395/28
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 145/12
+goto: 0/0 desc: 86/9 use: 40/4 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 14/1 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:45:00 621/43
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 119/5
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 127/11
+goto: 0/0 desc: 163/16 use: 60/6 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 42/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-10 23:50:00 1019/66
+无指令: 220/4 无效: 10/1 makecpp: 0/0 quit: 5/1 go: 261/11
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 129/11
+goto: 0/0 desc: 263/26 use: 89/9 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 42/3 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-11 00:10:00 213/10
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 103/8 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 22:35:00 2531/148
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1560/67
+tips: 12/2 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 707/63 use: 9/1 list: 0/0 buy: 0/0
+family: 63/6 remove: 8/1 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 10/1 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 42/4 setnpc: 0/0 mail: 0/0 
+2010-04-13 22:40:00 1538/98
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 788/33
+tips: 0/0 clone: 0/0 look: 6/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 480/48 pf2: 0/0 key: 0/0 pf: 55/5 move: 0/0
+gift: 0/0 get: 99/9 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 22:45:00 513/48
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 48/2
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 160/18 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 190/19 pf2: 0/0 key: 0/0 pf: 39/3 move: 65/5
+gift: 0/0 get: 11/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 23:25:01 5242/247
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4633/195
+tips: 6/1 clone: 0/0 look: 30/3 talk: 16/1 buyitem: 0/0
+goto: 0/0 desc: 99/11 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 180/18 pf2: 0/0 key: 0/0 pf: 47/5 move: 0/0
+gift: 0/0 get: 121/11 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 23:35:00 1859/122
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 974/41
+tips: 6/1 clone: 0/0 look: 6/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 261/30 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 96/8 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 0/0 pf: 80/8 move: 13/1
+gift: 0/0 get: 143/13 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 23:45:00 1917/94
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1222/52
+tips: 12/2 clone: 0/0 look: 24/3 talk: 101/5 buyitem: 448/30
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-13 23:50:00 904/59
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 904/59
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 00:10:00 270/14
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 160/12
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 00:25:00 284/14
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 162/11
+goto: 0/0 desc: 12/1 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 00:40:00 1986/89
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1730/74
+tips: 0/0 clone: 0/0 look: 37/4 talk: 30/2 buyitem: 33/3
+goto: 0/0 desc: 46/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 00:45:00 6547/324
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 5546/239
+tips: 0/0 clone: 0/0 look: 142/15 talk: 300/17 buyitem: 147/13
+goto: 0/0 desc: 212/23 use: 18/2 list: 16/2 buy: 18/2
+family: 0/0 remove: 0/0 sell: 84/5 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 40/4 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 00:55:00 2217/104
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 1781/77
+tips: 0/0 clone: 0/0 look: 97/10 talk: 180/10 buyitem: 0/0
+goto: 0/0 desc: 39/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 10/1 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 18:10:00 150/7
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 5/1 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 35/4
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 mail: 0/0 
+2010-04-14 18:50:02 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 18:55:00 5440/258
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4612/194
+tips: 0/0 clone: 0/0 look: 49/5 talk: 120/6 buyitem: 74/7
+goto: 0/0 desc: 126/13 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 70/7 pf2: 0/0 key: 0/0 pf: 269/23 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 10/1 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 19:00:00 6237/331
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4609/195
+tips: 0/0 clone: 0/0 look: 10/1 talk: 21/1 buyitem: 31/2
+goto: 0/0 desc: 66/7 use: 20/2 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 270/27 pf2: 0/0 key: 0/0 pf: 1133/89 move: 0/0
+gift: 0/0 get: 77/7 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 20:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 20:30:00 197/8
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 66/3
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 12/2 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 20:45:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 20:50:01 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 21:00:00 4978/233
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 4521/197
+tips: 0/0 clone: 0/0 look: 43/6 talk: 55/3 buyitem: 0/0
+goto: 0/0 desc: 28/3 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 170/17 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 9/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 42/4 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 21:05:00 8325/405
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 7379/310
+tips: 0/0 clone: 0/0 look: 20/2 talk: 63/3 buyitem: 120/12
+goto: 0/0 desc: 186/23 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 120/10 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 230/23 pf2: 0/0 key: 0/0 pf: 56/8 move: 0/0
+gift: 0/0 get: 143/13 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 8/1 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 21:10:00 6923/317
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 6573/280
+tips: 0/0 clone: 0/0 look: 10/1 talk: 21/1 buyitem: 0/0
+goto: 0/0 desc: 182/21 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 100/10 pf2: 0/0 key: 0/0 pf: 14/2 move: 13/1
+gift: 0/0 get: 10/1 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 21:15:00 27/3
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 20/2 pf2: 0/0 key: 0/0 pf: 7/1 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 21:20:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+pet: 0/0 pf5: 0/0 title: 0/0 vipchat: 0/0 use2: 0/0
+kill: 0/0 pf2: 0/0 key: 0/0 pf: 0/0 move: 0/0
+gift: 0/0 get: 0/0 zgdict: 0/0 learn: 0/0 mix3: 0/0
+org: 0/0 act: 0/0 bag: 0/0 openbox: 0/0 mix2: 0/0
+gmset: 0/0 setnpc: 0/0 team: 0/0 mail: 0/0 tt: 0/0
+goto2: 0/0 repair: 0/0 exchange: 0/0 ct: 0/0 tell: 0/0
+pf3: 0/0 chat: 0/0 set: 0/0 black: 0/0 ft: 0/0
+pf4: 0/0 rumor: 0/0 ot: 0/0 store: 0/0 savings: 0/0
+et: 0/0 
+2010-04-14 23:25:00 1206/79
+无指令: 110/2 无效: 10/1 makecpp: 0/0 quit: 0/0 go: 430/18
+tips: 0/0 clone: 0/0 look: 30/3 talk: 63/3 buyitem: 253/21
+goto: 0/0 desc: 154/17 use: 9/1 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 120/10 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 7/1
+recover: 0/0 team: 8/1 key: 12/1 
+2010-04-14 23:30:00 9563/444
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 8877/373
+tips: 0/0 clone: 0/0 look: 30/3 talk: 42/2 buyitem: 14/1
+goto: 0/0 desc: 143/17 use: 99/11 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 24/2 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 55/5 kill: 190/19 pf: 89/11
+recover: 0/0 team: 0/0 key: 0/0 
+2010-04-14 23:35:01 4524/242
+无指令: 220/4 无效: 0/0 makecpp: 0/0 quit: 10/2 go: 3411/148
+tips: 0/0 clone: 0/0 look: 58/6 talk: 108/6 buyitem: 0/0
+goto: 0/0 desc: 246/31 use: 27/3 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 144/12 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 30/3 kill: 130/13 pf: 101/11
+recover: 0/0 team: 0/0 key: 0/0 move: 39/3 
+2010-04-14 23:40:01 986/62
+无指令: 110/2 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 542/25
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 63/7 kill: 90/9 pf: 181/19
+recover: 0/0 team: 0/0 key: 0/0 
+2010-04-15 14:10:00 3168/198
+无指令: 220/4 无效: 364/28 makecpp: 0/0 quit: 5/1 go: 1377/61
+tips: 0/0 clone: 0/0 look: 10/1 talk: 0/0 buyitem: 316/24
+goto: 0/0 desc: 494/53 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 48/4 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 14/2
+recover: 0/0 team: 0/0 key: 0/0 move: 130/10 mix3: 190/10
+
+2010-04-15 14:15:03 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+
+2013-09-23 13:00:00 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+
+2013-09-23 13:05:00 5208/227
+无指令: 110/2 无效: 90/6 makecpp: 0/0 quit: 0/0 go: 4973/214
+tips: 26/4 clone: 0/0 look: 9/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+
+2013-09-23 13:10:00 7748/337
+无指令: 0/0 无效: 20/2 makecpp: 0/0 quit: 0/0 go: 7553/320
+tips: 27/4 clone: 0/0 look: 32/4 talk: 58/3 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 14/1 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+zgdict: 44/3 
+2013-09-23 13:15:02 0/0
+无指令: 0/0 无效: 0/0 makecpp: 0/0 quit: 0/0 go: 0/0
+tips: 0/0 clone: 0/0 look: 0/0 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 0/0 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+
+2013-09-23 13:30:00 2180/94
+无指令: 110/2 无效: 32/2 makecpp: 0/0 quit: 0/0 go: 1993/84
+tips: 26/4 clone: 0/0 look: 9/1 talk: 0/0 buyitem: 0/0
+goto: 0/0 desc: 0/0 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 10/1 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+
+2013-09-23 13:35:01 4914/222
+无指令: 0/0 无效: 52/4 makecpp: 0/0 quit: 0/0 go: 4598/195
+tips: 20/3 clone: 0/0 look: 22/3 talk: 54/3 buyitem: 0/0
+goto: 0/0 desc: 40/4 use: 0/0 list: 0/0 buy: 0/0
+family: 0/0 remove: 0/0 sell: 0/0 blue: 0/0 who: 0/0
+give: 0/0 friend: 0/0 drop: 0/0 update: 0/0 yellow: 0/0
+go2map: 0/0 pawn: 0/0 dest: 0/0 consign: 0/0 say: 0/0
+gmset: 0/0 gmdrop: 0/0 get: 0/0 kill: 40/4 pf: 0/0
+recover: 0/0 team: 0/0 key: 0/0 move: 0/0 mix3: 0/0
+zgdict: 88/6 

@@ -1,0 +1,52 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/sys/main
+http://192.168.1.102:3721/svn/gss
+
+
+
+2007-12-07T02:28:57.854136Z
+1437
+lyt
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+main.c
+file
+
+
+
+
+2007-12-07T08:22:05.118163Z
+75671c54dd6bec23709beecc3ecafa47
+2007-12-07T02:28:57.854136Z
+1437
+lyt
+
+efun.c
+file
+
+
+
+
+2007-11-06T09:59:34.125000Z
+d720613dcf95c5f8ba3cdaa5adaeb2e8
+2007-09-03T03:48:36.210948Z
+1154
+lyt
+

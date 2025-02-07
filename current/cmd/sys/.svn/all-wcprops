@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/gss/!svn/ver/1118/current/cmd/sys
+END
+mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/1/current/cmd/sys/mem.c
+END
+dump_obj.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/535/current/cmd/sys/dump_obj.c
+END
+promote.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/500/current/cmd/sys/promote.c
+END
+callouts.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/1018/current/cmd/sys/callouts.c
+END
+cpu.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/1/current/cmd/sys/cpu.c
+END
+saveall.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/1118/current/cmd/sys/saveall.c
+END
+code.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/623/current/cmd/sys/code.c
+END
+reboot.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/879/current/cmd/sys/reboot.c
+END
+rehash.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/1/current/cmd/sys/rehash.c
+END
+view.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/cmd/sys/view.c
+END
+shutdown.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/82/current/cmd/sys/shutdown.c
+END
+reclaim.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/324/current/cmd/sys/reclaim.c
+END

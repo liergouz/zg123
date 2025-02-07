@@ -1,0 +1,97 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/item/final
+http://192.168.1.102:3721/svn/gss
+
+
+
+2007-12-05T06:08:46.881135Z
+1435
+wu_1010
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+15
+dir
+
+33
+dir
+
+60
+dir
+
+16
+dir
+
+70
+dir
+
+71
+dir
+
+72
+dir
+
+73
+dir
+
+91
+dir
+
+65
+dir
+
+74
+dir
+
+75
+dir
+
+76
+dir
+
+86
+dir
+
+88
+dir
+
+stuff.c
+file
+
+
+
+
+2007-11-06T09:51:51.109375Z
+c4cc5df088756a02a008555a3c266f45
+2006-08-01T08:57:06.345666Z
+250
+ten
+
+Readme.txt
+file
+
+
+
+
+2007-11-06T09:51:51.109375Z
+a9346157638829209acc237c26d33062
+2006-08-10T09:12:00.447657Z
+278
+ten
+

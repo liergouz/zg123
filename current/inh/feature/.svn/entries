@@ -1,0 +1,52 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/inh/feature
+http://192.168.1.102:3721/svn/gss
+
+
+
+2006-08-23T07:35:32.140349Z
+315
+ten
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+dbase.c
+file
+
+
+
+
+2007-11-06T10:01:26.500000Z
+d2c5e7d754137f5428ec670d74b36042
+2006-08-23T07:35:32.140349Z
+315
+ten
+
+save.c
+file
+
+
+
+
+2007-11-06T10:01:26.500000Z
+5c45e00cadfe147c027f8d20d0f71e18
+2006-04-12T03:27:40.043962Z
+1
+lyt
+

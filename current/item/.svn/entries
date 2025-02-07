@@ -1,0 +1,247 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/item
+http://192.168.1.102:3721/svn/gss
+
+
+
+2007-12-05T06:08:46.881135Z
+1435
+wu_1010
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+54
+dir
+
+90
+dir
+
+55
+dir
+
+91
+dir
+
+final
+dir
+
+56
+dir
+
+92
+dir
+
+std
+dir
+
+57
+dir
+
+93
+dir
+
+sellitem.txt
+file
+
+
+
+
+2007-11-06T09:58:30.515625Z
+a236482cfe58dcbf58b2028599af472d
+2007-09-03T06:16:37.029530Z
+1157
+lyt
+
+58
+dir
+
+59
+dir
+
+95
+dir
+
+96
+dir
+
+sell
+dir
+
+97
+dir
+
+98
+dir
+
+99
+dir
+
+ride
+dir
+
+60
+dir
+
+61
+dir
+
+stuff
+dir
+
+65
+dir
+
+66
+dir
+
+test.c
+file
+
+
+
+
+2007-11-06T09:58:30.515625Z
+b21edb9a962efab50bfc5497339d2ad3
+2007-08-03T02:22:27.704299Z
+1032
+ten
+
+30
+dir
+
+31
+dir
+
+32
+dir
+
+33
+dir
+
+34
+dir
+
+70
+dir
+
+71
+dir
+
+35
+dir
+
+72
+dir
+
+36
+dir
+
+73
+dir
+
+37
+dir
+
+38
+dir
+
+74
+dir
+
+75
+dir
+
+76
+dir
+
+77
+dir
+
+78
+dir
+
+79
+dir
+
+Readme.txt
+file
+
+
+
+
+2007-11-06T09:58:30.515625Z
+39ebe7f81c39e6c93b4b7b609218903a
+2007-02-06T03:47:20.811607Z
+581
+lyt
+
+bind
+dir
+
+01
+dir
+
+product
+dir
+
+04
+dir
+
+40
+dir
+
+41
+dir
+
+42
+dir
+
+44
+dir
+
+08
+dir
+
+80
+dir
+
+09
+dir
+
+mop
+dir
+
+49
+dir
+
+86
+dir
+
+87
+dir
+
+88
+dir
+
+89
+dir
+
+skill
+dir
+

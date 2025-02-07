@@ -1,0 +1,589 @@
+
+#include <ansi.h>
+#include <skill.h>
+#include <action.h>
+#include <effect.h>
+
+mapping	allgood	=([
+	"good1": ([
+		"01" : "/item/sell/0061",
+		]),
+	"good2": ([
+		"01" : "/item/mop/9988",
+		"02" : "/item/08/0001",  
+		"03" : "/item/08/0002",  
+		"04" : "/item/sell/0044",
+		"05" : "/item/08/0004",  				
+		"06" : "/item/sell/0004",
+		"07" : "/item/08/0003",  
+		"08" : "/item/sell/0002",
+		"09" : "/item/sell/0007",
+		"10" : "/item/sell/0008",
+		"11" : "/item/sell/0009",
+		"12" : "/item/sell/0010",
+		"13" : "/item/91/9166",  
+		"14" : "/item/91/9178",  
+		"15" : "/item/sell/0006",		
+                "16" : "/item/sell/0060",
+		]),
+	"good3": ([
+		"01" : "/item/sell/0025",
+		"02" : "/item/08/0811",
+		"03" : "/item/08/0802",
+		"04" : "/item/08/shuiping",
+		]),
+	"good4":  ([
+		"01" : "/item/sell/9301",
+		"02" : "/item/sell/9302",
+		"03" : "/item/sell/9303",
+		"04" : "/item/sell/9304",
+		"05" : "/item/sell/9305",
+		"06" : "/item/sell/9306",
+		"07" : "/item/sell/9307",
+		"08" : "/item/sell/9308",
+		"09" : "/item/sell/9309",
+		"10" : "/item/sell/9310",
+		"11" : "/item/54/0902",
+		"12" : "/item/54/0950",
+		"13" : "/item/54/0951",
+		"14" : "/item/54/0952",
+		"15" : "/item/54/0953",
+		"16" : "/item/54/0954",
+		"17" : "/item/54/1000",
+		"18" : "/item/54/1001",
+		"19" : "/item/54/1050",
+		"20" : "/item/54/1051",
+		"21" : "/item/54/1052",
+		"22" : "/item/54/1100",
+		"23" : "/item/54/1101",
+		"24" : "/item/54/1102",
+		"25" : "/item/54/4141",
+		"26" : "/item/54/4142",
+		"27" : "/item/54/4143",
+		"28" : "/item/54/4145",
+		"29" : "/item/54/8000",
+		"30" : "/item/54/8012",
+		"31" : "/item/54/8013",
+		"32" : "/item/sell/0015",
+		"33" : "/item/sell/0016",
+		"34" : "/item/sell/0017",
+		"35" : "/item/sell/0018",
+		"36" : "/item/sell/0019",
+		 ]) ,
+	"good5": ([
+		"01" : "/item/sell/0045",
+		"02" : "/item/sell/0032",
+		"03" : "/item/sell/0034",
+		"04" : "/item/sell/0033",
+		"05" : "/item/sell/0202",
+		"06" : "/item/sell/6002",
+		"07" : "/item/01/0006",
+		"08" : "/item/sell/0041",
+		"09" : "/item/sell/0201",		
+		"10" : "/item/sell/0012",
+		"11" : "/item/std/6002",				
+		"12" : "/item/sell/0026",
+		"13" : "/item/sell/0027",
+		"14" : "/item/sell/0028",
+		"15" : "/item/sell/0029",
+		"16" : "/item/sell/0050",						
+		"17" : "/item/sell/0030",
+		"18" : "/item/sell/0031",		
+		"19" : "/item/sell/0200",		
+		"20" : "/item/sell/0042",
+		"21" : "/item/sell/0043",
+		"22" : "/item/std/8000",		
+		]),
+	"good6": ([
+		"01" : "/item/sell/0202",
+		"02" : "/item/sell/0033",
+		"03" : "/item/sell/0032",
+		"04" : "/item/08/0001",
+		"05" : "/item/08/0004",
+		"06" : "/item/sell/6002",
+		"07" : "/item/sell/9305",
+		]),
+//----------------这个只是在国庆卖的一个特殊物品，而且是不显示的------------------------------------
+	"good99": ([
+		"01" : "/item/mop/9003",
+		"02" : "/item/mop/9006",
+		]),
+//--------------------------------------------------------------------------------------------
+	]);
+mapping	gonggao	=([
+	"充值优惠" : "2007年4月11日至5月11日期间，凡购买元宝的用户（不论何种充值方式），每单次充值100个元宝可额外获得 “紫参丹”1个，如果单次充值元宝数额超过100，每多100便多赠送一个“紫参丹”。（紫参丹功能：使用后+2000潜能）",
+	"直充优惠" : "2007年4月11日开始凡通过《大话战国》官网的“银行卡直充”功能购买元宝的用户，可按充值数量额外获得游戏道具。详细活动介绍请参见zg.mop.com相关活动公告。",
+		]);
+
+
+void send_gonggao(object me);
+
+mapping	goodprice = ([ ]);
+
+void create()
+{
+	string cpp, *line;
+	int i, size, a,	b, c, d, ret;
+	cpp = read_file("/quest/good.dat");
+	if (!cpp)
+	{
+		return;
+	}
+	line = explode(	cpp, "\n" );
+	size = sizeof(line);
+	if (size==0) return;
+	for (i=0;i<size;i++)
+	{		
+		if (sscanf(line[i], "%d %d %d %d", a, b, c, d)!=4) 
+		{
+			continue;	
+		}
+		goodprice[a] = ({b, c, d });
+	}
+}
+
+// 函数：命令处理
+int main( object me, string arg	)
+{
+	mapping	list;
+	int iVip, i, size, price, type,	what, total, amount, count, p, x, y, z,	itemid;
+	string *key, file, desc, name, legend;
+	object item;
+	int * prices;
+//	iVip = me->get_vip();
+//	if (time()<iVip) iVip =	1;
+//	else iVip = 0;
+
+	if (!arg)
+	{
+//tell_user(me, "打开珍宝铺");		
+		send_user(me, "%c%c%c",	0x45, 1, 0 );
+		if (MAIN_D->get_host_type()==1||MAIN_D->get_host_type()==1000)
+		{
+			send_user(me, "%c%c%d",	0x45, 2, me->get_save("testbonus") );
+		}
+		else
+		if (MAIN_D->get_host_type()==6012)
+		{
+//tell_user(me, "打开珍宝铺1");			
+			me->set_pay_money_buy_item(1);
+			me->set_pay_type(5);
+			me->set_buy_item_cmd_string("  ");
+			db_user_pay( me, sprintf( "210.48.144.183:2500\n"
+				"21,\"%s\",%d\r\n", me->get_real_id(), me->get_acountno() ) );
+//			log_file( "php.date", sprintf( "open 210.48.144.183:2500\n"
+//				"21,\"%s\",%d\r\n", me->get_real_id(), me->get_acountno() ) );			
+		}
+		else
+		if (me->get_pay_money_buy_item()==0 && !me->get("phpbalance"))
+		{					
+			me->set_pay_money_buy_item(1);
+			me->set_pay_type(5);
+			me->set_buy_item_cmd_string("  ");
+			db_user_pay( me, sprintf( "%s:80\n"
+				"GET http:/""/%s/querybalance.php?t=%s&u=%d\r\n", MAIN_D->get_php_ip(),
+				MAIN_D->get_php_ip(), short_time_2(), me->get_acountid() ) );
+//log_file( "php.date", 	sprintf( "%s:80\n"
+//				"GET http:/""/%s/querybalance.php?t=%s&u=%d\r\n", MAIN_D->get_php_ip(),
+//				MAIN_D->get_php_ip(), short_time_2(), me->get_acountid() ) );			
+		}
+
+
+		arg = "6";
+	}
+
+	if (arg=="notice")
+	{
+		send_gonggao(me);
+		return 1;
+	}
+	key = explode( arg, " "	);
+	if (sizeof(key)==1)
+	{
+		list = allgood["good"+arg];
+		if( !mapp(list)) return	1;
+		key = keys(list);
+		size = sizeof(key);
+		if (size==0) return 1;
+		key = sort_array(key, 1);
+		send_gonggao(me);
+		for( i = 0; i <	size; i	++ )
+		{
+			file = list[ key[i] ];
+			desc = file->get_short();
+			prices = goodprice[file->get_item_number()];
+			if (sizeof(prices)==3)
+			{
+				if (iVip==0) price = prices[0];
+				else
+				{
+					if (prices[2]>0) price = prices[2];
+					else price = prices[1];
+				}
+				if (prices[2]>0 && prices[2] < price ) 	//存在促销价
+					price = prices[2];
+					
+				if (desc==0) desc = file->get_desc();
+				name = sprintf("%-20s%s", file->get_name(), desc);
+				send_user( me, "%c%c%c%c%d%d%d%w%w%c%c%s", 0x45, 3, to_int(arg), to_int( key[i]	), prices[0], prices[1], price,
+					file->get_picid_2(), file->get_amount(), 0, file->get_item_color(), name );
+			}
+			else
+			{
+				price =	file->get_item_value();
+				if (iVip==0) price = file->get_item_value();
+				else
+				{
+					if (file->get_item_value_3()>0)	price =	file->get_item_value_3();
+					else price = file->get_item_value_2();
+				}
+				if (desc==0) desc = file->get_desc();
+				name = sprintf("%-20s%s", file->get_name(), desc);
+				send_user( me, "%c%c%c%c%d%d%d%w%w%c%c%s", 0x45, 3, to_int(arg), to_int( key[i]	), file->get_item_value(), file->get_item_value_2(), price,
+					file->get_picid_2(), file->get_amount(), 0, file->get_item_color(), name );
+			}
+		}
+		return 1;
+	}
+	if (key[0]=="desc")
+	{
+		if (sizeof(key)!=3) return 1;
+		type = to_int(key[1]);
+		what = to_int(key[2]);
+		if( !stringp( file = allgood[sprintf("good%d.%02d", type, what ) ] ) ) return 1;
+		send_user( me, "%c%c%c%c%s", 0x45, 4, type, what, file->get_desc() );
+		return 1;
+	}
+	if (sscanf(arg,	"%d %d %d", type, what,	total)!=3) return 1;
+	if( total < 1 )
+	{
+		notify(	"您购买的个数得大于０。" );
+		return 1;
+	}
+	if (MAIN_D->get_host_type()==1||MAIN_D->get_host_type()==1000)
+	{
+		list = allgood[sprintf("good%d", type)];
+		if( !mapp(list))
+		{
+			notify(	"没有这样的道具出售。" );
+			return 1;
+		}
+		file = list[sprintf("%02d", what+1)];
+		if( !stringp( file ) )
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		if( ( amount = USER_INVENTORY_D->can_carry_3( me, load_object(file) ) ) < 1 )
+		{		
+			notify(	"您携带的东西太多了。" );
+			return 1;
+		}
+		if( ( price = file->get_item_value() ) < 1 )
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		if ( file->question_before_buy(me,arg) == 1 )
+			return 1;
+		if ( file->get_sell_amount() && amount > file->get_sell_amount() )
+			amount = file->get_sell_amount();
+		if( total > amount ) total = amount;
+		prices = goodprice[file->get_item_number()];
+		if (sizeof(prices)==3)
+		{
+			price =	prices[0];
+			if (iVip>0)
+			{
+				if (prices[2]>0)  price	= prices[2];
+				else
+				if (prices[1]>0)  price	= prices[1];
+			}
+			if (prices[2]>0 && prices[2] < price )  
+				price	= prices[2];
+		}
+		else
+		{
+			price =	file->get_item_value();
+			if (iVip>0)
+			{
+				if (file->get_item_value_3()>0)	 price = file->get_item_value_3();
+				else
+				if (file->get_item_value_2()>0)	 price = file->get_item_value_2();
+			}
+		}
+		price *= total;
+		if (me->get_save("testbonus")<price)
+		{
+			notify(	"您的角色余额不足。" );
+			return 1;
+		}
+		me->add_save("testbonus", -price);
+		send_user(me, "%c%c%d",	0x45, 2, me->get_save("testbonus") );
+		"/sys/sys/id"->add_buy(total, price);
+		if ( file->give_item_to_user(me) )
+			return ;
+		else if( file->is_combined()	)
+		{
+			if( amount = USER_INVENTORY_D->carry_combined_item( me,	load_object(file), total ) )
+			{
+
+				item = new(file);
+				item->set_hide(0);
+				item->set_amount(amount);
+				count =	"/sys/sys/count"->add_buy_count(1);
+				itemid = "/sys/sys/id"->add_max_itemid(1);
+				item->set_user_id( sprintf("#%d#", itemid) );
+				log_file("itemid.dat", sprintf("%s %d %s %s\n",	short_time(), itemid, item->get_name(),	"/sys/item/item"->get_pawn_save_string(item) ));
+				legend = sprintf("点数购买 @%s %s,%d,%s,%s %s %s %d %s %d_%d_%d", "商店界面", me->get_name(), me->get_number(),	get_ip_name(me), me->get_id(), item->get_name(), "/sys/item/item"->get_pawn_save_string(item), amount, item->get_user_id(), get_z(me), get_x(me), get_y(me) );
+				"/sys/user/cmd"->log_item(legend);
+				if( p =	item->move2(me) )
+				{
+					item->add_to_user(p);
+				}
+				else if( p = get_valid_xy(z, x,	y, IS_ITEM_BLOCK) )
+				{
+					item->add_to_scene(z, p	/ 1000,	p % 1000);
+				}
+			}
+		}
+		else for( i = 0; i < total; i ++ )
+		{
+			item = new(file);
+			item->set_hide(0);
+			count =	"/sys/sys/count"->add_buy_count(1);
+			itemid = "/sys/sys/id"->add_max_itemid(1);
+			item->set_user_id( sprintf("#%d#", itemid) );
+			log_file("itemid.dat", sprintf("%s %d %s %s\n",	short_time(), itemid, item->get_name(),	"/sys/item/item"->get_pawn_save_string(item) ));
+			legend = sprintf("点数购买 @%s %s,%d,%s,%s %s %s %d %s %d_%d_%d", "商店界面", me->get_name(), me->get_number(),	get_ip_name(me), me->get_id(), item->get_name(), "/sys/item/item"->get_pawn_save_string(item), 1, item->get_user_id(), get_z(me), get_x(me), get_y(me) );
+			"/sys/user/cmd"->log_item(legend);
+			if( p =	item->move2(me) )
+			{
+				item->add_to_user(p);
+			}
+			else if( p = get_valid_xy(z, x,	y, IS_ITEM_BLOCK) )
+			{
+				item->add_to_scene(z, p	/ 1000,	p % 1000);
+			}
+		}
+log_file("buyitem.dat",	sprintf("%s %s(%d) 购买%s成功 %d %d\n",	short_time(), me->get_id(), me->get_number(), file->get_name(),	total, price));
+		send_user(me,  "%c%s", '!', sprintf("您买下%s。", file->get_name()) );
+		return 1;
+	}
+	if( !me->get_pay_money_buy_item() )
+	{
+		if (me->get("paycount")<0)
+		{
+			notify(	"您的帐号余额不足，如果您已充值，请退出游戏再进以购买道具。" );
+			return 1;
+		}
+		list = allgood[sprintf("good%d", type)];
+		if( !mapp(list))
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		file = list[sprintf("%02d", what+1)];
+		if( !stringp( file ) )
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		if( ( amount = USER_INVENTORY_D->can_carry_3( me,	load_object(file) ) ) <	1 )
+		{
+			notify(	"您携带的东西太多了。" );
+			return 1;
+		}
+		if( ( price = file->get_item_value() ) < 1 )
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		if ( file->question_before_buy(me,arg) == 1 )
+			return 1;
+		if ( file->get_sell_amount() && amount > file->get_sell_amount() )
+			amount = file->get_sell_amount();
+		if( total > amount ) total = amount;
+		prices = goodprice[file->get_item_number()];
+		if (sizeof(prices)==3)
+		{
+			price =	prices[0];
+			if (iVip>0)
+			{
+				if (prices[2]>0)  price	= prices[2];
+				else
+				if (prices[1]>0)  price	= prices[1];
+			}
+			if (prices[2]>0 && prices[2] < price )  
+				price	= prices[2];
+		}
+		else
+		{
+			price =	file->get_item_value();
+			if (iVip>0)
+			{
+				if (file->get_item_value_3()>0)	 price = file->get_item_value_3();
+				else
+				if (file->get_item_value_2()>0)	 price = file->get_item_value_2();
+			}
+		}
+		price *= total;
+		me->set_pay_money_buy_item(1);	  // 通过点数购买道具中
+		me->set_pay_type(6);
+		me->set_buy_item_cmd_string( sprintf("%d %d %d", type, what, total) );
+log_file("buyitem.dat",	sprintf("%s %s(%d) 购买%s %d\n", short_time(), me->get_id(), me->get_number(), file->get_name(), total));
+		if (MAIN_D->get_host_type()==4||MAIN_D->get_host_type()==0)
+		{
+			db_user_pay( me, sprintf( "%s:80\n"
+				"GET http:/""/%s/purchase.php?t=%s&u=%d&o=%d&n=%d&m=%d&c=%d&ip=%s&r=%d&h=%d\r\n", MAIN_D->get_php_ip(),
+				MAIN_D->get_php_ip(), short_time_2(), me->get_acountid(), me->get_number(), total, price, file->get_item_number(), get_ip_name(me), MAIN_D->get_region(), MAIN_D->get_host() ) );
+//log_file("php.dat", sprintf( "%s:80\n"
+//				"GET http:/""/%s/purchase.php?t=%s&u=%d&o=%d&n=%d&m=%d&c=%d&ip=%s&r=%d&h=%d\n",	MAIN_D->get_php_ip(),
+//				MAIN_D->get_php_ip(), short_time_2(), me->get_acountid(), me->get_number(), total, price, file->get_item_number(), get_ip_name(me), MAIN_D->get_region(), MAIN_D->get_host() ) );
+		}
+		else
+		if (MAIN_D->get_host_type()==6012)
+		{
+			db_user_pay( me, sprintf( "210.48.144.183:2500\n"
+				"22,\"%s\",%d,\"99\",99,%d,\"%d\",\"%d\",\"%s\",\"%s\"\r\n", me->get_real_id(), me->get_acountno(),price, "/sys/sys/id"->get_transid(), file->get_item_number(), file->get_name(), get_ip_name(me)  ) );
+//			log_file( "php.date", sprintf( "210.48.144.183:2500\n"
+//				"22,\"%s\",%d,\"99\",99,%d,\"%d\",\"%d\",\"%s\",\"%s\"\r\n", me->get_real_id(), me->get_acountno(),price, "/sys/sys/id"->get_transid(), file->get_item_number(), file->get_name(), get_ip_name(me)  ) );			
+			"/sys/sys/id"->add_transid(1);				
+		}
+		else
+		db_user_pay( me, sprintf( "%s:80\n"
+			"GET /xq2/buy.php?id=%s&time=%d&region=%d&host=%d&item=%d&point=%d&ip=%s\r\n", MAIN_D->get_php_ip(),
+			rawurlencode( me->get_id() ), time(), MAIN_D->get_region(), MAIN_D->get_host(),	file->get_item_number(), price,	get_ip_name(me)	) );	// 扣点！
+		return 1;
+	}
+	if( me->get_pay_money_buy_item() == 8 && me->get_pay_type()==6 )    // 通过点数购买道具成功！
+	{
+		me->set_pay_money_buy_item(0);	  // 取消通过点数购买道具
+		me->set_pay_type(0);
+
+		list = allgood[sprintf("good%d", type)];
+		if( !mapp(list))
+		{
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		file = list[sprintf("%02d", what+1)];
+		if( !stringp( file ) )
+		{
+log_file("buyitem.dat",	sprintf("%s %s(%d) 没有购买对象\n", short_time(), me->get_id(),	me->get_number() ));
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+		if( ( price = file->get_item_value() ) < 1 )
+		{
+log_file("buyitem.dat",	sprintf("%s %s(%d) 购买商品不对\n", short_time(), me->get_id(),	me->get_number()));
+			notify(	"没有这样道具出售。" );
+			return 1;
+		}
+
+		if( ( amount = USER_INVENTORY_D->can_carry_3( me,	load_object(file) ) ) <	1 )
+		{
+log_file("buyitem.dat",	sprintf("%s %s(%d) 购买不足空位\n", short_time(), me->get_id(),	me->get_number()));
+			notify(	"您携带的东西太多了。" );
+			return 1;
+		}
+		prices = goodprice[file->get_item_number()];
+		if (sizeof(prices)==3)
+		{
+			price =	prices[0];
+			if (iVip>0)
+			{
+				if (prices[2]>0)  price	= prices[2];
+				else
+				if (prices[1]>0)  price	= prices[1];
+			}
+			if (prices[2]>0 && prices[2] < price )  
+				price	= prices[2];
+		}
+		else
+		{
+			price =	file->get_item_value();
+			if (iVip>0)
+			{
+				if (file->get_item_value_3()>0)	 price = file->get_item_value_3();
+				else
+				if (file->get_item_value_2()>0)	 price = file->get_item_value_2();
+			}
+		}
+		if ( file->get_sell_amount() && amount > file->get_sell_amount() )
+			amount = file->get_sell_amount();
+		if( total > amount ) total = amount;
+		price *= total;
+		"/sys/sys/id"->add_buy(total, price);
+		if ( file->give_item_to_user(me) )
+			return ;
+		else if( file->is_combined()	)
+		{
+			if( amount = USER_INVENTORY_D->carry_combined_item( me,	load_object(file), total ) )
+			{
+
+				item = new(file);
+				item->set_hide(0);
+				item->set_amount(amount);
+				count =	"/sys/sys/count"->add_buy_count(1);
+				itemid = "/sys/sys/id"->add_max_itemid(1);
+				item->set_user_id( sprintf("#%d#", itemid) );
+				log_file("itemid.dat", sprintf("%s %d %s %s\n",	short_time(), itemid, item->get_name(),	"/sys/item/item"->get_pawn_save_string(item) ));
+				legend = sprintf("点数购买 @%s %s,%d,%s,%s %s %s %d %s %d_%d_%d", "商店界面", me->get_name(), me->get_number(),	get_ip_name(me), me->get_id(), item->get_name(), "/sys/item/item"->get_pawn_save_string(item), amount, item->get_user_id(), get_z(me), get_x(me), get_y(me) );
+				"/sys/user/cmd"->log_item(legend);
+				if( p =	item->move2(me) )
+				{
+					item->add_to_user(p);
+				}
+				else if( p = get_valid_xy(z, x,	y, IS_ITEM_BLOCK) )
+				{
+					item->add_to_scene(z, p	/ 1000,	p % 1000);
+				}
+			}
+		}
+		else for( i = 0; i < total; i ++ )
+		{
+			item = new(file);
+			item->set_hide(0);
+			count =	"/sys/sys/count"->add_buy_count(1);
+			itemid = "/sys/sys/id"->add_max_itemid(1);
+			item->set_user_id( sprintf("#%d#", itemid) );
+			log_file("itemid.dat", sprintf("%s %d %s %s\n",	short_time(), itemid, item->get_name(),	"/sys/item/item"->get_pawn_save_string(item) ));
+			legend = sprintf("点数购买 @%s %s,%d,%s,%s %s %s %d %s %d_%d_%d", "商店界面", me->get_name(), me->get_number(),	get_ip_name(me), me->get_id(), item->get_name(), "/sys/item/item"->get_pawn_save_string(item), 1, item->get_user_id(), get_z(me), get_x(me), get_y(me) );
+			"/sys/user/cmd"->log_item(legend);
+			if( p =	item->move2(me) )
+			{
+				item->add_to_user(p);
+			}
+			else if( p = get_valid_xy(z, x,	y, IS_ITEM_BLOCK) )
+			{
+				item->add_to_scene(z, p	/ 1000,	p % 1000);
+			}
+		}
+log_file("buyitem.dat",	sprintf("%s %s(%d) 购买%s成功 %d %d\n",	short_time(), me->get_id(), me->get_number(), file->get_name(),	total, price));
+		send_user(me,  "%c%s", '!', sprintf("您买下%s。", file->get_name()) );
+		if (file->get_name()=="国庆大礼包") send_user(me, "%c%s", ';', "恭喜你成功购买了一份国庆疯狂大礼包，同时获得了"HIR"200元宝"NOR"，赶快去体验这个礼包带来的热闹国庆吧！");
+	}
+	else
+	{
+		if (me->get_pay_money_buy_item()>0)
+		{
+			send_user(me,"%c%s",'!',"您的申请正在处理中，请稍候。");
+			return ;
+		}
+	}
+	return 1;
+}
+
+void send_gonggao(object me)
+{
+	int i, size;
+	string * key;
+	key = keys(gonggao);
+	size = sizeof(key);
+	for (i=0;i<size;i++)
+	{
+		send_user( me, "%c%c%c%s", 0x45, 5, i+1, key[i]	);
+		send_user( me, "%c%c%c%s", 0x45, 6, i+1, gonggao[key[i]] );
+	}
+}

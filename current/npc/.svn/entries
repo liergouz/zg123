@@ -1,0 +1,178 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/npc
+http://192.168.1.102:3721/svn/gss
+
+
+
+2007-12-05T06:08:46.881135Z
+1435
+wu_1010
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+00
+dir
+
+10
+dir
+
+01
+dir
+
+npc
+dir
+
+20
+dir
+
+fight.c
+file
+
+
+
+
+2007-11-06T09:50:23.734375Z
+6987748563158dc8becba6ef6861cfdb
+2007-03-09T07:03:16.813922Z
+649
+ten
+
+30
+dir
+
+40
+dir
+
+ride
+dir
+
+80
+dir
+
+org
+dir
+
+school
+dir
+
+90
+dir
+
+war
+dir
+
+std
+dir
+
+npcall.c
+file
+
+
+
+
+2007-11-06T09:50:23.750000Z
+29fe436b7a91c22c0426fb049fac5e8e
+2006-08-21T09:10:03.372132Z
+309
+ten
+
+88
+dir
+
+party
+dir
+
+98
+dir
+
+test.c
+file
+
+
+
+
+2007-11-06T09:50:23.765625Z
+3020c3597d5e5f6c0337129223236b03
+2006-06-26T05:20:29.361603Z
+188
+ten
+
+clone_100.c
+file
+
+
+
+
+2007-11-06T09:50:23.796875Z
+368bd943082b6adba1ccdc94aadbb03a
+2006-04-12T03:27:40.043962Z
+1
+lyt
+
+task
+dir
+
+9999.c
+file
+
+
+
+
+2007-11-06T09:50:23.828125Z
+58c34b994e6a6dff4194241b8a4dd8dd
+2007-03-27T02:58:28.514160Z
+686
+lyt
+
+fight2.c
+file
+
+
+
+
+2007-11-06T09:50:23.843750Z
+59be9e68d53fb8de2923c4b8e19ad870
+2007-01-12T01:59:56.313439Z
+516
+lyt
+
+boss
+dir
+
+city
+dir
+
+base
+dir
+
+copy
+dir
+
+Readme.txt
+file
+
+
+
+
+2007-11-06T09:50:23.859375Z
+b4e9aca3583b476daf58befc278456af
+2006-07-25T03:17:43.866949Z
+228
+lyt
+

@@ -1,0 +1,61 @@
+8
+
+dir
+1437
+http://192.168.1.102:3721/svn/gss/current/map
+http://192.168.1.102:3721/svn/gss
+
+
+
+2007-12-05T06:08:46.881135Z
+1435
+wu_1010
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc556159-3311-0410-bf74-90f4e72ec414
+
+ini
+dir
+
+npc
+dir
+
+xy
+dir
+
+blk
+dir
+
+city
+dir
+
+copy
+dir
+
+Readme.TXT
+file
+
+
+
+
+2007-11-06T09:59:18.937500Z
+d91227033435772a2df7a06aff87873c
+2006-04-12T03:27:40.043962Z
+1
+lyt
+
+map
+dir
+

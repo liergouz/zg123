@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1325/current/sys/copy
+END
+control.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/672/current/sys/copy/control.c
+END
+tomb.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1325/current/sys/copy/tomb.c
+END
+barrack.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/1325/current/sys/copy/barrack.c
+END
+mirror.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/1057/current/sys/copy/mirror.c
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/gss/!svn/ver/1435/current/sys/sys
+END
+task.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/819/current/sys/sys/task.c
+END
+callout.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/1409/current/sys/sys/callout.c
+END
+class.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/728/current/sys/sys/class.c
+END
+server.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/512/current/sys/sys/server.c
+END
+login.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1439/current/sys/sys/login.c
+END
+city.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/324/current/sys/sys/city.c
+END
+magic_card.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gss/!svn/ver/1017/current/sys/sys/magic_card.c
+END
+emote.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/324/current/sys/sys/emote.c
+END
+manager.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/1435/current/sys/sys/manager.c
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1087/current/sys/sys/check.c
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/1382/current/sys/sys/map.c
+END
+user.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/1118/current/sys/sys/user.c
+END
+file.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/315/current/sys/sys/file.c
+END
+chat.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/862/current/sys/sys/chat.c
+END
+tips.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/sys/sys/tips.c
+END
+random.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/160/current/sys/sys/random.c
+END
+family.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/360/current/sys/sys/family.c
+END
+title.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1336/current/sys/sys/title.c
+END
+team.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/1409/current/sys/sys/team.c
+END
+login0.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/1266/current/sys/sys/login0.c
+END
+count.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1350/current/sys/sys/count.c
+END
+login1.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/1336/current/sys/sys/login1.c
+END
+connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/885/current/sys/sys/connect.c
+END
+id.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/922/current/sys/sys/id.c
+END

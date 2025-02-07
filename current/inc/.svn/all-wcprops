@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/gss/!svn/ver/1419/current/inc
+END
+ansi.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/825/current/inc/ansi.h
+END
+effect.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/878/current/inc/effect.h
+END
+item.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/889/current/inc/item.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/99/current/inc/time.h
+END
+task.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/1082/current/inc/task.h
+END
+cmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/400/current/inc/cmd.h
+END
+level.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/283/current/inc/level.h
+END
+city.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/343/current/inc/city.h
+END
+smart_alarm_clock.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gss/!svn/ver/947/current/inc/smart_alarm_clock.h
+END
+map.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/716/current/inc/map.h
+END
+action.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/267/current/inc/action.h
+END
+skill.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1419/current/inc/skill.h
+END
+public.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/1265/current/inc/public.h
+END
+shouxi.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/296/current/inc/shouxi.h
+END
+music.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/inc/music.h
+END
+npc.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/gss/!svn/ver/1/current/inc/npc.h
+END
+equip.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1032/current/inc/equip.h
+END

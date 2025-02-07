@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/gss/!svn/ver/1435/current/npc
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/188/current/npc/test.c
+END
+clone_100.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/1/current/npc/clone_100.c
+END
+fight.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/649/current/npc/fight.c
+END
+9999.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/686/current/npc/9999.c
+END
+fight2.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/516/current/npc/fight2.c
+END
+npcall.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/309/current/npc/npcall.c
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/228/current/npc/Readme.txt
+END

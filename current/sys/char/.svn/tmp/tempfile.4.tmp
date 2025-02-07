@@ -1,0 +1,1499 @@
+
+#include <skill.h>
+#include <effect.h>
+#include <equip.h>
+#include <item.h>
+#include <action.h>
+
+int set_enmity(object who, object enemy, int count);
+
+// º¯Êı£ºÉú³É¶ş½øÖÆÂë
+void SAVE_BINARY() { }
+
+// º¯Êı£ºĞŞÕıÎïÀíÉËº¦
+int correct_damage( object me, object who, int damage, int ap )
+{
+        object item;
+        int point, change;
+
+        if( get_effect(who, EFFECT_CHAR_DREAM_1) ) return 0;    // ÃÎÓÎ±£»¤(²»ÊÜÉËº¦)
+
+        if( damage < 1 ) damage = 1;    // ĞŞÕıÉËº¦
+
+        if( who->is_user() )
+        {
+                if( point = who->get_change_hurt() )    // Ç¬À¤Å²ÒÆ
+                {
+                        point = damage * point / 100;
+                        change = point / 2;
+                        if( change <= who->get_mp() )
+                        {
+                                who->add_mp(-change);
+                                damage -= point;
+                                send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 32211, 1, OVER_BODY, PF_ONCE );
+                                send_user( who, "%c%d%w", 0x6d, getoid(who), change );
+                        }
+                        else    // ²»¹» MP ×ª»¯
+                        {
+                                change = who->get_mp();
+                                point = change * 2;
+                                who->add_mp(-change);
+                                damage -= point;
+                                send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 32211, 1, OVER_BODY, PF_ONCE );
+                                send_user( who, "%c%d%w", 0x6d, getoid(who), change );
+
+                                if( get_effect(me, EFFECT_CHAR_CHANGE) ) set_effect(me, EFFECT_CHAR_CHANGE, 1);    // Ç¬À¤Å²ÒÆ(ÖĞ¶Ï)
+                        }
+                }
+
+                if( point = who->get_anti_hurt_rate() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt() ) damage -= point;    // ÃâÉËº¦
+
+//              if( damage < ap / 10 ) damage = ap / 20 + random( ap / 20 ) + 1;
+
+                if(    !get_effect(who, EFFECT_CHAR_SUPPRESS)    // Ã»ÓĞÑ¹ÖÆ
+                &&      objectp( item = who->get_equip(HAND_TYPE) )    // ·¨±¦
+                &&      item->get_talisman_type() == 2    // ¾ÅÁúÉñ»ğÕÖ
+                &&      item->get_lasting() >= 100    // ÄÍ¾Ã¶È
+                &&      random(100) < item->get_active_rate()    // ³É¹¦ÂÊ
+                &&    ( point = item->get_hp() ) > 0 )    // ÆøÑª
+                {
+                        if( damage > point )
+                        {
+                                item->set_hp(0);  damage -= point;
+                        }
+                        else
+                        {
+                                item->add_hp( -damage );  damage = 0;
+                        }
+                        item->add_lasting(-1);    // Ê¹ÓÃ¼õÉÙÄÍ¾Ã
+                }
+
+                if( ( point = who->get_hurt_rate() ) && who->get_mp() >= 6 && random(100) < who->get_hurt_rand() )    // ·´µ¯ÉËº¦
+                {
+//                      send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 31711, 1, OVER_BODY, PF_ONCE );
+			if (me->get_level()<who->get_skill(SKILL_0317))
+				me->add_hp( - damage * point / 100  );
+			else
+                        	me->add_hp( - damage * point / 100 * who->get_skill(SKILL_0317)/me->get_level() );
+//                      CHAR_DIE_D->is_enemy_die(who, me, damage * point / 100);    // ÓÉÓÚ ME ÓĞ¿ÉÄÜ±» DEST, ¹Ê·Å×îºó´¦Àí
+                        who->add_mp(-6);
+                }
+        }
+        else if( who->is_boss() )
+        {
+                if( point = who->get_change_hurt() )    // Ç¬À¤Å²ÒÆ
+                {
+                        point = damage * point / 100;
+                        change = point / 2;
+                        // who->add_mp(-change);
+                        damage -= point;
+                        send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 32211, 1, OVER_BODY, PF_ONCE );
+                }
+
+                if( point = who->get_anti_hurt_rate() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt() ) damage -= point;    // ÃâÉËº¦
+
+//              if( damage < ap / 10 ) damage = ap / 20 + random( ap / 20 ) + 1;
+
+                if( ( point = who->get_hurt_rate() ) && random(100) < who->get_hurt_rand() )    // ·´µ¯ÉËº¦
+                {
+//                      send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 31711, 1, OVER_BODY, PF_ONCE );
+                        me->add_hp( - damage * point / 100 );
+//                      CHAR_DIE_D->is_enemy_die(who, me, damage * point / 100);    // ÓÉÓÚ ME ÓĞ¿ÉÄÜ±» DEST, ¹Ê·Å×îºó´¦Àí
+                        // who->add_mp(-6);
+                }
+        }
+//      else    if( damage < ap / 10 ) damage = ap / 20 + random( ap / 20 ) + 1;
+
+	if (me->get_comrade_type()==82)
+	{
+		if (who->get_comrade_type()==95||who->get_comrade_type()==80)
+			damage = 800;
+		else
+			damage = 400;
+	}
+	if (who->get_comrade_type()==82)
+	{
+		if (me->get_comrade_type()==95||me->get_comrade_type()==80)
+			damage /= 5;
+	}
+        return damage;
+}
+
+// º¯Êı£ºĞŞÕı·¨ÊõÉËº¦
+int correct_damage_2( object me, object who, int damage, int cp )
+{
+        object item;
+        int point;
+
+        if( get_effect(who, EFFECT_CHAR_DREAM_1) ) return 0;    // ÃÎÓÎ±£»¤(²»ÊÜÉËº¦)
+
+        if( damage < 1 ) damage = 1;    // ĞŞÕıÉËº¦
+
+        if( who->is_user() )
+        {
+                if( point = who->get_anti_hurt_rate_2() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt_2() ) damage -= point;    // Ãâ·¨ÊõÉËº¦
+
+//              if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+
+                if(    !get_effect(who, EFFECT_CHAR_SUPPRESS)    // Ã»ÓĞÑ¹ÖÆ
+                &&      objectp( item = who->get_equip(HAND_TYPE) )    // ·¨±¦
+                &&      item->get_talisman_type() == 2    // ¾ÅÁúÉñ»ğÕÖ
+                &&      item->get_lasting() >= 100    // ÄÍ¾Ã¶È
+                &&      random(100) < item->get_active_rate()    // ³É¹¦ÂÊ
+                &&    ( point = item->get_hp() ) > 0 )    // ÆøÑª
+                {
+                        if( damage > point )
+                        {
+                                item->set_hp(0);  damage -= point;
+                        }
+                        else
+                        {
+                                item->add_hp( -damage );  damage = 0;
+                        }
+                        item->add_lasting(-1);    // Ê¹ÓÃ¼õÉÙÄÍ¾Ã
+                }
+
+                if( ( point = who->get_hurt_rate_2() ) && random(100) < who->get_hurt_rand_2() )    // ·´µ¯ÉËº¦
+                {
+//                      send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 31711, 1, OVER_BODY, PF_ONCE );
+                        me->add_hp( -damage * point / 100 );
+//                      CHAR_DIE_D->is_enemy_die(who, me, damage * point / 100);    // ÓÉÓÚ ME ÓĞ¿ÉÄÜ±» DEST, ¹Ê·Å×îºó´¦Àí
+                }
+        }
+        else if( who->is_boss() )
+        {
+                if( point = who->get_anti_hurt_rate_2() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt_2() ) damage -= point;    // Ãâ·¨ÊõÉËº¦
+
+//              if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+
+                if( ( point = who->get_hurt_rate_2() ) && random(100) < who->get_hurt_rand_2() )    // ·´µ¯ÉËº¦
+                {
+//                      send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 31711, 1, OVER_BODY, PF_ONCE );
+                        me->add_hp( -damage * point / 100 );
+//                      CHAR_DIE_D->is_enemy_die(who, me, damage * point / 100);    // ÓÉÓÚ ME ÓĞ¿ÉÄÜ±» DEST, ¹Ê·Å×îºó´¦Àí
+                }
+        }
+//      else    if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+
+        return damage;
+}
+
+// º¯Êı£ºĞŞÕı·¨ÊõÉËº¦(ÕóÆì)
+int correct_damage_3( object me, object who, int damage, int cp )    // ³­×Ô correct_damage_2
+{
+        object item;
+        int point;
+
+        if( get_effect(who, EFFECT_CHAR_DREAM_1) ) return 0;    // ÃÎÓÎ±£»¤(²»ÊÜÉËº¦)
+
+        if( damage < 1 ) damage = 1;    // ĞŞÕıÉËº¦
+
+        if( who->is_user() )
+        {
+                if( point = who->get_anti_hurt_rate_2() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt_2() ) damage -= point;    // Ãâ·¨ÊõÉËº¦
+
+//              if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+
+                if(    !get_effect(who, EFFECT_CHAR_SUPPRESS)    // Ã»ÓĞÑ¹ÖÆ
+                &&      objectp( item = who->get_equip(HAND_TYPE) )    // ·¨±¦
+                &&      item->get_talisman_type() == 2    // ¾ÅÁúÉñ»ğÕÖ
+                &&      item->get_lasting() >= 100    // ÄÍ¾Ã¶È
+                &&      random(100) < item->get_active_rate()    // ³É¹¦ÂÊ
+                &&    ( point = item->get_hp() ) > 0 )    // ÆøÑª
+                {
+                        if( damage > point )
+                        {
+                                item->set_hp(0);  damage -= point;
+                        }
+                        else
+                        {
+                                item->add_hp( -damage );  damage = 0;
+                        }
+                        item->add_lasting(-1);    // Ê¹ÓÃ¼õÉÙÄÍ¾Ã
+                }
+        }
+        else if( who->is_boss() )
+        {
+                if( point = who->get_anti_hurt_rate_2() ) damage -= damage * point / 100;
+                if( point = who->get_anti_hurt_2() ) damage -= point;    // Ãâ·¨ÊõÉËº¦
+
+//              if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+        }
+//      else    if( damage < cp / 10 ) damage = cp / 20 + random( cp / 20 ) + 1;
+
+        return damage;
+}
+
+// º¯Êı£º×°±¸ÄÍ¾ÃËğÊ§
+void wear_down( object who )
+{
+        object *inv = who->get_all_equip();
+
+        switch( random(100) )
+        {
+   case 0..14 : if( objectp( inv[0] ) ) inv[0]->add_lasting(-1);  break;
+  case 15..24 : if( objectp( inv[1] ) ) inv[1]->add_lasting(-1);  break;
+  case 25..69 : if( objectp( inv[3] ) ) inv[3]->add_lasting(-1);  break;
+  case 70..84 : if( objectp( inv[4] ) ) inv[4]->add_lasting(-1);  break;
+  case 85..94 : if( objectp( inv[5] ) ) inv[5]->add_lasting(-1);  break;
+      default : if( objectp( inv[6] ) && inv[6]->get_item_type() == ITEM_TYPE_TALISMAN && !inv[6]->is_limit_time_item() ) inv[6]->add_lasting(-1);  break;
+        }
+}
+
+// º¯Êı£ºÕ½¶·´¦Àí(¶¯×÷)
+varargs int attack_action( object me, object who, int pf, int distance )
+{
+	int act;
+
+        // ÅĞ¶ÏÄÜ·ñ¹¥»÷
+        if( !who || !who->can_be_fighted(me) || !me->can_fight(who) ) return 0;
+
+        // ÅĞ¶Ï¹¥»÷¾àÀë
+
+        if( distance_between(me, who) > range_value(distance, 1, MAX_NUMBER) )
+        {
+//                if( me->is_user() ) me->set_enemy(0);    // µ±Íæ¼Ò×ß¿ª£¬²»ÔÙ¹¥»÷
+                return 0;
+        }
+        // ÏÔÊ¾¹¥»÷¶¯×÷
+
+        me->to_front_xy( get_x(who), get_y(who) );    // ´ËÊ±×ªÉí£¬ºóÃæ²»ÓÃ
+
+	if (pf>1000)
+	{
+		act = pf /1000;
+		pf = pf % 100;
+	}
+	else
+	if( !( act = pf / 10 ) )    // pf: [¶¯×÷ĞòºÅ][¹âÓ°ĞòºÅ]
+	{
+		pf = 0;  act = 1 + random(3);    // ÎŞÖ¸¶¨¶¯×÷ĞòºÅ£¬Ëæ»ú
+	}
+	if (me->is_user()) CHAR_CHAR_D->stop_loop_perform_9(me);
+
+        if( me->get_weapon_code() == THROWING )
+                send_user( get_scene_object_2(me, USER_TYPE), "%c%d%d%c%c%c%d", 0x42, getoid(me), time2(), act, pf, get_d(me), getoid(who) );
+        else    send_user( get_scene_object_2(me, USER_TYPE), "%c%d%d%c%c%c%d", 0x41, getoid(me), time2(), act, pf, get_d(me), getoid(who) );
+
+        return 1;
+}
+
+// º¯Êı£ºÕ½¶·´¦Àí
+varargs int attack_done( object me, object who, int hit_act, int add_ap, int hit_rate, int damage_rate, int sub_dp_rate, int distance )    // hit_rate: 10000 ±íÊ¾È«ÖĞ
+{
+        object *user, item, owner,pet;
+        int ap, ap0, ap2, dp, dp0, dp2, asp, dsp, p;
+        int rate, damage, level, level2, yuan, poison, point, id, random, double_flag;
+
+        // ÅĞ¶ÏÄÜ·ñ¹¥»÷
+        if( !who || !who->can_be_fighted(me) || !me->can_fight(who) ) return 0;
+
+        // ÅĞ¶Ï¹¥»÷¾àÀë
+
+/*      if( distance_between(me, who) > range_value(distance, 1, MAX_NUMBER) )
+        {
+                if( me->is_user() ) me->set_enemy(0);    // µ±Íæ¼Ò×ß¿ª£¬²»ÔÙ¹¥»÷
+                return 0;
+        }       */
+	if( get_effect(me, EFFECT_CHAR_GOOD_BAD) )
+		damage_rate += 10;
+
+        // ¼ÇÂ¼ÉËº¦¶ÔÊÖ
+        if( who->is_npc() )
+        {
+                if( who->get_enemy_4() == me )
+                        who->set_attack_time( time() );    // Í¬Ò»¸öÈË£º¸üĞÂ³ÖĞøÊ±¼ä
+                else if( gone_time( who->get_attack_time() ) > 12 )
+                {
+                        who->set_enemy_4(me);
+                        who->set_attack_time( time() );    // ²»Í¬µÄÈË£º¸üĞÂ³ÖĞøµĞÊÖ
+                }
+                if( !who->get_max_damage() && who->get_action_mode()==1 ) who->init_enemy_damage(me, 0);    // ¼ÇÂ¼×îÇ¿ÉËº¦(NPC)
+        }
+        // 	add by cjxx
+        if(functionp(me->get_when_enemy_be_hit())) {
+		evaluate(me->get_when_enemy_be_hit(),me,who,hit_act,distance);
+		return;
+        }
+        //	add end
+
+        // ÅĞ¶ÏÄÜ·ñÃüÖĞ
+        asp = me->get_sp();  dsp = who->get_sp();
+        rate = asp * 86 / range_value(dsp, 1, MAX_NUMBER);    // asp * 43 * 100 / 50 / dsp
+        level2 = who->get_level();
+        level = me->get_level();
+        rate = 100 - dsp * 100 /(level2*90+700);
+        if (level<level2 && !me->is_comrade() && !who->is_comrade()) rate = rate * (level+10) / (level2+10);
+        rate = range_value(rate, 5, 100);
+
+        rate += me->get_hit_rate() - who->get_dodge_rate() - who->get_2("suit_effect.dodge") + hit_rate;    // ¸½¼ÓÃüÖĞ£­¸½¼ÓÉÁ±Ü£«ÌØÊâ¼¼¸½¼ÓÃüÖĞ
+        if( get_effect(me, EFFECT_CHAR_BLIND) ) rate /= 2;    // Ê§Ã÷(ÃüÖĞ¼õ°ë)
+        if (get_effect(who, EFFECT_DODGE)) rate -= 20;
+        if (get_effect(who, EFFECT_MAGIC_4243)) rate -= 50;
+        if (get_effect(who, EFFECT_CHAR_MOVE)) rate -= who->get_save("03641");
+        if( rate < 1000 ) rate = range_value(rate, 5, 100);    // ×¢ÒâÈ«ÖĞÇé¿ö
+	if( get_effect(me, EFFECT_CHAR_IGNORE) || get_effect(who, EFFECT_CHAR_IGNORE) )
+		rate = 0;
+	random = random100();
+        if( random < rate )
+        {
+        	if ( who->is_trainer() )
+        	{
+        		who->beat(me);
+        		return 1;	
+        	}
+        		
+                // ¼ÆËã damage
+                // Ë²²½·¨ »Ø±ÜÒ»´Î¹¥»÷
+                if (get_effect(who, EFFECT_03642))
+                {
+                	"/skill/03/03642"->into_effect(who);
+                	set_effect(who, EFFECT_03642, 0);
+                	return 0;
+                }
+
+	       // ¼ÆËã ap, dp
+	        if( me->get_weapon_code() == THROWING )
+	        {
+	                item = me->get_equip(WEAPON_TYPE);
+	                ap0 = !objectp(item) || item->get_lasting() < 100 ? 0 : item->get("ap");
+	
+	                if( point = me->get_skill(SKILL_0261) ) ap0 += point;    // ÂşÌì»¨Óê
+	                else if( point = me->get_skill(SKILL_0161) ) ap0 += point / 2;    // °µÆ÷Í¶Éä
+	
+	                ap = range_value( me->get_ap() - ap0, 0, MAX_NUMBER);
+	                ap0 = range_value( ap - 35, 0, MAX_NUMBER);
+	        }
+	        else
+	        {
+	                ap = me->get_ap();  ap0 = me->get_ap_0();
+	        }
+		if ( me->get("sk74221") ) ap0 = ap;
+		if ( me->get("sk74127") ) ap = ap0;
+	        ap += add_ap;  ap0 += add_ap;    // ÌØÊâ¼¼¸½¼Ó¹¥»÷
+	
+	        dp = who->get_dp();  dp0 = who->get_dp_0();
+		if ( me->get("sk74221") ) dp = dp0;
+		if ( me->get("sk74127") ) dp0 = dp;
+	
+	        dp -= dp * sub_dp_rate / 100;  dp0 -= dp0 * sub_dp_rate / 100;    // ¼õÈõ·ÀÓùÁ¦£¥
+
+   
+                damage = me->get_lucky();
+                ap2 = ap0 + (ap - ap0) * damage / 100 + random( (ap - ap0) * (100 - damage) / 100 );
+                dp2 = dp0 + (dp - dp0) * damage / 100 + random( (dp - dp0) * (100 - damage) / 100 );
+/*
+                if( me->is_comrade() || who->is_comrade() )    // Õ½³¡Õ½ÓÑ
+                {
+                        damage = ( ap2 - ap2 * dp2 / (40 + dp2) );    // 25 / 1000
+                }
+                else
+*/                
+                {
+                        damage = (ap2 * 11 + dp2 * 49) / 50;
+                        damage = ap2 - ap2 * dp2 / range_value(damage, 1, MAX_NUMBER);
+                }
+                if (!me->is_comrade() && !who->is_comrade()) damage = damage * (level+10)/(level2+10);
+		damage = correct_damage(me, who, range_value(damage, 1, ap2), ap);
+		if (p = me->get_skill(0430)) 
+		{
+			damage = damage * (100+p*2)/100;		// °ïÅÉµÄÉËº¦Ç¿»¯
+		}
+                damage += damage * damage_rate / 100;    // ÌØÊâ¼¼¸½¼ÓÉËº¦
+
+                damage += damage * me->get_save("03162#")/100;
+                damage += damage * who->get("sk74124")/100;
+
+                damage += me->get("add_damage");		// ×öÒ»¸öÁÙÊ±Ôö¼Ó¹¥»÷Á¦µÄ±äÁ¿
+
+	if( is_god(me) ) tell_user( me, "R%s VS %s, ÃüÖĞ:%d random %02d ³É¹¦ AP:%d - DP:%d = ÉË:%d", me->get_name(), who->get_name(), rate, random, ap2, dp2, damage );
+	if( is_god(who) ) tell_user( who, "R%s VS %s, ÃüÖĞ:%d random %02d ³É¹¦ AP:%d - DP:%d = ÉË:%d", me->get_name(), who->get_name(), rate, random, ap2, dp2, damage );
+
+		rate = me->get_double_rate();
+		random = random(10000);
+		if( random < rate )
+		{
+			damage *= 2;
+			double_flag = 1;
+			if ( (rate=who->get_2("suit_effect.double1")) && (p=who->get_2("suit_effect.double2")) )
+			{	//Ì××°Ğ§¹û
+				damage = damage * ( 100 - rate - random(p-rate) ) / 100;
+			}
+		}
+		if (p = who->get_skill(0431)) 
+		{
+			damage = damage * (100 - p*2)/100;		// °ïÅÉµÄµÖ¿¹Ç¿»¯
+		}
+
+		damage += me->get_2("suit_effect.damage1");	//Ì××°
+		damage = damage * ( 100 - who->get_2("suit_effect.damage_rate1") ) / 100;
+		if (who->get_perform("05016#"))	damage = damage * 4 / 5;
+                if (damage<1) damage = 1;
+		if (get_effect(me, EFFECT_CHAR_POWERFALL))
+		{
+			if (me->is_user())
+				damage = damage * (100 + me->get_save_2("pf.powerfall"))/100;	
+			else
+				damage = damage * (100 + me->get("pf.powerfall"))/100;	
+			if (damage <0 ) damage = 1;
+		}
+                if( get_effect(who, EFFECT_CHAR_MISS) )    // ÁéÆø¼×
+                {
+                	if (damage<who->get_save("pf.miss") && damage<who->get_mp())
+                	{
+                		who->add_mp(-damage);
+                		who->add_save("pf.miss", -damage);
+                		send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42515, 1, OVER_BODY, PF_ONCE );
+                		send_user(who, "%c%w%c", 0x82, 4252, 0);
+                		return 1;
+                	}
+                	else
+                	if (who->get_mp()>who->get_save("pf.miss"))
+                	{
+                		damage-=who->get_save("pf.miss");
+                		who->add_mp(-who->get_save("pf.miss"));
+                	}
+                	else
+                	{
+                		damage-=who->get_mp();
+                		who->set_mp(0);
+                	}
+			"/sys/char/char"->effect_miss_done(who);
+                	set_effect(who, EFFECT_CHAR_MISS, 0);
+                }
+                if( get_effect(who, EFFECT_CHAR_MISS2) )    // ÔÆÃÎµÄÁéÆø¼×
+                {
+                	send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42525, 1, OVER_BODY, PF_ONCE );
+                	if (who->is_user())
+                	{
+                		if (who->add_save("05911", -damage)<0)
+                		{
+                			damage = -who->get_save("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                	else
+                	{
+                		if (who->add("05911", -damage)<0)
+                		{
+                			damage = -who->get("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                }
+                else
+                {
+                	if( who->is_user() && objectp(item=who->get_equip(WEAPON_TYPE)) &&
+                		item->get_name()=="Ó¢½ÜÈ­ÈĞ" && random100() < 10 )
+                	{
+                		who->set_save("05911", 630);
+			        set_effect(who, EFFECT_CHAR_MISS2, 30);
+			        send_user( who, "%c%w%w%c", 0x81, 5911, get_effect_3(who, EFFECT_CHAR_MISS2), EFFECT_GOOD );
+			        send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 5911, 1, EFFECT_GOOD );
+				send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 10711, 1, OVER_BODY, PF_LOOP );
+                	}
+                }
+		if( me->is_user() && objectp(item=me->get_equip(WEAPON_TYPE)) )
+		{
+			if ( item->get_name()=="Ìì×ğ±¦µ¶" && random100() < 15 )
+				damage += 200;
+			else if ( item->get_name()=="Õæ¾ı³ãÑæÇ¹" && random100() < 15 && (-who->get("pf.armorfall")) < 160 )
+			{
+				//70¼¶µÄÃ©É½Ê´¼×
+		                set_effect(who, EFFECT_CHAR_ARMORFALL, 120);
+		                send_user( who, "%c%w%w%c", 0x81, 4143, get_effect_3(who, EFFECT_CHAR_ARMORFALL), EFFECT_BAD );
+		                send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 4143, 1, EFFECT_BAD );
+		                if( who->is_user() )
+		                {
+		                	who->set("pf.armorfall", -160);  
+		                	who->set("pf.armorfall2", -85);
+		                	who->set_save_2("pf.armorfall", -160);  
+		                	who->set_save_2("pf.armorfall2", -85);
+		                        USER_ENERGY_D->count_pp(who); 
+		                        USER_ENERGY_D->count_dp(who);
+		                }
+		                else
+		                {
+		                        who->add_dp(who->set("pf.armorfall", -160));
+		                        who->add_pp(who->set("pf.armorfall2", -85));
+		                }
+			}
+			else if ( item->get_name()=="Ç¬À¤ÎŞ¼«¹÷" && random100() < 20 &&
+				!get_effect(who, EFFECT_CHAR_FAINT) && !get_effect(who, EFFECT_CHAR_FAINT_0) &&
+				!who->is_anti_effect() && !who->get("anti_faint") && !who->get_perform("02222#") )
+			{
+		                user = get_scene_object_2(who, USER_TYPE);
+		                set_effect(who, EFFECT_CHAR_FAINT, 2);    // Ğ¡ĞÄ×¼±¸ me
+		                CHAR_CHAR_D->init_loop_perform(who);
+		                if( get_heart_state(who) == MAGIC_STAT ) send_user( user, "%c%d%d%c", 0x40, getoid(who), time2(), MAGIC_ACT_END );    // ½áÊøÊ©·¨¶¯×÷               
+		                send_user( who, "%c%w%w%c", 0x81, 9002, get_effect_3(who, EFFECT_CHAR_FAINT), EFFECT_BAD );
+		                send_user( user - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9002, 1, EFFECT_BAD );
+		                send_user( user, "%c%d%w%c%c%c", 0x6f, getoid(who), 9002, 10, OVER_BODY, PF_LOOP );	        
+			}
+		}
+		if (me->is_nianshou()) damage =random(who->get_level()/2)+who->get_level()/2;
+		if (who->is_nianshou()) damage =1;
+
+                // ÏÔÊ¾ÉÙÑªĞ§¹û
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+                        else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+		}
+		if( me->is_user() ) owner = me;
+		else owner = me->get_owner();
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+                        else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+		}
+                if( point = me->get_absorb_hp() )    // ÎüÈ¡ÆøÑª
+                {
+                        point = range_value( damage * point / 100, 0, 100 ) ;
+                        send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w", 0x68, getoid(me), -point );
+                        me->add_hp(point);
+                }
+                if( me->is_user() )
+                {
+                        if( objectp( item = me->get_equip(WEAPON_TYPE) ) && item->get_lasting() >= 100 )    // ÎäÆ÷ & ÄÍ¾Ã¶È
+                        {
+                                if(   ( (poison = item->get_poison()) && time() < item->get("poison_time")  )
+                                &&     !get_effect(who, EFFECT_CHAR_POISON)
+                                &&     !get_effect(who, EFFECT_CHAR_9140)    // ±Ù¶¾É¢
+                                &&      random(100) < 40 
+                                &&	random(100) > who->get_anti_poison() )
+                                {
+                                	poison += me->get_2("suit_effect.poison");	//Ì××°
+                                        who->set_poison( poison / 10 );
+                                        set_effect_2(who, EFFECT_CHAR_POISON, 10, 2);
+                                        send_user( who, "%c%w%w%c", 0x81, 9096, get_effect_3(who, EFFECT_CHAR_POISON), EFFECT_BAD );
+                                        send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9096, 1, EFFECT_BAD );
+                                }
+                                item->add_lasting(-1);    // »÷ÖĞ¼õÉÙÄÍ¾Ã
+                        }
+
+                        if(    !get_effect(me, EFFECT_CHAR_SUPPRESS)    // Ã»ÓĞÑ¹ÖÆ
+                        &&      objectp( item = me->get_equip(HAND_TYPE) )    // ·¨±¦
+                        &&      item->get_talisman_type() == 3    // Éã»êÁå
+                        &&      item->get_lasting() >= 100    // ÄÍ¾Ã¶È
+                        &&      random(100) < item->get_active_rate() )    // ³É¹¦ÂÊ
+                        {
+                                if(    !get_effect(who, EFFECT_CHAR_FAINT)
+                                &&     !get_effect(who, EFFECT_CHAR_FAINT_0)
+                                &&     !get_effect(who, EFFECT_CHAR_9145) )
+                                {
+                                        user = get_scene_object_2(who, USER_TYPE);
+                                        set_effect(who, EFFECT_CHAR_FAINT, 3);
+                                        send_user( who, "%c%w%w%c", 0x81, 9002, get_effect_3(who, EFFECT_CHAR_FAINT), EFFECT_BAD );
+                                        send_user( user - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9002, 1, EFFECT_BAD );
+                                        send_user( user, "%c%d%w%c%c%c", 0x6f, getoid(who), 9002, 10, OVER_BODY, PF_LOOP );
+                                }
+                                item->add_lasting(-1);    // Ê¹ÓÃ¼õÉÙÄÍ¾Ã
+                        }
+
+
+                        if( point = me->get_absorb_mp() )    // ÎüÈ¡·¨Á¦
+                        {
+                                point = range_value( who->get_hp(), 0, damage ) * point / 100;
+                                point = range_value( point, 0, who->get_mp() );
+                                who->add_mp(-point);
+                                me->add_mp(point);
+                        }
+
+                }
+                else    // NPC ´ø¶¾¹¥»÷
+                {
+                        if(   ( poison = me->get("@") )
+                        &&     !get_effect(who, EFFECT_CHAR_POISON)
+                        &&     !get_effect(who, EFFECT_CHAR_9140)    // ±Ù¶¾É¢
+                        &&      random(100) < 15 
+                        && 	random(100) > who->get_anti_poison())
+                        {
+                                who->set_poison( poison / 10 );
+                                set_effect_2(who, EFFECT_CHAR_POISON, 10, 2);
+                                send_user( who, "%c%w%w%c", 0x81, 9096, get_effect_3(who, EFFECT_CHAR_POISON), EFFECT_BAD );
+                                send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9096, 1, EFFECT_BAD );
+                        }
+                }
+
+                if( who->is_user() )
+                {
+                	wear_down(who);    // »÷ÖĞ¼õÉÙÄÍ¾Ã
+                        // ±»´òÖĞÒ»Ğ©³ÖĞøĞ§¹ûÖĞ¶Ï
+                        CHAR_CHAR_D->stop_loop_perform_be_attack(who);
+                }
+                else if( get_effect(who, EFFECT_SLEEP) ) set_effect(who, EFFECT_SLEEP, 1);    // »èÃÔ
+
+                if(     get_effect(who, EFFECT_CHAR_ATTACK)    // Ë³ÊÆÍÆÖÛ
+                &&     !who->get_enemy_5()    // »¹Ã»·´»÷¶ÔÏó
+                &&      me->can_be_fighted(who) && who->can_fight(me)
+                &&      random(100) < 30    // 30% ³É¹¦ÂÊ
+                &&      who->get_mp() >= PF_FILE_02321->get_sub_mp_2(who) )    // ¿Û¼õ·¨Á¦
+                {
+                        who->set_enemy_5(me);    // ÉèÖÃ·´»÷¶ÔÏó
+
+                        if( !who->get_enemy() )    // Ã»ÓĞµĞÊÖ
+                        {
+                                who->start_fight(me);
+                                who->to_front_xy( get_x(me), get_y(me) );
+                        }
+                }
+                if( ( level = me->get_skill(SKILL_0317) ) >= 1 || ( level = me->get_skill(SKILL_0348) ) >= 1 )    // »¤Ìå½ğî¸£­¼¯Æø
+                {
+                        point = me->add_damage_count(damage);
+                        yuan = me->get_yuan();
+
+                        if( point >= yuan * 40 + 60 * (300 - level) / 100 )
+                        {
+                                me->set_damage_count(0);
+                                if( me->add_yuan(1) != yuan ) send_user( me, "%c%d%w%c%c%c", 0x6f, getoid(me), 31711, 1, OVER_BODY, PF_ONCE );
+                        }
+                }
+                // ÅĞ¶ÏËÀÍöÌõ¼ş
+		//Áé»ê¼ÏËø
+		if(who->is_user()&&(pet=who->get("showbeast"))&&get_effect_3(pet, EFFECT_CHAR_SOUL_LOCK)&&inside_screen_2(pet, who))
+		{
+                        send_user( get_scene_object_2(pet, USER_TYPE), "%c%d%w", 0x68, getoid(pet), damage*2 );
+			CHAR_DIE_D->is_enemy_die(me, pet, damage*2);
+			return;
+		}
+		else if(who->is_npc()&&get_effect_3(who, EFFECT_CHAR_SOUL_LOCK)&&(owner=who->get_owner())&&owner&&inside_screen_2(owner, who))
+		{
+                        send_user( get_scene_object_2(owner, USER_TYPE), "%c%d%w", 0x68, getoid(owner), damage/2 );
+			CHAR_DIE_D->is_enemy_die(me, owner, damage/2);
+			return;
+		}
+		else	
+			CHAR_DIE_D->is_enemy_die(me, who, damage);//¼õÑª
+                if( objectp(me) && objectp(who) && me->get_hp() < 1 ) CHAR_DIE_D->is_enemy_die(who, me, 0);
+                if (me && me->is_npc() && who) me->do_after_attack(who);
+                // »¤Ìå½ğî¸µÄ·´µ¯ÉËº¦
+                if (who && me && get_effect(who, EFFECT_REBOUND))
+                {
+
+			if (who->is_npc())
+			{
+				damage = who->get("03173#");
+				owner = who->get_owner();
+			}
+			else
+			{
+				damage = who->get_save("03173#");
+				owner = who;
+			}
+			if (me->is_nianshou()) damage =0;
+	                if (owner) send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(me), damage, get_d(who), getoid(me),
+	                        hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+			if( me->is_user() ) owner = me;
+			else owner = me->get_owner();
+	                if (owner) send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(me), damage, get_d(who), getoid(me),
+	                        hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+                	CHAR_DIE_D->is_enemy_die(who, me, damage);
+                	if( objectp(me) && objectp(who) && me->get_hp() < 1 ) CHAR_DIE_D->is_enemy_die(who, me, 0);
+                }
+        	if ( me && !me->is_die() && who && !who->is_die() && who->get("sk74126") && random(100)<10 && !get_effect_3(me, EFFECT_CHAR_DREAM) )	//¹¥»÷·½±»ÃÎÓÎ
+        	{
+	                set_effect_2(me, EFFECT_CHAR_DREAM, 3, 2);
+	                send_user( me, "%c%w%w%c", 0x81, 9016, get_effect_3(me, EFFECT_CHAR_DREAM), EFFECT_BAD );
+	                send_user( get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 53112, 1, OVER_BODY, PF_LOOP );
+	                send_user( get_scene_object_2(me, USER_TYPE) - ({ me }), "%c%d%w%c%c", 0x83, getoid(me), 9016, 1, EFFECT_BAD );        	
+	                CHAR_CHAR_D->init_loop_perform(me);
+        	}        
+        }
+        else
+        {
+	if( is_god(me) ) tell_user( me, "R%s VS %s, ÃüÖĞ:%d random %d Ê§°Ü", me->get_name(), who->get_name(), rate, random );
+	if( is_god(who) ) tell_user( who, "R%s VS %s, ÃüÖĞ:%d random %d Ê§°Ü", me->get_name(), who->get_name(), rate, random );
+                // ÏÔÊ¾¶ãÉÁĞ§¹û
+                id = getoid(who);
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+		if( me->is_user() ) owner = me;
+		else owner = me->get_owner();
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+                return 0;
+        }
+
+        return damage;
+}
+
+// º¯Êı£º°µÆ÷¹¥»÷´¦Àí
+varargs int throwing_done( object me, object who, int hit_act, int add_ap, int hit_rate, int damage_rate )    // hit_rate: 10000 ±íÊ¾È«ÖĞ
+{
+        object *user, item, item2, owner,pet;
+        int ap, ap0, ap2, dp, dp0, dp2, asp, dsp;
+        int rate, damage, poison, point, double_flag, p;
+        int z, x0, y0, x1, y1, id, random, level, level2;
+
+        // ÅĞ¶ÏÄÜ·ñ¹¥»÷
+
+//        if( me->get_weapon_code() != THROWING ) return 0;
+
+        if( !who || !who->can_be_fighted(me) || !me->can_fight(who) ) return 0;
+
+        // ÅĞ¶Ï¾àÀë¡¢Â·¾¶
+
+        z = get_z(me);  x0 = get_x(me);  y0 = get_y(me);  x1 = get_x(who);  y1 = get_y(who);
+
+        if( !inside_screen_2(me, who) ) return 0;
+        if( !from_to(z, x0, y0, x1 - x0, y1 - y0, MAP_BLOCK ) ) return 0;
+
+        // ¼ÇÂ¼ÉËº¦¶ÔÊÖ
+
+        if( who->is_npc() )
+        {
+                if( who->get_enemy_4() == me )
+                        who->set_attack_time( time() );    // Í¬Ò»¸öÈË£º¸üĞÂ³ÖĞøÊ±¼ä
+                else if( gone_time( who->get_attack_time() ) > 12 )
+                {
+                        who->set_enemy_4(me);
+                        who->set_attack_time( time() );    // ²»Í¬µÄÈË£º¸üĞÂ³ÖĞøµĞÊÖ
+                }
+                if( !who->get_max_damage() ) who->init_enemy_damage(me, 0);    // ¼ÇÂ¼×îÇ¿ÉËº¦(NPC)
+        }
+
+//      me->set_enemy(who);
+        item = me->get_equip(WEAPON_TYPE);    // ×¢Òâ£ºNPC ÎäÆ÷¶ÔÏóÎª¿Õ
+
+        // ÅĞ¶ÏÄÜ·ñÃüÖĞ
+        asp = me->get_sp();  dsp = who->get_sp();
+
+//        rate = asp * 86 / range_value(dsp, 1, MAX_NUMBER);    // asp * 43 * 100 / 50 / dsp
+        level2 = who->get_level();
+        level = me->get_level();
+        rate = 100 - dsp * 100 /(level2*90+700);
+        if (level<level2 && !me->is_comrade() && !who->is_comrade()) rate = rate * (level+10) / (level2+10);
+        rate = range_value(rate, 5, 100);
+
+        rate += me->get_hit_rate_3() - who->get_dodge_rate() - who->get_2("suit_effect.dodge") + hit_rate;    // ¸½¼ÓÃüÖĞ£­¸½¼ÓÉÁ±Ü£«ÌØÊâ¼¼¸½¼ÓÃüÖĞ    // - who->get_dodge_rate_3()
+        if( get_effect(me, EFFECT_CHAR_BLIND) ) rate /= 2;    // Ê§Ã÷(ÃüÖĞ¼õ°ë)
+        if (get_effect(who, EFFECT_DODGE)) rate -= 20;
+        if (get_effect(who, EFFECT_MAGIC_4243)) rate -= 50;
+        if (get_effect(who, EFFECT_CHAR_MOVE)) rate -= who->get_save("03641");
+        if( rate < 1000 ) rate = range_value(rate, 5, 100);    // ×¢ÒâÈ«ÖĞÇé¿ö
+
+        if( random(100) < rate )
+        {
+        	if ( who->is_trainer() )
+        	{
+        		who->beat(me);
+        		return 1;	
+        	}
+                // ¼ÆËã damage
+                // Ë²²½·¨ »Ø±ÜÒ»´Î¹¥»÷
+                if (get_effect(who, EFFECT_03642))
+                {
+                	"/skill/03/03642"->into_effect(who);
+                	set_effect(who, EFFECT_03642, 0);
+                	return 0;
+                }
+	        // ¼ÆËã ap, dp
+	
+	        ap = me->get_ap();  ap0 = me->get_ap_0();
+	
+	        ap += add_ap;  ap0 += add_ap;    // ÌØÊâ¼¼¸½¼Ó¹¥»÷
+	
+	        dp = who->get_dp();  dp0 = who->get_dp_0();
+	        
+                damage = me->get_lucky();
+                ap2 = ap0 + (ap - ap0) * damage / 100 + random( (ap - ap0) * (100 - damage) / 100 );
+                dp2 = dp0 + (dp - dp0) * damage / 100 + random( (dp - dp0) * (100 - damage) / 100 );
+/*
+                if( me->is_comrade() || who->is_comrade() )    // Õ½³¡Õ½ÓÑ
+                {
+                        damage = ( ap2 - ap2 * dp2 / (40 + dp2) );    // 25 / 1000
+                }
+                else
+*/                
+                {
+                        damage = (ap2 * 20 + dp2 * 49) / 50;
+                        damage = ap2 - ap2 * dp2 / range_value(damage, 1, MAX_NUMBER);
+                }
+                if (!me->is_comrade() && !who->is_comrade()) damage = damage * (level+10)/(level2+10);
+		damage = correct_damage(me, who, range_value(damage, 1, ap2), ap);    // °µÆ÷ AP ²»ĞŞÕı
+		
+		if (p = me->get_skill(0437)) 
+		{
+			damage = damage * (100+p*2)/100;		// °ïÅÉµÄ·¨ÉËÇ¿»¯
+		}		
+                damage += damage * damage_rate / 100;    // ÌØÊâ¼¼¸½¼ÓÉËº¦
+
+                damage += damage * me->get_save("03162#")/100;
+
+	if( is_god(me) ) tell_user( me, "r%s °µÆ÷-> %s, rate=%d AP:%d - DP:%d = ÉË:%d", me->get_name(), who->get_name(), rate, ap2, dp2, damage );
+	if( is_god(who) ) tell_user( who, "r%s °µÆ÷-> %s, rate=%d AP:%d - DP:%d = ÉË:%d", me->get_name(), who->get_name(), rate, ap2, dp2, damage );
+
+		rate = me->get_double_rate();
+		random = random(10000);
+		if( random < rate )
+		{
+			damage *= 2;
+			double_flag = 1;
+			if ( (rate=who->get_2("suit_effect.double1")) && (p=who->get_2("suit_effect.double2")) )
+			{	//Ì××°Ğ§¹û
+				damage = damage * ( 100 - rate - random(p-rate) ) / 100;
+			}		
+		}
+		damage += me->get("add_damage");		// ×öÒ»¸öÁÙÊ±Ôö¼Ó¹¥»÷Á¦µÄ±äÁ¿
+		if (p = who->get_skill(0438)) 
+		{
+			damage = damage * (100-p*2)/100;		// °ïÅÉµÄ·¨·ÀÇ¿»¯
+		}	
+
+		if (who->get_perform("05016#"))	damage = damage * 4 / 5;
+		damage = damage * ( 100 - who->get_2("suit_effect.damage_rate3") ) / 100;			
+		if (damage<1) damage = 1;	
+		if (get_effect(me, EFFECT_CHAR_POWERFALL))
+		{
+			if (me->is_user())
+				damage = damage * (100 + me->get_save_2("pf.powerfall"))/100;	
+			else
+				damage = damage * (100 + me->get("pf.powerfall"))/100;	
+			if (damage <0 ) damage = 1;
+		}
+                if( get_effect(who, EFFECT_CHAR_MISS) )    // ÁéÆø¼×
+                {
+                	if (damage<who->get_save("pf.miss") && damage<who->get_mp())
+                	{
+                		who->add_mp(-damage);
+                		who->add_save("pf.miss", -damage);
+                		send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42515, 1, OVER_BODY, PF_ONCE );
+                		send_user(who, "%c%w%c", 0x82, 4252, 0);
+                		return 1;
+                	}
+                	else
+                	if (who->get_mp()>who->get_save("pf.miss"))
+                	{
+                		damage-=who->get_save("pf.miss");
+                		who->add_mp(-who->get_save("pf.miss"));
+                	}
+                	else
+                	{
+                		damage-=who->get_mp();
+                		who->set_mp(0);
+                	}
+			"/sys/char/char"->effect_miss_done(who);
+                	set_effect(who, EFFECT_CHAR_MISS, 0);
+                }
+                if( get_effect(who, EFFECT_CHAR_MISS2) )    // ÔÆÃÎµÄÁéÆø¼×
+                {
+                	send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42525, 1, OVER_BODY, PF_ONCE );
+                	if (who->is_user())
+                	{
+                		if (who->add_save("05911", -damage)<0)
+                		{
+                			damage = -who->get_save("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                	else
+                	{
+                		if (who->add("05911", -damage)<0)
+                		{
+                			damage = -who->get("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                }
+                else
+                {
+                	if( who->is_user() && objectp(item=who->get_equip(WEAPON_TYPE)) &&
+                		item->get_name()=="Ó¢½ÜÈ­ÈĞ" && random100() < 10 )
+                	{
+                		who->set_save("05911", 630);
+			        set_effect(who, EFFECT_CHAR_MISS2, 30);
+			        send_user( who, "%c%w%w%c", 0x81, 5911, get_effect_3(who, EFFECT_CHAR_MISS2), EFFECT_GOOD );
+			        send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 5911, 1, EFFECT_GOOD );
+				send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 10711, 1, OVER_BODY, PF_LOOP );
+                	}
+                }
+		if (me->is_nianshou()) damage =random(who->get_level()/2)+who->get_level()/2;
+		if (who->is_nianshou()) damage =1;
+
+                // ÏÔÊ¾ÉÙÑªĞ§¹û
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+                        else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+		}
+		if (me->is_npc()) owner = me->get_owner();
+		else owner = me;
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+                        else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me),
+                        		hit_act, hit_act == HIT_NORMAL ? 2 : 1 );
+		}
+                if(     item
+                &&    ( poison = item->get_poison() )
+                &&      random(100) < 15
+                &&     !get_effect(who, EFFECT_CHAR_POISON)
+                &&     !get_effect(who, EFFECT_CHAR_9140) )    // ±Ù¶¾É¢
+                {
+                	poison += me->get_2("suit_effect.poison");	//Ì××°
+                        who->set_poison( poison / 10 );
+                        set_effect_2(who, EFFECT_CHAR_POISON, 10, 2);
+                        send_user( who, "%c%w%w%c", 0x81, 9096, get_effect_3(who, EFFECT_CHAR_POISON), EFFECT_BAD );
+                        send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9096, 1, EFFECT_BAD );
+                }
+
+                if(    !get_effect(me, EFFECT_CHAR_SUPPRESS)    // Ã»ÓĞÑ¹ÖÆ
+                &&      objectp( item2 = me->get_equip(HAND_TYPE) )    // ·¨±¦
+                &&      item2->get_talisman_type() == 3    // Éã»êÁå
+                &&      item2->get_lasting() >= 100    // ÄÍ¾Ã¶È
+                &&      random(100) < item2->get_active_rate() )    // ³É¹¦ÂÊ
+                {
+                        if(    !get_effect(who, EFFECT_CHAR_FAINT)
+                        &&     !get_effect(who, EFFECT_CHAR_FAINT_0)
+                        &&     !get_effect(who, EFFECT_CHAR_9145) )
+                        {
+                                user = get_scene_object_2(who, USER_TYPE);
+                                set_effect(who, EFFECT_CHAR_FAINT, 3);
+                                send_user( who, "%c%w%w%c", 0x81, 9002, get_effect_3(who, EFFECT_CHAR_FAINT), EFFECT_BAD );
+                                send_user( user - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 9002, 1, EFFECT_BAD );
+                                send_user( user, "%c%d%w%c%c%c", 0x6f, getoid(who), 9002, 10, OVER_BODY, PF_LOOP );
+                        }
+                        item2->add_lasting(-1);    // Ê¹ÓÃ¼õÉÙÄÍ¾Ã
+                }
+
+                if( who->is_user() )
+                {
+                	wear_down(who);    // »÷ÖĞ¼õÉÙÄÍ¾Ã
+                        // ±»´òÖĞÒ»Ğ©³ÖĞøĞ§¹ûÖĞ¶Ï
+                        CHAR_CHAR_D->stop_loop_perform_be_attack(who);
+		}
+		else if( get_effect(who, EFFECT_SLEEP) ) set_effect(who, EFFECT_SLEEP, 1);    // »èÃÔ
+
+                // ÅĞ¶ÏËÀÍöÌõ¼ş
+		//Áé»ê¼ÏËø
+		if(who->is_user()&&(pet=who->get("showbeast"))&&get_effect_3(pet, EFFECT_CHAR_SOUL_LOCK)&&inside_screen_2(pet, who))
+		{
+                        send_user( get_scene_object_2(pet, USER_TYPE), "%c%d%w", 0x68, getoid(pet), damage*2 );
+			CHAR_DIE_D->is_enemy_die(me, pet, damage*2);
+			return;
+		}
+		else if(who->is_npc()&&get_effect_3(who, EFFECT_CHAR_SOUL_LOCK)&&(owner=who->get_owner())&&owner&&inside_screen_2(owner, who))
+		{
+                        send_user( get_scene_object_2(owner, USER_TYPE), "%c%d%w", 0x68, getoid(owner), damage/2 );
+			CHAR_DIE_D->is_enemy_die(me, owner, damage/2);
+			return;
+		}
+		else
+                	CHAR_DIE_D->is_enemy_die(me, who, damage);
+                if( me && (me->get_hp() < 1) ) CHAR_DIE_D->is_enemy_die(who, me, 0);
+        }
+        else
+        {
+	if( is_god(me) ) tell_user( me, "r%s °µÆ÷-> %s, ÃüÖĞ:%d Ê§°Ü", me->get_name(), who->get_name(), rate );
+	if( is_god(who) ) tell_user( who, "r%s °µÆ÷-> %s, ÃüÖĞ:%d Ê§°Ü", me->get_name(), who->get_name(), rate );
+                // ÏÔÊ¾¶ãÉÁĞ§¹û
+                id = getoid(who);
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+		if( me->is_user() ) owner = me;
+		else owner = me->get_owner();
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+                if( item ) item->add_lasting(-1);    // °µÆ÷ÏûºÄ(¿ÉÄÜ DEST, ±ØĞë·Åºó)
+                return 0;
+        }
+
+        if( item ) item->add_lasting(-1);    // °µÆ÷ÏûºÄ(¿ÉÄÜ DEST, ±ØĞë·Åºó)
+
+        return damage;
+}
+
+// º¯Êı£º·¨Êõ¹¥»÷´¦Àí
+varargs int cast_done( object me, object who, int add_cp, int damage_rate,int sub_pp_rate )
+{
+        object item, owner,pet;
+        int cp, cp0, cp2, pp, pp0, pp2, asp, dsp, p;
+        int rate, damage, id, double_flag, random, level, level2;
+
+        // ÅĞ¶ÏÄÜ·ñ¹¥»÷
+
+        if( !who || !who->can_be_fighted(me) || !me->can_fight(who) ) return 0;
+
+        // ÅĞ¶Ï¹¥»÷¾àÀë
+
+        // ¼ÇÂ¼ÉËº¦¶ÔÊÖ
+        level = me->get_level();
+        level2 = who->get_level();
+        
+	if( get_effect(me, EFFECT_CHAR_GOOD_BAD) )
+		damage_rate += 10;        
+		
+        if( who->is_npc() )
+        {
+                if( who->get_enemy_4() == me )
+                        who->set_attack_time( time() );    // Í¬Ò»¸öÈË£º¸üĞÂ³ÖĞøÊ±¼ä
+                else if( gone_time( who->get_attack_time() ) > 12 )
+                {
+                        who->set_enemy_4(me);
+                        who->set_attack_time( time() );    // ²»Í¬µÄÈË£º¸üĞÂ³ÖĞøµĞÊÖ
+                }
+                if( !who->get_max_damage() ) who->init_enemy_damage(me, 0);    // ¼ÇÂ¼×îÇ¿ÉËº¦(NPC)
+        }
+
+
+
+        // ÅĞ¶ÏÄÜ·ñÃüÖĞ
+        asp = me->get_sp();  dsp = who->get_sp();
+//        rate = asp * 86 / range_value(dsp, 1, MAX_NUMBER);    // asp * 43 * 100 / 50 / dsp
+	rate = 100;
+	if (level<level2 && !me->is_comrade() && !who->is_comrade()) rate = rate * (level+10) / (level2+10);
+	rate = range_value(rate, 5, 100);
+        rate += me->get_hit_rate_2() - who->get_dodge_rate_2()  - who->get_2("suit_effect.dodge");    // ¸½¼ÓÃüÖĞ£­¸½¼ÓÉÁ±Ü£«ÌØÊâ¼¼¸½¼ÓÃüÖĞ    // + hit_rate
+        if( get_effect(me, EFFECT_CHAR_BLIND) ) rate /= 2;    // Ê§Ã÷(ÃüÖĞ¼õ°ë)
+        if (get_effect(who, EFFECT_DODGE)) rate -= 20;
+        if (get_effect(who, EFFECT_MAGIC_4243)) rate -= 50;
+        if (get_effect(who, EFFECT_CHAR_MOVE)) rate -= who->get_save("03641");
+        rate = range_value(rate, 5, 100);
+	if( get_effect(me, EFFECT_CHAR_IGNORE) || get_effect(who, EFFECT_CHAR_IGNORE) )
+		rate = 0;
+        if( random(100) < rate )
+        {
+        	if ( who->is_trainer() )
+        	{
+        		who->beat(me);
+        		return 1;	
+        	}
+                // ¼ÆËã damage
+                // Ë²²½·¨ »Ø±ÜÒ»´Î¹¥»÷
+                if (get_effect(who, EFFECT_03642))
+                {
+                	"/skill/03/03642"->into_effect(who);
+                	set_effect(who, EFFECT_03642, 0);
+                	return 0;
+                }
+	        // ¼ÆËã ap, dp
+	        cp = me->get_cp();  cp0 = me->get_cp_0();
+	        pp = who->get_pp();  pp0 = who->get_pp_0();
+		pp -= pp * sub_pp_rate /100; pp0 -= pp0 * sub_pp_rate /100;
+		if ( me->get("sk74221") )
+		{
+			cp0 = cp;
+			pp = pp0;
+		}
+		if ( me->get("sk74127") )
+		{
+			cp = cp0;
+			pp0 = pp;
+		}
+	
+	        cp += add_cp;  cp0 += add_cp;    // ÌØÊâ¼¼¸½¼Ó¹¥»÷
+	        
+                damage = me->get_lucky();
+                cp2 = cp0 + (cp - cp0) * damage / 100 + random( (cp - cp0) * (100 - damage) / 100 );
+                pp2 = pp0 + (pp - pp0) * damage / 100 + random( (pp - pp0) * (100 - damage) / 100 );
+/*
+                if( me->is_comrade() || who->is_comrade() )    // Õ½³¡Õ½ÓÑ
+                {
+                        if( me->is_user() && who->is_user() )
+                                damage = ( cp2 - cp2 * pp2 / (40 + pp2) );    // 15 / 10, 25 / 1000
+                        else    damage = ( cp2 * 3 / 2 - cp2 * 3 / 2 * pp2 / (40 + pp2) );    // 15 / 10, 25 / 1000
+                }
+                else
+*/                
+                {
+                        damage = (cp2 * 9 + pp2 * 47) / 50;
+                        damage = cp2 - cp2 * pp2 / range_value(damage, 1, MAX_NUMBER);
+                }
+		if (!me->is_comrade() && !who->is_comrade()) damage = damage * (level+10)/(level2+10);
+                damage = correct_damage_2(me, who, range_value(damage, 1, cp2), cp);
+                damage += damage * me->get_save("03162#")/100;                
+                damage += damage * who->get("sk74125")/100;                
+
+	if( is_god(me) ) tell_user( me, "r%s Ê©·¨-> %s, CP:%d - PP:%d = ÉË:%d", me->get_name(), who->get_name(), cp2, pp2, damage );
+	if( is_god(who) ) tell_user( who, "r%s Ê©·¨-> %s, CP:%d - PP:%d = ÉË:%d", me->get_name(), who->get_name(), cp2, pp2, damage );
+
+		rate = me->get_double_rate_2();
+		random = random(10000);
+		if( random < rate )
+		{
+			damage *= 2;
+			double_flag = 1;
+			if ( (rate=who->get_2("suit_effect.double1")) && (p=who->get_2("suit_effect.double2")) )
+			{	//Ì××°Ğ§¹û
+				damage = damage * ( 100 - rate - random(p-rate) ) / 100;
+			}
+		}
+		damage = damage + damage * damage_rate /100;		
+		if (p = me->get_skill(0432)) 
+		{
+			damage = damage * (100+p*2)/100;		// °ïÅÉµÄ·¨ÉËÇ¿»¯
+		}
+		if (p = who->get_skill(0433)) 
+		{
+			damage = damage * (100-p*2)/100;		// °ïÅÉµÄ·¨·ÀÇ¿»¯
+		}
+
+		damage += me->get_2("suit_effect.damage2");	//Ì××°
+		damage += 1 + random(me->get_2("suit_effect.damage_rand2"));
+		if (who->get_perform("05016#"))	damage = damage * 4 / 5;
+		if (damage<1) damage = 1;
+		if (get_effect(me, EFFECT_CHAR_POWERFALL))
+		{
+			if (me->is_user())
+				damage = damage * (100 + me->get_save_2("pf.powerfall"))/100;	
+			else
+				damage = damage * (100 + me->get("pf.powerfall"))/100;	
+			if (damage <0 ) damage = 1;
+		}
+                if( get_effect(who, EFFECT_CHAR_MISS) )    // ÁéÆø¼×
+                {
+                	if (damage<who->get_save("pf.miss") && damage<who->get_mp())
+                	{
+                		who->add_mp(-damage);
+                		who->add_save("pf.miss", -damage);
+                		send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42515, 1, OVER_BODY, PF_ONCE );
+                		send_user(who, "%c%w%c", 0x82, 4252, 0);
+                		return 1;
+                	}
+                	else
+                	if (who->get_mp()>who->get_save("pf.miss"))
+                	{
+                		damage-=who->get_save("pf.miss");
+                		who->add_mp(-who->get_save("pf.miss"));
+                	}
+                	else
+                	{
+                		damage-=who->get_mp();
+                		who->set_mp(0);
+                	}
+			"/sys/char/char"->effect_miss_done(who);
+                	set_effect(who, EFFECT_CHAR_MISS, 0);
+                }
+                if( get_effect(who, EFFECT_CHAR_MISS2) )    // ÔÆÃÎµÄÁéÆø¼×
+                {
+                	send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42525, 1, OVER_BODY, PF_ONCE );
+                	if (who->is_user())
+                	{
+                		if (who->add_save("05911", -damage)<0)
+                		{
+                			damage = -who->get_save("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                	else
+                	{
+                		if (who->add("05911", -damage)<0)
+                		{
+                			damage = -who->get("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                }
+                else
+                {
+                	if( who->is_user() && objectp(item=who->get_equip(WEAPON_TYPE)) &&
+                		item->get_name()=="Ó¢½ÜÈ­ÈĞ" && random100() < 10 )
+                	{
+                		who->set_save("05911", 630);
+			        set_effect(who, EFFECT_CHAR_MISS2, 30);
+			        send_user( who, "%c%w%w%c", 0x81, 5911, get_effect_3(who, EFFECT_CHAR_MISS2), EFFECT_GOOD );
+			        send_user( get_scene_object_2(who, USER_TYPE) - ({ who }), "%c%d%w%c%c", 0x83, getoid(who), 5911, 1, EFFECT_GOOD );
+				send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 10711, 1, OVER_BODY, PF_LOOP );
+                	}
+                }                
+                damage += me->get("add_magic_damage");	//·¨ÊõÉËº¦Ğ§¹û¸½¼Ó
+		if( me->is_user() )
+		{
+			if( objectp(item=me->get_equip(WEAPON_TYPE)) && item->get_name()=="Óñ³¿±¦½£" )
+				damage += random(51);
+		}
+//		if (me->is_nianshou()) damage =random(who->get_level()/2)+who->get_level()/2;
+		if (who->is_nianshou())
+		{
+	                send_user( me, "%c%s", '!', "ÄãµÄ¼¿Á©¶ÔÄêÊŞÊÇ²»Æğ×÷ÓÃµÄ¡£");
+			damage =0;
+		}
+                // ÏÔÊ¾ÉÙÑªĞ§¹û
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me), HIT_NORMAL, 2 );
+                	else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me), HIT_NORMAL, 2 );
+                }
+		if (me->is_npc()) owner = me->get_owner();
+		else owner = me;
+                if (owner)
+                {
+                	if (double_flag==0)
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x48, getoid(who), damage, get_d(who), getoid(me), HIT_NORMAL, 2 );
+                	else
+                		send_user( owner, "%c%d%w%c%d%w%c", 0x4a, getoid(who), damage, get_d(who), getoid(me), HIT_NORMAL, 2 );
+		}
+                if( who->is_user() )
+                {
+                	wear_down(who);    // »÷ÖĞ¼õÉÙÄÍ¾Ã
+                        // ±»´òÖĞÒ»Ğ©³ÖĞøĞ§¹ûÖĞ¶Ï
+                        CHAR_CHAR_D->stop_loop_perform_be_attack(who);
+		}
+		else if( get_effect(who, EFFECT_SLEEP) ) set_effect(who, EFFECT_SLEEP, 1);    // »èÃÔ
+
+                // ÅĞ¶ÏËÀÍö´¦Àí
+		//Áé»ê¼ÏËø
+		if(who->is_user()&&(pet=who->get("showbeast"))&&get_effect_3(pet, EFFECT_CHAR_SOUL_LOCK)&&inside_screen_2(pet, who))
+		{
+                        send_user( get_scene_object_2(pet, USER_TYPE), "%c%d%w", 0x68, getoid(pet), damage*2 );
+			CHAR_DIE_D->is_enemy_die(me, pet, damage*2);
+			return;
+		}
+		else if(who->is_npc()&&get_effect_3(who, EFFECT_CHAR_SOUL_LOCK)&&(owner=who->get_owner())&&owner&&inside_screen_2(owner, who))
+		{
+                        send_user( get_scene_object_2(owner, USER_TYPE), "%c%d%w", 0x68, getoid(owner), damage/2 );
+			CHAR_DIE_D->is_enemy_die(me, owner, damage/2);
+			return;
+		}
+		else
+                	CHAR_DIE_D->is_enemy_die(me, who, damage);
+                if( me && me->get_hp() < 1 ) CHAR_DIE_D->is_enemy_die(who, me, 0);
+        }
+        else
+        {
+	if( is_god(me) ) tell_user( me, "r%s Ê©·¨-> %s, ÃüÖĞ:%d Ê§°Ü", me->get_name(), who->get_name(), rate );
+	if( is_god(who) ) tell_user( who, "r%s Ê©·¨-> %s, ÃüÖĞ:%d Ê§°Ü", me->get_name(), who->get_name(), rate );
+                // ÏÔÊ¾¶ãÉÁĞ§¹û
+                id = getoid(who);
+		if (who->is_npc()) owner = who->get_owner();
+		else owner = who;
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+		if( me->is_user() ) owner = me;
+		else owner = me->get_owner();
+                if (owner) send_user( owner, "%c%d", 0x44, id );
+                return 0;
+        }
+
+        return damage;
+}
+
+varargs get_cast_damage(object me, object who, int cp, int cp0, int add_rate)
+{
+	int rate, random, pp, pp0, asp, dsp, damage, cp2, pp2, double_flag, level, level2,p;
+        pp = who->get_pp();  pp0 = who->get_pp_0();
+        asp = me->get_sp();  dsp = who->get_sp();
+
+        // ÅĞ¶ÏÄÜ·ñÃüÖĞ
+//        rate = asp * 86 / range_value(dsp, 1, MAX_NUMBER);    // asp * 43 * 100 / 50 / dsp
+	level = me->get_level();
+	level2 = who->get_level();
+	rate = 100;
+	if (level<level2 && !me->is_comrade() && !who->is_comrade()) rate = rate * (level+10) /(level2+10);
+	rate = range_value(rate, 5, 100);
+        rate += me->get_hit_rate_2() - who->get_dodge_rate_2() - who->get_2("suit_effect.dodge");    // ¸½¼ÓÃüÖĞ£­¸½¼ÓÉÁ±Ü£«ÌØÊâ¼¼¸½¼ÓÃüÖĞ    // + hit_rate
+        if( get_effect(me, EFFECT_CHAR_BLIND) ) rate /= 2;    // Ê§Ã÷(ÃüÖĞ¼õ°ë)
+        if (get_effect(who, EFFECT_DODGE)) rate -= 20;
+        if (get_effect(who, EFFECT_MAGIC_4243)) rate -= 50;
+        if (get_effect(who, EFFECT_CHAR_MOVE)) rate -= who->get_save("03641");
+        rate = range_value(rate, 5, 100);
+        rate += add_rate;
+        if( random(100) < rate )
+        {
+                // ¼ÆËã damage
+                // Ë²²½·¨ »Ø±ÜÒ»´Î¹¥»÷
+                if (get_effect(who, EFFECT_03642))
+                {
+                	"/skill/03/03642"->into_effect(who);
+                	set_effect(who, EFFECT_03642, 0);
+                	return 0;
+                }
+                damage = me->get_lucky();
+                cp2 = cp0 + (cp - cp0) * damage / 100 + random( (cp - cp0) * (100 - damage) / 100 );
+                pp2 = pp0 + (pp - pp0) * damage / 100 + random( (pp - pp0) * (100 - damage) / 100 );
+/*
+                if( me->is_comrade() || who->is_comrade() )    // Õ½³¡Õ½ÓÑ
+                {
+                        if( me->is_user() && who->is_user() )
+                                damage = ( cp2 - cp2 * pp2 / (40 + pp2) );    // 15 / 10, 25 / 1000
+                        else    damage = ( cp2 * 3 / 2 - cp2 * 3 / 2 * pp2 / (40 + pp2) );    // 15 / 10, 25 / 1000
+                }
+                else
+*/                
+                {
+                        damage = (cp2 * 9 + pp2 * 47) / 50;
+                        damage = cp2 - cp2 * pp2 / range_value(damage, 1, MAX_NUMBER);
+                }
+		if (!me->is_comrade() && !who->is_comrade()) damage = damage * (level+10)/(level2+10);
+                damage = correct_damage_2(me, who, range_value(damage, 1, cp2), cp);
+                damage += damage * me->get_save("03162#")/100;
+
+	if( is_god(me) ) tell_user( me, "r%s Ê©·¨-> %s, CP:%d - PP:%d = ÉË:%d", me->get_name(), who->get_name(), cp2, pp2, damage );
+	if( is_god(who) ) tell_user( who, "r%s Ê©·¨-> %s, CP:%d - PP:%d = ÉË:%d", me->get_name(), who->get_name(), cp2, pp2, damage );
+
+		rate = me->get_double_rate_2();
+		random = random(10000);
+		if( random < rate )
+		{
+			damage *= 2;
+//			double_flag = 1;
+			if ( (rate=who->get_2("suit_effect.double1")) && (p=who->get_2("suit_effect.double2")) )
+			{	//Ì××°Ğ§¹û
+				damage = damage * ( 100 - rate - random(p-rate) ) / 100;
+			}
+		}
+		if (who->get_perform("05016#"))	damage = damage * 4 / 5;
+
+		if (damage<1) damage = 1;
+		if (get_effect(me, EFFECT_CHAR_POWERFALL))
+		{
+			if (me->is_user())
+				damage = damage * (100 + me->get_save_2("pf.powerfall"))/100;	
+			else
+				damage = damage * (100 + me->get("pf.powerfall"))/100;	
+			if (damage <0 ) damage = 1;
+		}
+                if( get_effect(who, EFFECT_CHAR_MISS) )    // ÁéÆø¼×
+                {
+                	if (damage<who->get_save("pf.miss") && damage<who->get_mp())
+                	{
+                		who->add_mp(-damage);
+                		who->add_save("pf.miss", -damage);
+                		send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42515, 1, OVER_BODY, PF_ONCE );
+                		send_user(who, "%c%w%c", 0x82, 4252, 0);
+                		return 1;
+                	}
+                	else
+                	if (who->get_mp()>who->get_save("pf.miss"))
+                	{
+                		damage-=who->get_save("pf.miss");
+                		who->add_mp(-who->get_save("pf.miss"));
+                	}
+                	else
+                	{
+                		damage-=who->get_mp();
+                		who->set_mp(0);
+                	}
+			"/sys/char/char"->effect_miss_done(who);
+                	set_effect(who, EFFECT_CHAR_MISS, 0);
+                }
+                if( get_effect(who, EFFECT_CHAR_MISS2) )    // ÔÆÃÎµÄÁéÆø¼×
+                {
+                	send_user( get_scene_object_2(who, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(who), 42525, 1, OVER_BODY, PF_ONCE );
+                	if (who->is_user())
+                	{
+                		if (who->add_save("05911", -damage)<0)
+                		{
+                			damage = -who->get_save("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                	else
+                	{
+                		if (who->add("05911", -damage)<0)
+                		{
+                			damage = -who->get("05911");
+                			set_effect(who, EFFECT_CHAR_MISS2, 1);
+                		}
+                		else return 1;
+                	}
+                }
+                if (who->get_perform("05016#"))	damage = damage * 4 / 5;
+		return damage;
+	}
+	else return 0;
+
+}
+
+//ÉèÖÃ³ğºŞÖµ
+int set_enmity(object who, object enemy, int count)
+{
+	int enmity,enmity1;
+	string id,id1;
+	mapping mpTmp;
+	object enemy1;
+	
+	if ( !who || !enemy )
+		return 0;
+	if ( !enemy->get_enmity_flag() )	//ÓĞ³ğºŞÉèÖÃ²Å½øĞĞ´¦Àí
+		return 0;
+        if( !enemy->can_be_fighted(who) || !who->can_fight(enemy) ) 
+        	return 0;
+	if ( who->is_npc() )
+		id = sprintf("%x#",getoid(who));
+	else
+		id = sprintf("%d",getoid(who));
+	enmity = enemy->set_enmity(id,enemy->get_enmity(id)+count);
+	enemy1 = enemy->get_enemy();
+	if ( !objectp(enemy1) )
+		enemy->start_fight(who);
+	else if ( enemy1 != who )
+	{
+		if ( enemy1->is_npc() )
+			id1 = sprintf("%x#",getoid(enemy1));
+		else
+			id1 = sprintf("%d",getoid(enemy1));
+		enmity1 = enemy->get_enmity(id1);
+		if ( enmity > enmity1*11/10 )	//³ğºŞ³¬¹ıµ±Ç°¹¥»÷¶ÔÏóµÄ10£¥£¬Ôò×ª»»¹¥»÷¶ÔÏó
+		{
+			enemy->start_fight(who);
+			enemy->set_enemy(who);
+			enemy->set("2122", time());
+			enemy->follow_user();
+		}
+	}
+	return enmity;
+}
+//ÉèÖÃ³ğºŞÖµ(ÎŞ´ò»÷¶ÔÏó)
+int set_enmity1(object who, int count)
+{
+	int x,y,z,i,size;
+	object *char;
+
+        z = get_z(who);  x = get_x(who);  y = get_y(who);
+        char = get_range_object(z, x, y, 10, USER_TYPE) + get_range_object(z, x, y, 10, CHAR_TYPE) - ({ who,0 });
+	for(i=0,size=sizeof(char);i<size;i++)
+	{
+		set_enmity(who,char[i],count);
+	}
+	return count;
+}
+//ÉèÖÃ³ğºŞÖµ(ÎŞ´ò»÷¶ÔÏó,ÓĞ¾ÈÖú¶ÔÏó)
+int set_enmity2(object who, object help,int count)
+{
+	int x,y,z,i,size;
+	object *char;
+
+        z = get_z(help);  x = get_x(help);  y = get_y(help);
+        char = get_range_object(z, x, y, 10, USER_TYPE) + get_range_object(z, x, y, 10, CHAR_TYPE) - ({ who,help,0 });
+	for(i=0,size=sizeof(char);i<size;i++)
+	{
+		set_enmity(who,char[i],count);
+	}
+	return count;
+}

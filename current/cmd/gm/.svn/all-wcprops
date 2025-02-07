@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/gss/!svn/ver/947/current/cmd/gm
+END
+summon_xmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/110/current/cmd/gm/summon_xmm.c
+END
+ap.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/cmd/gm/ap.c
+END
+gm.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/cmd/gm/gm.c
+END
+sc.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/cmd/gm/sc.c
+END
+ip.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/cmd/gm/ip.c
+END
+channel.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/947/current/cmd/gm/channel.c
+END
+showdat.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/109/current/cmd/gm/showdat.c
+END
+bian.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/160/current/cmd/gm/bian.c
+END
+manager.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/1/current/cmd/gm/manager.c
+END
+gift2.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/cmd/gm/gift2.c
+END
+op.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/892/current/cmd/gm/op.c
+END
+sys.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/1/current/cmd/gm/sys.c
+END
+show.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/524/current/cmd/gm/show.c
+END
+xinrenwang.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/404/current/cmd/gm/xinrenwang.c
+END
+gonggao.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/91/current/cmd/gm/gonggao.c
+END
+go2map.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/324/current/cmd/gm/go2map.c
+END
+who.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/204/current/cmd/gm/who.c
+END
+gmlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/728/current/cmd/gm/gmlist.c
+END
+ban.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/1/current/cmd/gm/ban.c
+END
+skills.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/1/current/cmd/gm/skills.c
+END
+shout.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/cmd/gm/shout.c
+END
+findgm.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/441/current/cmd/gm/findgm.c
+END
+recover.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/892/current/cmd/gm/recover.c
+END
+pass.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/gss/!svn/ver/1/current/cmd/gm/pass.c
+END
+hp.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gss/!svn/ver/1/current/cmd/gm/hp.c
+END
+user.info.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/1/current/cmd/gm/user.info.c
+END
+goto.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/152/current/cmd/gm/goto.c
+END
+kickout.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/892/current/cmd/gm/kickout.c
+END
+where.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/441/current/cmd/gm/where.c
+END
+finger.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/910/current/cmd/gm/finger.c
+END
+slave.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/cmd/gm/slave.c
+END
+pnum.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/679/current/cmd/gm/pnum.c
+END
+gmset.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/728/current/cmd/gm/gmset.c
+END
+family.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/343/current/cmd/gm/family.c
+END
+gmfight.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/383/current/cmd/gm/gmfight.c
+END
+summon_wzx.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/110/current/cmd/gm/summon_wzx.c
+END
+sc2.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/409/current/cmd/gm/sc2.c
+END
+i.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/gss/!svn/ver/1/current/cmd/gm/i.c
+END

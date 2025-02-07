@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gss/!svn/ver/1235/current/cmd/debug
+END
+testurl.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/373/current/cmd/debug/testurl.c
+END
+call.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/373/current/cmd/debug/call.c
+END
+checkfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gss/!svn/ver/315/current/cmd/debug/checkfile.c
+END
+clone-test.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gss/!svn/ver/692/current/cmd/debug/clone-test.c
+END
+checkproduct.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gss/!svn/ver/1161/current/cmd/debug/checkproduct.c
+END
+summon.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/136/current/cmd/debug/summon.c
+END
+npc.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/87/current/cmd/debug/npc.c
+END
+basic.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/1171/current/cmd/debug/basic.c
+END
+status.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/454/current/cmd/debug/status.c
+END
+ilist.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/1/current/cmd/debug/ilist.c
+END
+blue.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/132/current/cmd/debug/blue.c
+END
+clone-weapon.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gss/!svn/ver/447/current/cmd/debug/clone-weapon.c
+END
+lock.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/508/current/cmd/debug/lock.c
+END
+info.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/315/current/cmd/debug/info.c
+END
+ff.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gss/!svn/ver/1/current/cmd/debug/ff.c
+END
+inv.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gss/!svn/ver/1/current/cmd/debug/inv.c
+END
+findid.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/541/current/cmd/debug/findid.c
+END
+snoop.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/1/current/cmd/debug/snoop.c
+END
+fi.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/1169/current/cmd/debug/fi.c
+END
+dest.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/1235/current/cmd/debug/dest.c
+END
+check2.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/726/current/cmd/debug/check2.c
+END
+testeff.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/679/current/cmd/debug/testeff.c
+END
+clone.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/759/current/cmd/debug/clone.c
+END
+checkproduct2.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gss/!svn/ver/604/current/cmd/debug/checkproduct2.c
+END
+givegift.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gss/!svn/ver/297/current/cmd/debug/givegift.c
+END
+recover.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/1/current/cmd/debug/recover.c
+END
+summonall.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gss/!svn/ver/521/current/cmd/debug/summonall.c
+END
+double.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/482/current/cmd/debug/double.c
+END
+kickall.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gss/!svn/ver/521/current/cmd/debug/kickall.c
+END
+slave.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/178/current/cmd/debug/slave.c
+END
+yellow.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/132/current/cmd/debug/yellow.c
+END
+smash.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gss/!svn/ver/426/current/cmd/debug/smash.c
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/524/current/cmd/debug/map.c
+END
+ls.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/315/current/cmd/debug/ls.c
+END
+clone-armor.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gss/!svn/ver/1/current/cmd/debug/clone-armor.c
+END
+update.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/452/current/cmd/debug/update.c
+END
+checkorg.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gss/!svn/ver/685/current/cmd/debug/checkorg.c
+END
+cd.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gss/!svn/ver/315/current/cmd/debug/cd.c
+END
+halt.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gss/!svn/ver/524/current/cmd/debug/halt.c
+END
+energy.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/172/current/cmd/debug/energy.c
+END
+war.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gss/!svn/ver/447/current/cmd/debug/war.c
+END
+effect.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gss/!svn/ver/686/current/cmd/debug/effect.c
+END
